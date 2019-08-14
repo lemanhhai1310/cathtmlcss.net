@@ -1,0 +1,24 @@
+#thy-footer{
+  .top{
+    background-color: #eaecec;
+    border-top: 1px solid #daddde;
+    .title{
+      font-size: 16px;
+      color: #000;
+      font-family:'Roboto-Medium';
+    }
+    address{
+      font-family:'Roboto-Light';
+      strong{
+        color: #20221d;
+        font-family:'Roboto-Medium';
+      }
+    }
+  }
+  .bottom{
+    background-color: #20221d;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+}

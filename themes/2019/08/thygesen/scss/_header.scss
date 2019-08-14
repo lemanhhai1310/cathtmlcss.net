@@ -1,0 +1,30 @@
+.title2{
+  font-family:'Roboto-Bold';
+  font-size: 25px;
+  color: rgb(32,34,29);
+}
+.box-social{
+  .uk-icon-button{
+    border-radius: 0;
+    background-color: rgb(32, 34, 29);
+    color: #FFFFFF;
+    &:hover{
+      background-color: #B7C9D0;
+    }
+  }
+  .uk-margin-small-right{
+    margin-right: 12px;
+  }
+}
+.link1{
+  >li{
+    >a{
+      font-size: 16px !important;
+      font-family:'Roboto-Medium';
+      color: #20221d !important;
+      &:hover{
+        color: #43646e !important;
+      }
+    }
+  }
+}

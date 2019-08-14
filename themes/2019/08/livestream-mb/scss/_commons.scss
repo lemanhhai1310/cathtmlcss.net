@@ -1,0 +1,22 @@
+#app{
+  display: flex;
+  flex-direction: column;
+  >div{
+    &.chat{
+      flex: auto;
+      iframe{
+
+      }
+      .uk-switcher{
+
+      }
+    }
+  }
+}
+body{
+  font-size: 14px;
+  @extend html;
+}
+html{
+  background-color: #000000;
+}

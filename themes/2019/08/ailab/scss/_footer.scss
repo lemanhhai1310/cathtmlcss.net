@@ -1,0 +1,39 @@
+#ai-footer{
+  .top{
+    background-color: #202020;
+  }
+  .bottom{
+    background-color: #161616;
+    color: #8a8a8a;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+.box2_f{
+  h3{
+    color: #ffffff;
+    letter-spacing: -0.72px;
+    font-size: 17px;
+    font-family:'Rubik-Bold';
+  }
+  .uk-icon-button{
+    background-color: #1067db;
+    color: #ffffff;
+  }
+}
+.box1_f{
+  color: #ffffff;
+  font-size: 13px;
+  img{
+    transform: scale(0.7);
+  }
+  >span{
+    margin-left: 5px;
+    font-family:'Rubik-Light';
+  }
+  strong{
+    letter-spacing: -0.6px;
+    margin-left: 5px;
+    font-family:'Rubik-Regular';
+  }
+}

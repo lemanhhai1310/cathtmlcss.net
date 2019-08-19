@@ -1,3 +1,30 @@
+#menu_content{
+  //opacity: 0;
+  //visibility: hidden;
+  //transition: .3s ease-in-out;
+  //transition-property: opacity,visibility;
+  background: #373737;
+  max-height: none;
+  -webkit-backdrop-filter: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  //backdrop-filter: none;
+
+  transition: background .44s .2s cubic-bezier(0.52, 0.16, 0.24, 1),height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  &.uk-active{
+    background: #373737;
+    //opacity: 1;
+    //visibility: visible;
+    height: 100%;
+    position: fixed;
+
+    transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  }
+}
 .arrow-btn{
   background-color: #000000;
   width: 60px;
@@ -49,14 +76,17 @@
     }
   }
   .uk-button{
-    letter-spacing: 1px;
-    text-align: center;
-    color: #121212;
-    background-color: #fecb00;
-    font-family:'Rubik-Bold';
-    @media(max-width: 640px){
-      font-size: 13px;
-    }
+
+  }
+}
+.btn1{
+  letter-spacing: 1px;
+  text-align: center;
+  color: #121212;
+  background-color: #fecb00;
+  font-family:'Rubik-Bold';
+  @media(max-width: 640px){
+    font-size: 13px;
   }
 }
 .change_lang{

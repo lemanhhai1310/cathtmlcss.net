@@ -12,15 +12,25 @@
     <script src="assets/jquery/jquery-3.3.1.js"></script>
     <script src="assets/uikit-3.1.7/js/uikit.min.js"></script>
     <script src="assets/uikit-3.1.7/js/uikit-icons.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
-<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+<section id="app" class="uk-height-viewport uk-position-relative uk-offcanvas-content uk-overflow-hidden">
+<?php include "menu_content.php" ?>
 <div class="uk-height-viewport uk-position-relative uk-background-norepeat uk-background-bottom-center uk-background-contain" style="background-color: #1067db;" data-src="images/header/Bitmap.png" uk-img>
-    <img class="uk-position-top-right" src="images/header/Flat Design Oneboarding Concepts - Isometric illustration 2.png" alt="">
+    <div class="uk-position-cover uk-background-norepeat uk-background-top-right" data-src="images/header/Flat Design Oneboarding Concepts - Isometric illustration 2.png" uk-img uk-parallax="bgy: -200">
+
+    </div>
     <div class="uk-position-cover uk-grid-small" uk-grid>
         <div class="uk-width-auto">
-            <div class="uk-height-1-1 uk-padding-small" style="background-color: #fff;">
-
+            <div class="uk-height-1-1 uk-padding-small uk-background-default">
+                <div id="mobile_menu_toggler" class="uk-border-circle">
+                    <div id="m_nav_menu" class="m_nav">
+                        <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                        <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                        <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="uk-width-expand uk-flex uk-flex-column">
@@ -50,13 +60,13 @@
             </nav>
             <div class="uk-child-width-1-2@m uk-flex-auto" uk-grid>
                 <div class="uk-flex-middle uk-flex">
-                    <div class="box1_h uk-padding-large uk-padding-remove-top uk-padding-remove-right">
+                    <div class="box1_h uk-padding-large uk-padding-remove-top uk-padding-remove-right" uk-scrollspy="cls: uk-animation-scale-down; target: > *; delay: 150; repeat: true;">
                         <div class="c1">We create</div>
                         <div class="c2">AI technologies</div>
                         <div class="c1">that revolutionize</div>
                         <p>Full service agency focusing on creating artificial intelligence applications on the web or mobile.
                             We work with companies of all sizes.</p>
-                        <a href="#" class="uk-button uk-button-secondary uk-border-pill">READ MORE </a>
+                        <a href="#" class="uk-button btn1 uk-button-secondary uk-border-pill">READ MORE </a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,30 @@
+.copyright{
+	background-color: #161616;
+  color: #8a8a8a;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.menu1{
+	@media(max-width: 640px){
+  	text-align: center;
+  }
+	li{
+		a{
+			font-size: 28px;
+		  line-height: 1.81;
+		  letter-spacing: -0.44px;
+		  color: #ffffff;
+		  font-family:'Poppins-Bold';
+		  @media(max-width: 640px){
+		  	font-size: 20px;
+		  }
+		}
+	}
+}
+.lang_menu{
+	a{
+		&.uk-active{
+			color: #fff;
+		}
+	}
+}

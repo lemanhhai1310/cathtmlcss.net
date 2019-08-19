@@ -1,7 +1,7 @@
-<footer id="ai-footer">
+<footer id="ai-footer" uk-scrollspy="target: .anima; repeat: true; cls: animate; delay: 200">
     <div class="top uk-section-xsmall">
         <div class="uk-container">
-            <figure class="uk-text-center logo1 uk-margin">
+            <figure class="uk-text-center logo1 uk-margin anima">
                 <a href="#"><img data-srcset="images/logo.png, images/logo.webp, images/logo.svg" alt="" uk-img></a>
             </figure>
             <div class="uk-child-width-1-3@m uk-margin uk-grid-small uk-flex-middle" uk-grid>
@@ -25,7 +25,7 @@
                 );
                 foreach ($data as $k => $v):?>
                 <div>
-                    <div class="box1_f uk-flex uk-flex-middle">
+                    <div class="box1_f anima uk-flex uk-flex-middle">
                         <img src="<?= $v['src'] ?>" alt="">
                         <span>
                             <span><?= $v['title'] ?></span>
@@ -35,7 +35,7 @@
                 </div>
                 <?php endforeach; ?>
             </div>
-            <div class="uk-text-center box2_f">
+            <div class="uk-text-center box2_f anima">
                 <h3 class="uk-margin-small">Not following us yet?</h3>
                 <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
                 <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
@@ -50,6 +50,15 @@
         </div>
     </div>
 </footer>
+<div class="vc-bg-lines dark uk-position-cover">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
 </section>
 </body>
 </html>

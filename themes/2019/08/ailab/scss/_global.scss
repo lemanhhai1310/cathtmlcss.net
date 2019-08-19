@@ -2,3 +2,49 @@ body{
   font-size: 14px;
   font-family:'Rubik-Regular';
 }
+.anima{
+  opacity: 0 !important;
+  -webkit-transform: translateY(65px);
+  transform: translateY(65px);
+  &.animate{
+    opacity: 1 !important;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: opacity 0.8s ease-in-out,-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1),-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+.vc-bg-lines{
+  z-index: -1;
+  @media(max-width: 640px){
+    opacity: 0;
+  }
+  .line{
+    background: rgba(0,0,0,.05);
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: calc(100%/8);
+    display: inline-block;
+    &:nth-child(2){
+      left: calc(100%/8*2);
+    }
+    &:nth-child(3){
+      left: calc(100%/8*3);
+    }
+    &:nth-child(4){
+      left: calc(100%/8*4);
+    }
+    &:nth-child(5){
+      left: calc(100%/8*5);
+    }
+    &:nth-child(6){
+      left: calc(100%/8*6);
+    }
+    &:nth-child(7){
+      left: calc(100%/8*7);
+    }
+  }
+}

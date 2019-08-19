@@ -8,12 +8,12 @@
         </figure>
         <div class="uk-container uk-container-small">
         	<ul class="uk-list menu1">
-        		<li><a href="" title="">Home</a></li>
-        		<li><a href="" title="">About us</a></li>
-        		<li><a href="" title="">Services</a></li>
-        		<li><a href="" title="">Project Case</a></li>
-        		<li><a href="" title="">Blog</a></li>
-        		<li><a href="" title="">Contact</a></li>
+        		<li><a href="" title=""><span>Home</span></a></li>
+        		<li><a href="" title=""><span>About us</span></a></li>
+        		<li><a href="" title=""><span>Services</span></a></li>
+        		<li><a href="" title=""><span>Project Case</span></a></li>
+        		<li><a href="" title=""><span>Blog</span></a></li>
+        		<li><a href="" title=""><span>Contact</span></a></li>
         	</ul>
         </div>		
 	</div>

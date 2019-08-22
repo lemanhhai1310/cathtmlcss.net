@@ -1,0 +1,26 @@
+.tv-block-lichphatsong{
+  background-color: #131313;
+}
+.tv-filter1{
+  .uk-button{
+    background-color: #222222;
+    border-color: #222222;
+    border-radius: 16px;
+    color: #c7c7c7;
+    text-transform: initial;
+    font-family:'Roboto Medium';
+  }
+}
+.tv-search{
+  .uk-search-input{
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 16px;
+    font-family:'Roboto Medium';
+    padding-left: 15px;
+    &:focus{
+      background-color: #000000;
+      border-color: #000000;
+    }
+  }
+}

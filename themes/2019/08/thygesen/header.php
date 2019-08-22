@@ -19,11 +19,11 @@
             <div>
                 <div class="uk-child-width-auto@m uk-flex-middle" uk-grid>
                     <div>
-                        <h2 class="title2 uk-text-center">CLOTHING <br>
+                        <h2 class="title2 uk-text-center uk-visible@s">CLOTHING <br>
                             MANUFACTURER</h2>
                     </div>
                     <div>
-                        <div class="box-social uk-text-center">
+                        <div class="box-social uk-text-center uk-visible@s">
                             <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
                             <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="youtube"></a>
                             <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
@@ -65,7 +65,7 @@
             <div class="uk-navbar-right uk-hidden@m">
 
                 <div class="uk-navbar-item thy-menu-1" id="mobile_menu_toggler">
-                    <span class="uk-margin-small-right">Menu</span>
+                    <span class="uk-margin-small-right">One-stop-shop Clothing Manufacturer</span>
                     <div id="m_nav_menu" class="m_nav">
                         <div class="m_nav_ham button_closed" id="m_ham_1"></div>
                         <div class="m_nav_ham button_closed" id="m_ham_2"></div>

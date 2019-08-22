@@ -1,0 +1,13 @@
+body{
+  font-size: 13px;
+}
+//========================================================
+.anima{
+  @include hieuung(0,65px);
+  &.animate{
+    @include hieuung(1,0px);
+    -webkit-transition: opacity 0.8s ease-in-out,-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: opacity 0.8s ease-in-out,transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1),-webkit-transform 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+//========================================================

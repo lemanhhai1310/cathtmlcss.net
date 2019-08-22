@@ -4,7 +4,7 @@
             <figure class="uk-text-center logo1 uk-margin anima">
                 <a href="#"><img data-srcset="images/logo.png, images/logo.webp, images/logo.svg" alt="" uk-img></a>
             </figure>
-            <div class="uk-child-width-1-3@m uk-margin uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-child-width-1-3@m uk-margin uk-grid-small uk-flex-middle uk-visible@s" uk-grid>
                 <?php
                 $data = array(
                     array(

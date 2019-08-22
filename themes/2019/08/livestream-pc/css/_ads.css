@@ -1,0 +1,15 @@
+.block_ads {
+  background-color: transparent;
+  padding: 0; }
+  .block_ads .uk-alert-close {
+    background-image: -webkit-linear-gradient(18deg, #7cb03f, #82b43f 64%, #b7d23f);
+    background-image: -o-linear-gradient(18deg, #7cb03f, #82b43f 64%, #b7d23f);
+    background-image: linear-gradient(72deg, #7cb03f, #82b43f 64%, #b7d23f);
+    padding: 5px 12px;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+    border-top-left-radius: 4px;
+    font-size: 14px; }
+
+/*# sourceMappingURL=_ads.css.map */

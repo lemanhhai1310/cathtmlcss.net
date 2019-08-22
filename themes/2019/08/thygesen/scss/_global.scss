@@ -6,3 +6,13 @@ body{
 .uk-container{
   max-width: 1108px;
 }
+.uk-breadcrumb{
+  font-family:'Roboto-Light';
+  >li{
+    &:nth-child(n+2){
+      &:before{
+        margin: 0 5px !important;
+      }
+    }
+  }
+}

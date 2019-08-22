@@ -1,0 +1,179 @@
+body {
+  font-size: 13px; }
+
+.menu1 > li {
+  padding: 0 5px; }
+  .menu1 > li:last-child {
+    padding-right: 15px; }
+  .menu1 > li.uk-active > a {
+    background-color: #fd685b;
+    border-color: #fd685b;
+    color: #FFFFFF; }
+  .menu1 > li > a {
+    min-height: 38px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    padding: 0 15px;
+    text-transform: inherit;
+    color: #4d4d4d; }
+    .menu1 > li > a:hover {
+      background-color: #fd685b;
+      border-color: #fd685b;
+      color: #FFFFFF; }
+
+.top_header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc5362), to(#fe7955));
+  background-image: -webkit-linear-gradient(left, #fc5362, #fe7955);
+  background-image: -o-linear-gradient(left, #fc5362, #fe7955);
+  background-image: linear-gradient(to right, #fc5362, #fe7955);
+  padding: 5px 0; }
+
+.link_more {
+  color: #222222;
+  font-size: 13px; }
+
+.title_name {
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+  font-size: 20px; }
+
+@media (max-width: 640px) {
+  .box_content_main {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; } }
+
+@media (max-width: 640px) {
+  .box_content {
+    padding-left: 0;
+    padding-right: 0; } }
+
+.luot_nghe {
+  bottom: -14px;
+  padding: 0 10px;
+  text-transform: inherit;
+  font-size: 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 28px;
+  border: none;
+  z-index: 333;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc5362), to(#fe7955));
+  background-image: -webkit-linear-gradient(left, #fc5362, #fe7955);
+  background-image: -o-linear-gradient(left, #fc5362, #fe7955);
+  background-image: linear-gradient(to right, #fc5362, #fe7955); }
+  .luot_nghe i {
+    font-size: 14px;
+    margin-right: 5px; }
+
+@media (max-width: 1080px) {
+  .box_padding {
+    padding: 0; } }
+
+.box_nghe_si {
+  padding: 8px; }
+
+.title_name_1 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000; }
+  .title_name_1 a {
+    color: #000; }
+
+.luot_nghe_1 {
+  color: #bfbfbf;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .luot_nghe_1 i {
+    font-size: 14px;
+    margin-right: 5px; }
+
+.hover1:hover .title_name_1 {
+  color: #fc5262; }
+
+.box_2, .box_3 {
+  border-radius: 16px !important; }
+
+.box_1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#FFFFFF));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px; }
+  .box_1 .title {
+    font-size: 13px;
+    font-weight: 500; }
+    .box_1 .title a {
+      color: #222222; }
+
+.author {
+  font-size: 12px; }
+  .author a {
+    color: #525252; }
+
+.icon-play {
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+  visibility: visible;
+  width: 48px;
+  height: 48px;
+  display: block;
+  background: url("../images/icon.png") left -28px no-repeat; }
+
+.box_3 .stt {
+  top: 5px;
+  left: 5px;
+  color: #fd5265;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: normal; }
+
+.box_3 .uk-badge {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  left: -25px;
+  top: -15px; }
+
+.box_3:hover .icon-play {
+  opacity: 1; }
+
+@media (max-width: 640px) {
+  #site_map > li {
+    display: none; } }
+
+#site_map > li:nth-child(n+2):before {
+  height: 15px; }
+
+#site_map > li > a {
+  text-transform: inherit;
+  color: #ffffff; }
+
+.me_logo img {
+  width: 170px; }
+
+.me_copyright {
+  font-size: 12px;
+  color: #ffffff; }
+  @media (max-width: 640px) {
+    .me_copyright br {
+      display: none; } }
+
+.thanhvien {
+  width: 220px; }
+
+/*# sourceMappingURL=app.css.map */

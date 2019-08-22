@@ -1,0 +1,47 @@
+#tv-footer{
+
+}
+.tv-bg-black{
+  background-color: #000000;
+}
+.tv-bg-gray{
+  background-color: #131313;
+}
+.tv-list-1{
+  li{
+    a{
+      color: #818181;
+    }
+  }
+}
+.tv-social-1{
+  position: relative !important;
+  &:hover{
+    background-color: #131313;
+    color: #FFFFFF !important;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #8cba3f;
+    }
+  }
+}
+.tv-footer-1{
+  //padding: 10px 0;
+}
+.uk-alert-close{
+  top: -20px;
+  color: #FFFFFF;
+  opacity: 1;
+  .uk-position-bottom-left &{
+    right: 0;
+  }
+  .uk-position-bottom-right &{
+    left: 0;
+  }
+}

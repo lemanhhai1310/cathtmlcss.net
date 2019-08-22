@@ -1,0 +1,182 @@
+#tv-header{
+  background-image: linear-gradient(to right, #55B442, #73BE42, #96CC44, #c3d93f);
+  .uk-navbar-left{
+    &:not(.uk-hidden\@m){
+      .uk-navbar-nav{
+        >li{
+          &.uk-active{
+            >a{
+              color: #ffffff;
+              background-color: #3E8326;
+            }
+          }
+          >a{
+            .uk-badge{
+              border-radius: 2px;
+              position: absolute;
+              top: 8px;
+              left: 15px;
+              font-size: 8.2px;
+              width: 30px;
+              height: 12px;
+              &.ads{
+                background-color: #ffc600;
+                color: #000000;
+              }
+            }
+            &:hover{
+              background-color: #3E8326;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .uk-logo;
+        position: relative;
+        font-family:'Roboto Medium';
+        font-size: 13px;
+        color: #000000;
+        text-transform: initial;
+      }
+    }
+  }
+}
+.uk-logo{
+  min-height: 60px;
+  @media(max-width: 560px){
+    min-height: 55px;
+  }
+}
+// copy css
+.box8{
+  width: 250px;
+  border-radius: 4px;
+  overflow: hidden;
+  left: inherit !important;
+  right: 0px;
+}
+.coin{
+  height: 14px;
+}
+.box11{
+  border: 2px solid #ffffff;
+}
+.user_menu{
+  li{
+    a{
+      background-color: #ededed;
+      border-top: 1px solid #ffffff;
+      color: #6b6b6b;
+      &:hover{
+        background-color: #fff;
+        color: #000000;
+
+      }
+    }
+    &.uk-active{
+      a{
+
+      }
+    }
+  }
+}
+.user_acc{
+  background-color: #ededed;
+  padding: 10px;
+  ul{
+    margin: 0;
+    li{
+      margin: 0;
+      font-size: 13px;
+      color: #282828;
+      b{
+        color: #000000;
+      }
+      span{
+        color: #ff9000;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+$width_space_user: 8px;
+.user_info{
+  &.uk-grid-small{
+    margin-left: -$width_space_user;
+    >*{
+      padding-left: $width_space_user;
+    }
+  }
+  .uk-icon{
+    color: #bfd73f;
+  }
+  .uk-cover-container{
+    border: 2px solid #FFFFFF;
+  }
+}
+.name{
+  color: #ffffff;
+  font-size: 13px;
+  & + span{
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+.user{
+  background-image: linear-gradient(72deg, #74881f, #76891f 50%, #77891f);
+  >a{
+
+  }
+}
+
+
+.box10{
+  width: 250px;
+  border-radius: 4px;
+  overflow: hidden;
+  left: inherit !important;
+  right: 10px;
+}
+.user_menu{
+  li{
+    a{
+      background-color: #ededed;
+      border-top: 1px solid #ffffff;
+      color: #6b6b6b;
+    }
+    &.uk-active{
+      a{
+        background-color: #fff;
+        color: #000000;
+      }
+    }
+  }
+}
+.user_acc{
+  background-color: #ededed;
+  padding: 10px;
+  ul{
+    margin: 0;
+    li{
+      margin: 0;
+      font-size: 13px;
+      color: #282828;
+      b{
+        color: #000000;
+      }
+      span{
+        color: #ff9000;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.coin{
+  height: 14px;
+}

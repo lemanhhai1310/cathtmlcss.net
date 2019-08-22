@@ -17,18 +17,42 @@
 <body>
 <section id="app" class="uk-height-viewport uk-position-relative uk-offcanvas-content uk-overflow-hidden">
 <?php include "menu_content.php" ?>
-<div class="uk-height-viewport uk-position-relative uk-background-norepeat uk-background-bottom-center uk-background-contain" style="background-color: #1067db;" data-src="images/header/Bitmap.png" uk-img>
+<nav id="nav_mobile" class="uk-navbar-container uk-hidden@s" uk-navbar uk-sticky>
+
+    <div class="uk-navbar-left">
+        <div class="uk-navbar-item uk-padding-remove-left">
+            <div class="mobile_menu_toggler uk-border-circle">
+                <div class="m_nav m_nav_menu">
+                    <div class="m_nav_ham button_closed m_ham_1"></div>
+                    <div class="m_nav_ham button_closed m_ham_2"></div>
+                    <div class="m_nav_ham button_closed m_ham_3"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-padding-remove-left uk-logo" href=".">
+            <figure class="uk-text-center logo1 uk-margin-remove">
+                <img data-srcset="images/logo-black.png, images/logo.webp, images/logo.svg" alt="" uk-img>
+            </figure>
+        </a>
+    </div>
+
+</nav>
+<div class="uk-height-viewport uk-visible@s uk-position-relative uk-background-norepeat uk-background-bottom-center uk-background-contain" style="background-color: #1067db;" data-src="images/header/Bitmap.png" uk-img>
     <div class="uk-position-cover uk-background-norepeat uk-background-top-right" data-src="images/header/Flat Design Oneboarding Concepts - Isometric illustration 2.png" uk-img uk-parallax="bgy: -200">
 
     </div>
     <div class="uk-position-cover uk-grid-small" uk-grid>
         <div class="uk-width-auto">
             <div class="uk-height-1-1 uk-padding-small uk-background-default">
-                <div id="mobile_menu_toggler" class="uk-border-circle">
-                    <div id="m_nav_menu" class="m_nav">
-                        <div class="m_nav_ham button_closed" id="m_ham_1"></div>
-                        <div class="m_nav_ham button_closed" id="m_ham_2"></div>
-                        <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                <div class="mobile_menu_toggler uk-border-circle">
+                    <div class="m_nav m_nav_menu">
+                        <div class="m_nav_ham button_closed m_ham_1"></div>
+                        <div class="m_nav_ham button_closed m_ham_2"></div>
+                        <div class="m_nav_ham button_closed m_ham_3"></div>
                     </div>
                 </div>
             </div>

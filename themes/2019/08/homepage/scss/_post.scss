@@ -1,0 +1,25 @@
+.tv-card1{
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    display: inline-block;
+    background-color: #131313;
+  }
+  background-color: #131313;
+  position: relative;
+  color: #FFFFFF;
+  hr{
+    border-color: #222222;
+  }
+  @media(min-width: 960px){
+    padding-left: 0;
+  }
+}
+.tv-block-post{
+  background-color: #0c0c0c;
+}

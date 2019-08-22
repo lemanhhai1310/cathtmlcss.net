@@ -1,0 +1,32 @@
+.menu1{
+  >li{
+    padding: 0 5px;
+    &:last-child{
+      padding-right: 15px;
+    }
+    &.uk-active{
+      >a{
+        background-color: #fd685b;
+        border-color: #fd685b;
+        color: #FFFFFF;
+      }
+    }
+    >a{
+      min-height: 38px;
+      border-radius: 3px;
+      border: 1px solid #d7d7d7;
+      padding: 0 15px;
+      text-transform: inherit;
+      color: #4d4d4d;
+      &:hover{
+        background-color: #fd685b;
+        border-color: #fd685b;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+.top_header{
+  background-image: linear-gradient(to right, #fc5362, #fe7955);
+  padding: 5px 0;
+}

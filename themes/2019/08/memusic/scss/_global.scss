@@ -1,0 +1,11 @@
+body{
+  font-size: 13px;
+}
+#app{
+  @media(max-width: 960px){
+    //background-size: cover;
+  }
+}
+.uk-container{
+  //max-width: 1200px;
+}

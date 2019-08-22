@@ -1,0 +1,187 @@
+#modal-dathang-outside{
+  .uk-modal-dialog{
+    background-color: #f9f9f9;
+  }
+  .uk-legend{
+    font-size: 17px;
+    color: #000;
+  }
+  .uk-input{
+    font-size: 14px;
+  }
+}
+
+.button-sub{
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 0px 20px;
+  height: 35px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+}
+
+.block_content{
+  &.order_fast{
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0px 0px 8px #e7e7e7;
+    border: 10px solid #ffffff;
+    border-width: 10px 10px 10px 0px;
+    border-top-right-radius: 17px;
+    max-width: 100%;
+    transition: all 1.3s ease 0s;
+    -webkit-transition: all 1.3s ease 0s;
+    .block-title{
+      background: rgb(255, 255, 255);
+      padding: 10px 0px 5px 15px;
+      cursor: pointer;
+      border: 1px solid var(--main-color);
+      border-width: 1px 1px 0 0;
+      position: relative;
+    }
+  }
+}
+.order_fast_closed{
+  .order_form_title{
+    &:after{
+      animation: 2s ease-in-out 1s normal none infinite running chang-rotage-anim;
+    }
+  }
+}
+.order_fast_closed{
+  left: 0;
+  bottom: 0px;
+  width: 160px;
+}
+.order_fast_opened{
+  bottom: 0px;
+  left: 0 !important;
+  width: 340px;
+}
+.order_form_title{
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
+  &:after{
+    font-size: 27px;
+    color: var(--main-color);
+    position: absolute;
+    right: 8px;
+    font-family: FontAwesome;
+    bottom: 6px;
+  }
+}
+.block_content.order_fast .block-title{
+  background: #fff;
+  padding: 0px 0px 8px 0px;
+  cursor: pointer;
+  border: none;
+  border-width: 1px 1px 0 0;
+  text-align: center;
+  border-radius: 0 4px 0 0;
+  font-size: 15px;
+}
+.block_content.order_fast .block-title .hotline_bottom{
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  padding-right: 17px;
+  line-height: 24px;
+  /* padding-left: 31px; */
+  position: relative;
+  border-right: 2px solid rgba(51, 51, 51, 0.52);
+  margin-right: 14px;
+}
+@media screen and (max-width:360px){
+  .block_content.order_fast .block-title .hotline_bottom{
+    font-size: 14px;
+    padding-right: 12px;
+    margin-right: 9px;
+  }
+}
+.block_content.order_fast .block-title .hotline_bottom:before{
+
+}
+.order_open_form{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  svg {
+    fill: red;
+    margin-left: 15px;
+  }
+}
+.block_content.order_fast .order_form{
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+
+
+  transition: all 2.3s ease 0s;
+  -webkit-transition: all 2.3s ease 0s;
+}
+.block_content.order_fast .order_form.active{
+  display: block;
+}
+.block_content.order_fast #order_form label {
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+}
+.block_content.order_fast #order_form input{
+  border: solid 1px #ececec;
+  width: 100%;
+  height: 32px;
+  padding-left: 10px;
+  color: #552014;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.block_content.order_fast #order_form textarea{
+  border: solid 1px #ececec;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #552014;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.block_content.order_fast #order_form .button-sub{
+  background: red;
+  /* border: solid 1px #552014; */
+  color: #fff;
+  font-weight: bold;
+  padding: 0px 20px;
+  height: 35px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.block_content.order_fast #order_form .button-sub:hover{
+  color: #ffc20e;
+}
+.price_order,.total_order_area{
+
+  padding: 0px 0 10px;
+}
+.price_order span,.total_order_area #total_order{
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 3px 3px 5px #7b7b7b;
+  color: #ED1C24;
+}

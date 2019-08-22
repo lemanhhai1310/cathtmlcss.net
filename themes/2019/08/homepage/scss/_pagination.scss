@@ -1,0 +1,37 @@
+.uk-pagination{
+  .phantrang1 &{
+    margin-left: -$width-5 !important;
+  }
+  li{
+    .phantrang1 &{
+      padding-left: $width-5 !important;
+    }
+    &.uk-active{
+      span{
+        background-color: #f5f5f5;
+        .phantrang1 &{
+          background-color: #72BB3E;
+          color: #FFFFFF;
+        }
+      }
+    }
+    a{
+
+    }
+    a,span{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+      background-color: #222222;
+      font-family:'Roboto Medium';
+      .phantrang1 &{
+        background-color: #b4b4b4;
+        color: #FFFFFF;
+        border-radius: 1px;
+      }
+    }
+  }
+}

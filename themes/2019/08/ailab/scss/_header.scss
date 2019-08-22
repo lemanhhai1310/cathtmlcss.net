@@ -1,3 +1,17 @@
+#nav_mobile{
+  box-shadow: 0 4px 4px rgba(0,0,0,.06);
+  &.uk-navbar-transparent{
+    box-shadow: none;
+  }
+  .uk-logo{
+    img{
+      height: 25px;
+    }
+  }
+  .uk-navbar-item{
+    min-height: 60px;
+  }
+}
 #menu_content{
   //opacity: 0;
   //visibility: hidden;

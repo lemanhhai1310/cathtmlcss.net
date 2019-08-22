@@ -1,0 +1,800 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>90phut TV - Lịch phát sóng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/uikit-3.1.6/css/uikit.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <!--JS-->
+    <script src="assets/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/uikit-3.1.6/js/uikit.min.js"></script>
+    <script src="assets/uikit-3.1.6/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v3.2'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     theme_color="#24892d">
+</div>
+<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+    <div id="my-id" uk-offcanvas="overlay: true; mode: push">
+        <div class="uk-offcanvas-bar uk-overflow-auto uk-flex uk-flex-column uk-padding-remove">
+            <nav class="menu_m">
+                <div class="uk-padding-small" style="background-color: #000000;">
+                    <div class="uk-grid-small user_info uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div class="uk-cover-container uk-border-circle">
+                                <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.0-1/p50x50/58551712_558791001311032_4407660791101128704_n.jpg?_nc_cat=101&_nc_oc=AQkAgoShI9Ogxh988U6FOz8BptadG-L9NflOXpU50nokMgUtviclFLUVB_1iY1MN1EQ&_nc_ht=scontent.fhan3-3.fna&oh=85961291b5986b127feb93ef87e5defc&oe=5D308A60" alt="" uk-cover>
+                                <canvas width="40" height="40"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <h5 class="name uk-margin-remove uk-text-bold">The Flash</h5>
+                            <span>Thành viên</span>
+                        </div>
+                        <div class="uk-width-auto">
+                            <div class="box9 uk-border-circle uk-flex uk-flex-middle uk-flex-center">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="uk-list uk-margin-remove">
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href=".">
+                            Trang chủ                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove uk-active">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Đang diễn ra                            <span class="uk-badge live uk-text-small uk-text-uppercase">live</span>                        </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="lichphatsong.php">
+                            Lịch phát sóng                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Xem Highlight                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Hướng dẫn                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Nạp Coin                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Đặt cược                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            FABET                            <span class="uk-badge ads uk-text-small uk-text-uppercase">ads</span>                        </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            188BET                            <span class="uk-badge ads uk-text-small uk-text-uppercase">ads</span>                        </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Cộng đồng                                                    </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Liên hệ quảng cáo                                                    </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright_m">
+                <div class="uk-padding-small"><small>Copyright © 2019 90phut.tv</small></div>
+            </div>
+        </div>
+    </div>    <header id="tv-header" uk-sticky>
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+            <div class="uk-navbar-left uk-hidden@m">
+
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#my-id" class="uk-navbar-toggle uk-padding-remove" uk-toggle>
+                            <div id="m_nav_menu" class="m_nav menu">
+                                <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                                <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                                <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="uk-navbar-left uk-visible@m">
+                <a class="uk-navbar-item uk-logo" href="."><img src="imgs/logo.png" alt=""></a>
+                <ul class="uk-navbar-nav">
+                    <li class=""><a href=".">Trang chủ</a></li>
+                    <li class="uk-active"><a href="lichphatsong.php">Lịch phát sóng</a></li>
+                    <li><a href="#">Trận đấu</a></li>
+                    <li class=""><a href="video.php">Video</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="uk-badge ads uk-text-small uk-text-uppercase">ads</span>
+                            Fabet
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="uk-badge ads uk-text-small uk-text-uppercase">ads</span>
+                            Bet188
+                        </a>
+                    </li>
+                    <li><a href="#">Fanpage</a></li>
+                </ul>
+
+            </div>
+
+            <div class="uk-navbar-center uk-hidden@m">
+                <a class="uk-navbar-item uk-logo" href="."><img src="imgs/logo.png" alt=""></a>
+            </div>
+
+            <div class="uk-navbar-right uk-visible@m">
+
+                <ul class="uk-navbar-nav">
+                    <li class="user">
+                        <a href="#">
+                            <div class="uk-grid-small user_info uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container uk-border-circle">
+                                        <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.0-9/53397793_1028481614010994_3431479243719049216_n.jpg?_nc_cat=100&_nc_eui2=AeEiZzOj1Lpi6CPBoD6ZV0Nx3rCG5lAGTTYyQP4Eb1Fxlr5g_8bfwLNG1s1NUOck7dcckU8EEcpEdV7oSVHdzkMpjmjAgjXM0tff4kx1pGFwgg&_nc_oc=AQmn_OVWm8u5NAIu9o5e5y68aFNIrM_5PNxMxsVmkBK6uWbLAhhLzngCQTM1HlCx-Ss&_nc_ht=scontent.fhan3-3.fna&oh=7cd32b804e67d1bbb7d2ff664e77c276&oe=5D682899" alt="" uk-cover>
+                                        <canvas width="35" height="35"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="name uk-margin-remove uk-text-bold">The Flash</h5>
+                                    <span>VIP 1</span>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span uk-icon="triangle-down"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="uk-navbar-dropdown uk-padding-remove box8" uk-dropdown="pos: bottom-right; mode: click">
+                            <div class="user_acc">
+                                <ul class="uk-list">
+                                    <li>Email: <b>hai.lemanh.1310@gmail.com</b></li>
+                                    <li>ID: <b>203</b></li>
+                                    <li>Số dư: <span>2,301,011</span> <img class="coin" src="imgs/coin.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav uk-text-center user_menu">
+                                <li><a href="#">Tài khoản</a></li>
+                                <li class="uk-active"><a href="#">Nạp coin</a></li>
+                                <li><a href="#">Chuyển coin</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="uk-navbar-right uk-hidden@m">
+
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a class="uk-padding-remove" href="#">
+                            <div class="uk-cover-container uk-border-circle box11">
+                                <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.0-1/p50x50/58551712_558791001311032_4407660791101128704_n.jpg?_nc_cat=101&_nc_oc=AQkAgoShI9Ogxh988U6FOz8BptadG-L9NflOXpU50nokMgUtviclFLUVB_1iY1MN1EQ&_nc_ht=scontent.fhan3-3.fna&oh=85961291b5986b127feb93ef87e5defc&oe=5D308A60" alt="" uk-cover>
+                                <canvas width="30" height="30"></canvas>
+                            </div>
+                        </a>
+                        <div class="uk-navbar-dropdown uk-padding-remove box8" uk-dropdown="pos: bottom-right">
+                            <div class="user_acc">
+                                <ul class="uk-list">
+                                    <li>Email: <b>hai.lemanh.1310@gmail.com</b></li>
+                                    <li>ID: <b>203</b></li>
+                                    <li>Số dư: <span>2,301,011</span> <img class="coin" src="imgs/coin.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav uk-text-center user_menu">
+                                <li><a href="#">Tài khoản</a></li>
+                                <li><a href="#">Nạp coin</a></li>
+                                <li><a href="#">Chuyển coin</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </div>
+</header><div class="tv-block-4">
+    <div class="uk-container tv-container1">
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-1-2@m">
+                <a href="#"><img class="uk-width-1-1" src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/06/728x90.gif" alt=""></a>
+            </div>
+            <div class="uk-width-1-2@m uk-visible@m">
+                <a href="#"><img class="uk-width-1-1" src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/02/729x90.gif" alt=""></a>
+            </div>
+            <div class="uk-width-1-1 uk-visible@m">
+                <a href="#"><img class="uk-width-1-1" src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/04/1100x70.gif" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div><div class="tv-block-ads uk-visible@xl" uk-sticky="offset: 63">
+    <div class="uk-container uk-position-relative">
+        <div class="uk-position-center-left-out">
+            <div><a href="#"><img src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=http://sbbanner.com/newmedia/vi/promo/viSbnG_120x300.gif" alt=""></a></div>
+            <div><a href="#"><img src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2018/08/120x300v.gif" alt=""></a></div>
+        </div>
+        <div class="uk-position-center-right-out">
+            <div><a href="#"><img src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/06/120x300.gif" alt=""></a></div>
+            <div><a href="#"><img src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/04/120x300Fv.gif" alt=""></a></div>
+        </div>
+    </div>
+</div><div class="uk-section-xsmall tv-block-lichphatsong">
+    <div class="uk-container uk-margin">
+        <div class="uk-child-width-auto uk-flex-middle uk-flex-between" uk-grid>
+            <div class="uk-width-1-2 uk-width-auto@m">
+                <h1 class="video-title uk-text-uppercase">lịch phát sóng</h1>
+            </div>
+            <div class="uk-width-1-2 uk-width-auto@m uk-flex-last@m">
+                <div class="tv-filter1 uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                    <select>
+                        <option value="Chọn giải đấu">Chọn giải đấu</option>
+                        <option value="UEFA Champion League">UEFA Champion League</option>
+                        <option value="V League">V League</option>
+                        <option value="Ngoại hạng Anh">Ngoại hạng Anh</option>
+                        <option value="Thai League">Thai League</option>
+                        <option value="COPA AMERICA">COPA AMERICA</option>
+                        <option value="Worldcup’s Women 2019">Worldcup’s Women 2019</option>
+                        <option value="Laliga">Laliga</option>
+                        <option value="Seri A">Seri A</option>
+                        <option value="Bundesliga">Bundesliga</option>
+                        <option value="UEFA Champion League">UEFA Champion League</option>
+                        <option value="V League">V League</option>
+                        <option value="Ngoại hạng Anh">Ngoại hạng Anh</option>
+                        <option value="Thai League">Thai League</option>
+                        <option value="COPA AMERICA">COPA AMERICA</option>
+                        <option value="Worldcup’s Women 2019">Worldcup’s Women 2019</option>
+                        <option value="Laliga">Laliga</option>
+                        <option value="Seri A">Seri A</option>
+                        <option value="Bundesliga">Bundesliga</option>
+                    </select>
+                    <button class="uk-button uk-button-default uk-width-1-1 uk-text-truncate" type="button" tabindex="-1">
+                        <span></span>
+                        <span uk-icon="icon: chevron-down"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <form class="uk-search uk-search-default uk-width-1-1 tv-search">
+                    <span class="uk-search-icon-flip" uk-search-icon></span>
+                    <input class="uk-search-input" type="search" placeholder="Tìm trận đấu...">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">
+        <div class="uk-child-width-1-4@m uk-grid-small" uk-grid>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left uk-active">đang diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/pgi_ubnvgunau/2019_06_27/LionelMessikhiemtonkhinoivesieuphamdaphat1.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/mdf_drokxr/2019_06_27/thumb_2.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/neg_yrznslt/2019_06_26/chinhden.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/neg_yrznslt/2019_06_27/VIETTEL_DO__HAGL_3_1.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/jopluat/2019_06_27/Park_Hangseo_DAI_DIEN.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/neg_yrznslt/2019_06_27/vietnamvancokhanangquavongbangneuhoayemen21024x682.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/pgi_gunpuybat/2019_06_27/ava.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/pgi_ubnatyvau/2019_06_26/davidsilvaandphilfodencropped_37r3paikoajn1557bj2jrrhh9.jpg" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left ">sắp diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-box-shadow-large tv-box-2">
+                    <div class="uk-cover-container">
+                        <img src="imgs/20180726-The18-Image-How-Many-Players-On-A-Soccer-Field.png" alt="" uk-cover>
+                        <canvas width="960" height="570"></canvas>
+                        <span class="uk-text-uppercase tv-txt-live uk-position-bottom-left uk-active">đang diễn ra</span>
+                        <div class="uk-position-cover tv-box-img-2 uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+                            <img src="imgs/1200px-Man_Utd_FC_.svg.png" alt="">
+                            <div class="uk-text-center tv-tyso">
+                                <div class="c1">2:30</div>
+                                <div class="c2">01/07</div>
+                            </div>                                <img src="imgs/Chelsea_icon_1317140689_1329240353.png" alt="">
+                        </div>
+                        <div class="uk-position-cover tv-box-11 uk-flex uk-flex-center uk-flex-middle">
+                            <a href="#"><img src="imgs/music-player-play-1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="uk-padding-small tv-box-desc">
+                        <time>Thứ 6 2:30 AM</time>
+                        <h5 class="title uk-text-truncate">Manchester United vs Chelsea</h5>
+                        <p class="desc">2019 FIFA World Cup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="uk-pagination uk-flex-center" uk-margin>
+            <li class="uk-active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>    </div>
+</div>
+    <footer id="tv-footer">
+        <div class="tv-bg-black tv-footer-1">
+            <div class="uk-container">
+                <div class="uk-child-width-auto uk-child-width-1-4@m uk-grid-collapse uk-grid-match" uk-grid>
+                    <div>
+                        <a class="uk-link-reset tv-social-1" href="#">
+                            <div class="uk-padding-small">
+                                <img src="imgs/facebook-logo-button.png" alt="">
+                                <span class="uk-text-middle uk-margin-small-left">FANPAGE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-link-reset tv-social-1" href="#">
+                            <div class="uk-padding-small">
+                                <img src="imgs/multiple-users-silhouette.png" alt="">
+                                <span class="uk-text-middle uk-margin-small-left">GROUP</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-link-reset tv-social-1" href="#">
+                            <div class="uk-padding-small">
+                                <img src="imgs/youtube.png" alt="">
+                                <span class="uk-text-middle uk-margin-small-left">YOUTUBE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-link-reset tv-social-1" href="#">
+                            <div class="uk-padding-small">
+                                <img src="imgs/target.png" alt="">
+                                <span class="uk-text-middle uk-margin-small-left">LIÊN HỆ QUẢNG CÁO: <b>ads@90phut.tv</b></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tv-bg-gray uk-section-xsmall">
+            <div class="uk-container">
+                <div class="uk-child-width-1-2 uk-child-width-1-4@m" uk-grid>
+                    <div>
+                        <ul class="uk-list tv-list-1">
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Quy định</a></li>
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list tv-list-1">
+                            <li><a href="#">Xem bóng đá trực tuyến</a></li>
+                            <li><a href="#">Lịch trực tiếp bóng đá</a></li>
+                            <li><a href="#">Video bàn thắng</a></li>
+                            <li><a href="#">Hướng dẫn xem bóng đá trực tuyến</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list tv-list-1">
+                            <li><a href="#">Lịch trực tiếp bóng đá hôm nay</a></li>
+                            <li><a href="#">Trực tiếp bóng đá</a></li>
+                            <li><a href="#">Xem bóng đá online</a></li>
+                            <li><a href="#">Lịch thi đấu bóng đá</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list tv-list-1">
+                            <li><a href="#">Lịch thi đấu Ngoại Hạng Anh</a></li>
+                            <li><a href="#">Lịch thi đấu La Liga</a></li>
+                            <li><a href="#">Lịch thi đấu Serie A</a></li>
+                            <li><a href="#">Lịch thi đấu Bundesliga</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tv-bg-black uk-section-xsmall">
+            <div class="uk-container">
+                <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                    <div>
+                        © Copyright 2019 90phut TV. All rights reserved.
+                    </div>
+                    <div>
+                        Vào 188bet link | nhà cái uy tín | 188bongda | keo bong da 88 | vao bong88 | CA CUOC 365 | LUCKY88.COM | nha cai uy tin | tructiepbongda | tylekeo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="uk-position-fixed uk-position-bottom-left uk-visible@m uk-padding-remove uk-margin-remove" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <a href="#"><img src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/02/300x86V-mib.gif" alt=""></a>
+    </div>
+    <div class="uk-position-fixed uk-position-bottom-right uk-visible@m uk-padding-remove uk-margin-remove" uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <a href="#"><img src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=1200000&url=https://demkhuya.tv/wp-content/uploads/2019/05/300x100.gif" alt=""></a>
+    </div>
+</section>
+<script data-prepros-origin-host="localhost" src="http://localhost:7968/__prepros-server__/prepros.js"> </script>
+</body>
+</html>

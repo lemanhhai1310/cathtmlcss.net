@@ -13,6 +13,7 @@
     <script src="assets/jquery/jquery-3.4.1.js"></script>
     <script src="assets/uikit-3.1.7/js/uikit.min.js"></script>
     <script src="assets/uikit-3.1.7/js/uikit-icons.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
 </head>
 <body>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">

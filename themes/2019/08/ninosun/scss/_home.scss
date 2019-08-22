@@ -1,0 +1,65 @@
+//========================================================
+.card1{
+  padding: 30px;
+  .uk-card-title{
+    @include title_order(19px,#555,'Helvetica-Neue-Bold');
+  }
+}
+.box_gift{
+  .sale{
+    @include title_order(25px,red,true);
+  }
+  .text_free{
+    @include title_order(20px,red,true);
+  }
+}
+.summary_hover{
+  @include title_order(17px,#555,false);
+}
+//========================================================
+#clock{
+  .uk-countdown-number{
+    @media (min-width: 960px) {
+      font-size: 4rem;
+    }
+  }
+}
+//========================================================
+.box1{
+  span{
+    text-transform: uppercase;
+    @include title_order(22px,#000,false);
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  hr{
+    border-color: #ddd !important;
+  }
+}
+//========================================================
+.news1{
+  .desc{
+    @include title_order(15px,#fff,false);
+    background-image: linear-gradient(bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.46), transparent, rgba(255,255,255,0));
+  }
+}
+.date{
+  .news1 &{
+    top: 15px;
+    right: 20px;
+  }
+  @include anhvuong(70px,70px);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+  background: #000000ab;
+  color: #fff;
+  border-radius: 50%;
+  .day{
+    font-size: 28px;
+    line-height: 1;
+  }
+  .month{
+    font-size: 16px;
+  }
+}

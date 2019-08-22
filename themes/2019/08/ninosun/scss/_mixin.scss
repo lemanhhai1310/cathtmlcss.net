@@ -1,0 +1,21 @@
+//========================================================
+@mixin anhvuong($x,$y){
+  width: $x;
+  height: $y;
+}
+//========================================================
+@mixin hieuung($x,$y){
+  opacity: $x !important;
+  transform: translateY($y);
+}
+//========================================================
+@mixin title_order($x,$y,$z){
+  font-size: $x;
+  color: $y;
+  @if($z){
+    font-family:'Helvetica-Neue-Bold';
+  }@else {
+
+  }
+}
+//========================================================

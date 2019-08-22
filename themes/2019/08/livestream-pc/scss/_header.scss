@@ -1,0 +1,126 @@
+#nav-main{
+  z-index: 981;
+  background-image: linear-gradient(72deg, #7cb03f, #82b43f 64%, #b7d23f);
+  .uk-navbar-item{
+    min-height: 60px;
+    color: #000000;
+    text-transform: inherit;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .uk-navbar-item;
+      }
+      &.uk-active{
+        >a{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .uk-navbar-left{
+    .uk-navbar-nav{
+      >li{
+        >a{
+          padding-top: 13px;
+          position: relative;
+          font-weight: 500;
+          &:hover{
+            background-color: rgba(44, 58, 0, 0.3);
+            color: #FFFFFF;
+          }
+          .uk-badge{
+            border-radius: 2px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 8.2px;
+            width: 30px;
+            height: 12px;
+          }
+          .live{
+            background-color: #ff0000;
+          }
+          .ads{
+            background-color: #ffc600;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+$width_space_user: 8px;
+.user_info{
+  &.uk-grid-small{
+    margin-left: -$width_space_user;
+    >*{
+      padding-left: $width_space_user;
+    }
+  }
+  .uk-icon{
+    color: #bfd73f;
+  }
+  .uk-cover-container{
+    border: 2px solid #FFFFFF;
+  }
+}
+.name{
+  color: #ffffff;
+  & + span{
+    color: #ffffff;
+    font-size: 13px;
+  }
+}
+.user{
+  background-image: linear-gradient(72deg, #74881f, #76891f 50%, #77891f);
+  >a{
+
+  }
+}
+
+
+.box10{
+  width: 250px;
+  border-radius: 4px;
+  overflow: hidden;
+  left: inherit !important;
+  right: 10px;
+}
+.user_menu{
+  li{
+    a{
+      background-color: #ededed;
+      border-top: 1px solid #ffffff;
+      color: #6b6b6b;
+    }
+    &.uk-active{
+      a{
+        background-color: #fff;
+        color: #000000;
+      }
+    }
+  }
+}
+.user_acc{
+  background-color: #ededed;
+  padding: 10px;
+  ul{
+    margin: 0;
+    li{
+      margin: 0;
+      font-size: 13px;
+      color: #282828;
+      b{
+        color: #000000;
+      }
+      span{
+        color: #ff9000;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.coin{
+  height: 14px;
+}

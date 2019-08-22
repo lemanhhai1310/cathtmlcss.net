@@ -1,0 +1,16 @@
+.block_ads{
+  background-color: transparent;
+  padding: 0;
+  .uk-container{
+    //max-width: calc(1500px + 30px);
+  }
+  .uk-alert-close{
+    background-image: linear-gradient(72deg, #7cb03f, #82b43f 64%, #b7d23f);
+    padding: 5px 12px;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+    border-top-left-radius: 4px;
+    font-size: 14px;
+  }
+}

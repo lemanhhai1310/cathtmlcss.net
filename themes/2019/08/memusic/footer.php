@@ -3,7 +3,7 @@
         <div class="uk-child-width-auto@s uk-flex-middle uk-text-center uk-flex-between uk-grid-small" uk-grid>
             <div>
                 <figure class="me_logo">
-                    <a href=""><img src="images/logo-bottom.png" alt=""></a>
+                    <a href=""><img class="lazyload" data-src="images/logo-bottom.png" alt=""></a>
                 </figure>
             </div>
             <div>
@@ -23,11 +23,19 @@
                 </div>
             </div>
             <div>
-                <img class="thanhvien" src="images/thanhvien_VNPT.png" alt="">
+                <img class="thanhvien lazyload" data-src="images/thanhvien_VNPT.png" alt="">
             </div>
         </div>
     </div>
 </footer>
 </section>
+<!--JS-->
+<!--
+<script src="assets/jquery/jquery-3.4.1.js"></script>
+<script src="assets/uikit-3.1.7/js/uikit.min.js"></script>
+<script src="assets/uikit-3.1.7/js/uikit-icons.min.js"></script>
+<script src="js/lazysizes.min.js"></script>
+-->
+<script src="js/app-dist.js"></script>
 </body>
 </html>

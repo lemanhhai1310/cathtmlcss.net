@@ -1,0 +1,114 @@
+@mixin nation($i){
+  @if ($i == 1){
+    background: #f1a7b4;
+    &:before{
+      border-right:50px solid #f1a7b4;
+    }
+  }
+  @else if ($i == 2){
+    background: #ffb399;
+    &:before{
+      border-right:50px solid #ffb399;
+    }
+  }
+  @else if ($i == 3){
+    background: #c9d991;
+    &:before{
+      border-right:50px solid #c9d991;
+    }
+  }
+  @else if ($i == 4){
+    background: #7ed3ce;
+    &:before{
+      border-right:50px solid #7ed3ce;
+    }
+  }
+  @else if ($i == 5){
+    background: #dad380;
+    &:before{
+      border-right:50px solid #dad380;
+    }
+  }
+  @else if ($i == 6){
+    background: #f1a7b4;
+    &:before{
+      border-right:50px solid #f1a7b4;
+    }
+  }
+  @else if ($i == 7){
+    background: #ffb399;
+    &:before{
+      border-right:50px solid #ffb399;
+    }
+  }
+  @else if ($i == 8){
+    background: #c9d991;
+    &:before{
+      border-right:50px solid #c9d991;
+    }
+  }
+  @else if ($i == 9){
+    background: #7ed3ce;
+    &:before{
+      border-right:50px solid #7ed3ce;
+    }
+  }
+  @else if ($i == 10){
+    background: #dad380;
+    &:before{
+      border-right:50px solid #dad380;
+    }
+  }
+  @else if ($i == 11){
+    background: #f1a7b4;
+    &:before{
+      border-right:50px solid #f1a7b4;
+    }
+  }
+  @else{
+    background: #898cc5;
+    &:before{
+      border-right:50px solid #898cc5;
+    }
+  }
+}
+@for $i from 1 through 6 {
+  .nation-#{$i} {
+    @include nation($i);
+    width: 35%;
+    @media(max-width: 640px){
+      width: 40%;
+    }
+    position: relative;
+    &:before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 220px solid transparent;
+      border-bottom: 0 solid transparent;
+      z-index: 10;
+      position: absolute;
+      right: 100%;
+    }
+    >div{
+      padding-left: 0;
+      left: -10px;
+      z-index: 100;
+      padding-bottom: 30px;
+      @media(max-width: 640px){
+        left: 0;
+        padding-bottom: 10px;
+        padding-right: 0;
+      }
+    }
+    h3{
+      text-transform: uppercase;
+      font-family:'Roboto-BoldCondensed';
+      margin-bottom: 10px;
+      font-size: 20px;
+      @media(max-width: 640px){
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.slide_home_sp{
+  @media (max-width: 640px) {
+    margin-left: 0!important;
+    margin-right: 15px!important;
+  }
+}
+.info_sp{
+  color: #666666;
+  .catalog{
+    font-size: 12px;
+  }
+  .title{
+    font-size: 16px;
+    margin-top: 0 !important;
+    font-family:'Roboto Medium';
+    a{
+      color: #666666;
+    }
+  }
+  .price{
+    font-size: 15px;
+  }
+  .uk-button{
+    font-size: 13px;
+    min-width: 78px;
+    &.uk-button-secondary{
+      background-color: #666666;
+    }
+    &.uk-button-primary{
+      background-color: #f4d595;
+      color: #666666;
+    }
+  }
+}
+.box_1{
+  .uk-cover-container{
+    transition: all .3s;
+  }
+  &:hover{
+    .uk-cover-container{
+      transform: translateY(-5px);
+    }
+    .title{
+      a{
+        color: #f4d595;
+      }
+    }
+  }
+}

@@ -8,7 +8,23 @@
   margin: 0;
   font-size: 20px;
 }
+.box_stt{
+  z-index: 100;
+  margin-top: -110px;
+}
 .box_content_main{
+  position: relative;
+  background-color: transparent;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 0;
+  }
   @media(max-width: 640px){
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -19,6 +35,10 @@
   @media(max-width: 640px){
     padding-left: 0;
     padding-right: 0;
+    .uk-slider-items{
+      margin-left: 0 !important;
+      margin-right: 15px !important;
+    }
   }
 }
 .luot_nghe{
@@ -32,6 +52,10 @@
   border: none;
   z-index: 333;
   background-image: linear-gradient(to right,#fc5362,#fe7955);
+  @media(max-width: 640px){
+    min-width: 130px;
+    justify-content: center;
+  }
   i{
     font-size: 14px;
     margin-right: 5px;
@@ -40,5 +64,40 @@
 .box_padding{
   @media(max-width: 1080px){
     padding: 0;
+  }
+}
+.block_top{
+  background-image: linear-gradient(#fc5262, #fd6d59);
+  z-index: 2;
+}
+.btn_load_more{
+  text-transform: inherit;
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 13px;
+}
+.play_1{
+  width: 45px !important;
+  height: 45px !important;
+}
+.btn_filter{
+  font-size: 13px;
+  border-radius: 4px;
+  line-height: 30px;
+  padding: 0 12px;
+  &:hover{
+    background-color: #a50e3f !important;
+    color: #FFFFFF;
+  }
+  &.uk-active{
+    background-color: #a50e3f !important;
+    color: #FFFFFF;
+  }
+}
+.uk-offcanvas-overlay{
+  &:before{
+    background: rgba(0, 0, 0, 0.5);
   }
 }

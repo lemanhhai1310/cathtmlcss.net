@@ -29,4 +29,54 @@
 .top_header{
   background-image: linear-gradient(to right, #fc5362, #fe7955);
   padding: 5px 0;
+  .uk-navbar-item{
+    min-height: 36px;
+  }
+}
+.form_search{
+  .uk-input{
+    background-color: #fff !important;
+    color: #a1a1a1 !important;
+    height: 34px;
+    &::placeholder{
+      color: #a1a1a1;
+    }
+  }
+  .uk-icon{
+    color: #222;
+  }
+}
+.login_txt{
+  li{
+    &:nth-child(n+2){
+      &:before{
+        border-left-color: #000 !important;
+        height: 15px !important;
+      }
+    }
+    a{
+      color: #000 !important;
+    }
+  }
+}
+.menu2_tag{
+  .uk-button{
+    line-height: 32px;
+    padding: 0 10px;
+  }
+}
+@media(max-width: 640px){
+  .menu_home_m{
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0,.06);
+    .uk-navbar-item,
+    .uk-navbar-toggle{
+      min-height: 52px;
+    }
+    .uk-logo{
+      img{
+        height: 44px;
+      }
+    }
+  }
 }

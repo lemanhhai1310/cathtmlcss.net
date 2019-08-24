@@ -1,0 +1,47 @@
+.txt_copyright{
+  font-size: 13px;
+  color: #000;
+}
+.title_footer_1{
+  font-size: 16px;
+  color: #4d4d4d;
+}
+.menu_bottom_footer{
+  >li{
+    &:nth-child(n+2){
+      margin-top: 5px;
+    }
+    >a{
+      font-size: 13px;
+      color: #4d4d4d;
+    }
+  }
+}
+.footer_address{
+  font-size: 13px;
+  color: #000;
+  ul{
+    li{
+      .uk-icon{
+        width: 16px;
+      }
+    }
+  }
+}
+.footer_form_email{
+  .uk-legend{
+    color: #4d4d4d;
+    font-size: 13px;
+  }
+  .uk-input{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 13px;
+  }
+  .uk-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin uk-grid($i){
+  margin-left: -#{$i}px;
+  >*{
+    padding-left: #{$i}px;
+  }
+}
+@for $i from 1 through 15 {
+  .uk-grid-#{$i}{
+    @include uk-grid($i);
+  }
+}

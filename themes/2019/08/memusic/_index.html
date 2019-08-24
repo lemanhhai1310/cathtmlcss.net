@@ -2,20 +2,1309 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Memusic - Trang chủ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/uikit-3.1.7/css/uikit.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <!--JS-->
-    <script src="assets/jquery/jquery-3.3.1.js"></script>
+    <script src="assets/jquery/jquery-3.4.1.js"></script>
     <script src="assets/uikit-3.1.7/js/uikit.min.js"></script>
     <script src="assets/uikit-3.1.7/js/uikit-icons.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
 </head>
 <body>
-<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
-    
+<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-background-norepeat uk-background-bottom-center" data-src="images/bg-bottom3.png" uk-img>
+    <div id="my-id" uk-offcanvas="overlay: true; mode: push">
+        <div class="uk-offcanvas-bar uk-overflow-auto uk-flex uk-flex-column uk-padding-remove">
+            <nav class="menu_m">
+                <div class="uk-padding-small" style="background-color: #000000;">
+                    <div class="uk-grid-small user_info uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <div class="uk-cover-container uk-border-circle">
+                                <img src="images/hailm.jpg" alt="" uk-cover>
+                                <canvas width="40" height="40"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <h5 class="name uk-margin-remove uk-text-bold">The Flash</h5>
+                            <span>Thành viên</span>
+                        </div>
+                        <div class="uk-width-auto">
+                            <div class="box9 uk-border-circle uk-flex uk-flex-middle uk-flex-center">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="uk-list uk-margin-remove">
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href=".">
+                            Trang chủ </a>
+                    </li>
+                    <li class="uk-margin-remove uk-active">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Đang diễn ra <span class="uk-badge live uk-text-small uk-text-uppercase">live</span> </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="lichphatsong.php">
+                            Lịch phát sóng </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Xem Highlight </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Hướng dẫn </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Nạp Coin </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Đặt cược </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            FABET <span class="uk-badge ads uk-text-small uk-text-uppercase">ads</span> </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            188BET <span class="uk-badge ads uk-text-small uk-text-uppercase">ads</span> </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Cộng đồng </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            Liên hệ quảng cáo </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright_m">
+                <div class="uk-padding-small"><small>Copyright © 2019 90phut.tv</small></div>
+            </div>
+        </div>
+    </div>
+    <header id="me-header">
+        <div class="top_header uk-light uk-visible@m">
+            <div class="uk-container">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+
+                        <div class="uk-navbar-item">
+                            <a href="" class="uk-margin-small-right" uk-icon="facebook"></a>
+                            <a href="" class="uk-margin-small-right" uk-icon="youtube"></a>
+                            <a href="" uk-icon="instagram"></a>
+                        </div>
+
+                        <div class="uk-navbar-item">
+                            <div class="menu2_tag">
+                                <a href=""
+                                   class="uk-button uk-button-default uk-border-rounded uk-text-capitalize uk-margin-small-right">Sao
+                                    Bolero</a>
+                                <a href="" class="uk-button uk-button-default uk-border-rounded uk-text-capitalize">Teen
+                                    Bolero</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+
+                        <div class="uk-navbar-item">
+                            <form action="javascript:void(0)" class="uk-position-relative form_search">
+                                <input class="uk-input uk-border-rounded" style="min-width: 350px" type="text"
+                                       placeholder="Tìm kiếm">
+                                <button type="submit" class="uk-position-center-right uk-margin-small-right"
+                                        uk-icon="search"></button>
+                            </form>
+                        </div>
+                        <div class="uk-navbar-item">
+                            <ul class="uk-subnav uk-subnav-divider uk-margin-remove login_txt">
+                                <li><a href="#" class="uk-text-capitalize">Đăng nhập</a></li>
+                                <li><a href="#" class="uk-text-capitalize">Đăng ký</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <div class="uk-container uk-padding-remove">
+            <nav class="menu_home_m uk-navbar-container uk-navbar-transparent" uk-navbar
+                 uk-sticky="media: (max-width: 640px)">
+
+                <div class="nav-overlay uk-navbar-left">
+
+                    <a class="uk-navbar-item uk-logo uk-visible@m" href="."><img src="images/logo-top.png" alt=""></a>
+
+                    <div class="uk-navbar-item uk-hidden@m">
+                        <a href="#my-id" class="uk-navbar-toggle uk-padding-remove" uk-toggle>
+                            <div id="m_nav_menu" class="m_nav menu">
+                                <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                                <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                                <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="nav-overlay uk-navbar-center">
+
+                    <a class="uk-navbar-item uk-logo uk-hidden@m" href="."><img src="images/logo-top.png" alt=""></a>
+
+                </div>
+
+                <div class="nav-overlay uk-navbar-right">
+
+                    <ul class="uk-navbar-nav menu1 uk-visible@m">
+                        <li class="uk-active"><a href="#">Trang chủ</a></li>
+                        <li><a href="#">MV</a></li>
+                        <li><a href="#">Chủ đề</a></li>
+                        <li><a href="#">Album</a></li>
+                        <li><a href="#">New HIT</a></li>
+                        <li><a href="#">Nghệ sĩ</a></li>
+                    </ul>
+
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-search-icon
+                       uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+                </div>
+
+                <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+                    <div class="uk-navbar-item uk-width-expand">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="Tìm kiếm" autofocus>
+                        </form>
+                    </div>
+
+                    <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                       href="#"></a>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="uk-container uk-padding-remove">
+        <div class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom box_padding">
+            <div uk-slideshow="ratio: 1020:571">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="images/banner1.png" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/banner1.png" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="images/banner1.png" alt="" uk-cover>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                       uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                       uk-slideshow-item="next"></a>
+
+                </div>
+                <ul class="uk-slideshow-nav dot_slide_home uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="uk-background-norepeat uk-background-top-center uk-section-xsmall" data-src="images/bg-movive.png"
+         uk-img>
+        <div class="uk-container uk-padding-remove">
+            <div class="uk-flex uk-light uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                <h3 class="title_name">MV</h3>
+                <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="uk-visible@s uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin">
+                <div class="uk-grid-medium" uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <ul class="uk-tab-left mv_video_left"
+                            uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                            <li class="">
+                                <a href="">
+                                    <div class="uk-grid-small uk-grid uk-light" uk-grid="">
+                                        <div class="uk-width-auto uk-first-column">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover="" class="uk-cover"
+                                                     style="height: 56px; width: 56px;">
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove" style="background-image: none">
+                                                <h6 class="uk-margin-remove title uk-text-truncate">Gia Đình</h6>
+                                                <div class="author uk-text-capitalize">Quân A.P</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid="">
+                                                <div class="uk-first-column time1" style="font-size: 12px;">04:50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="uk-active">
+                                <a href="">
+                                    <div class="uk-grid-small uk-grid uk-light" uk-grid="">
+                                        <div class="uk-width-auto uk-first-column">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover="" class="uk-cover"
+                                                     style="height: 56px; width: 56px;">
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove" style="background-image: none">
+                                                <h6 class="uk-margin-remove title uk-text-truncate">Ai Là Người Thương
+                                                    Em</h6>
+                                                <div class="author uk-text-capitalize">Quân A.P</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid="">
+                                                <div class="uk-first-column time1" style="font-size: 12px;">04:50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    <div class="uk-grid-small uk-grid uk-light" uk-grid="">
+                                        <div class="uk-width-auto uk-first-column">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover="" class="uk-cover"
+                                                     style="height: 56px; width: 56px;">
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove" style="background-image: none">
+                                                <h6 class="uk-margin-remove title uk-text-truncate">Độ Ta Không Độ
+                                                    Nàng</h6>
+                                                <div class="author uk-text-capitalize">Quân A.P</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid="">
+                                                <div class="uk-first-column time1" style="font-size: 12px;">04:50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    <div class="uk-grid-small uk-grid uk-light" uk-grid="">
+                                        <div class="uk-width-auto uk-first-column">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover="" class="uk-cover"
+                                                     style="height: 56px; width: 56px;">
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove" style="background-image: none">
+                                                <h6 class="uk-margin-remove title uk-text-truncate">Nhan Sắc</h6>
+                                                <div class="author uk-text-capitalize">Quân A.P</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid="">
+                                                <div class="uk-first-column time1" style="font-size: 12px;">04:50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="">
+                                    <div class="uk-grid-small uk-grid uk-light" uk-grid="">
+                                        <div class="uk-width-auto uk-first-column">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover="" class="uk-cover"
+                                                     style="height: 56px; width: 56px;">
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove" style="background-image: none">
+                                                <h6 class="uk-margin-remove title uk-text-truncate">Bên Anh Thêm Được
+                                                    Không</h6>
+                                                <div class="author uk-text-capitalize">Quân A.P</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid="">
+                                                <div class="uk-first-column time1" style="font-size: 12px;">04:50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-expand">
+                        <ul id="component-tab-left" class="uk-switcher">
+                            <li></li>
+                            <li>
+                                <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                    <img src="https://photo-zmp3.zadn.vn/banner/b/9/a/5/b9a5e41ecdf3506cd8b3971c0d5de4b3.jpg"
+                                         alt="" uk-cover>
+                                    <canvas width="960" height="539"></canvas>
+                                    <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                              src="images/play.png" alt=""></a>
+                                    <div class="uk-padding-small box_1 uk-position-bottom"
+                                         style="padding-bottom: 10px;">
+                                        <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau
+                                            (Single)</a></h4>
+                                        <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-hidden@s box_content uk-margin">
+                <div class="uk-position-relative uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right"
+                     tabindex="-1" uk-slider="finite: true;">
+
+                    <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                        <li class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                <img src="https://photo-zmp3.zadn.vn/banner/d/7/7/e/d77ecb29097fe17876d40bc2e1833650.jpg"
+                                     alt="" uk-cover>
+                                <canvas width="960" height="539"></canvas>
+                                <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                          src="images/play.png" alt=""></a>
+                                <div class="uk-padding-small box_1 uk-position-bottom" style="padding-bottom: 10px;">
+                                    <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau (Single)</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                <img src="https://photo-zmp3.zadn.vn/banner/9/9/7/d/997dc7d75aaad461610eaa90955c3bd6.jpg"
+                                     alt="" uk-cover>
+                                <canvas width="960" height="539"></canvas>
+                                <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                          src="images/play.png" alt=""></a>
+                                <div class="uk-padding-small box_1 uk-position-bottom" style="padding-bottom: 10px;">
+                                    <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau (Single)</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                <img src="https://photo-zmp3.zadn.vn/banner/b/9/a/5/b9a5e41ecdf3506cd8b3971c0d5de4b3.jpg"
+                                     alt="" uk-cover>
+                                <canvas width="960" height="539"></canvas>
+                                <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                          src="images/play.png" alt=""></a>
+                                <div class="uk-padding-small box_1 uk-position-bottom" style="padding-bottom: 10px;">
+                                    <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau (Single)</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                <img src="https://photo-zmp3.zadn.vn/banner/0/f/c/8/0fc81520f899f2f985606c22a924c6bc.jpg"
+                                     alt="" uk-cover>
+                                <canvas width="960" height="539"></canvas>
+                                <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                          src="images/play.png" alt=""></a>
+                                <div class="uk-padding-small box_1 uk-position-bottom" style="padding-bottom: 10px;">
+                                    <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau (Single)</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                <img src="https://photo-zmp3.zadn.vn/banner/1/4/0/f/140f2449725fbcf89677bdda52a3ddec.jpg"
+                                     alt="" uk-cover>
+                                <canvas width="960" height="539"></canvas>
+                                <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                          src="images/play.png" alt=""></a>
+                                <div class="uk-padding-small box_1 uk-position-bottom" style="padding-bottom: 10px;">
+                                    <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau (Single)</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="mv_video uk-cover-container uk-border-rounded uk-box-shadow-medium">
+                                <img src="https://photo-zmp3.zadn.vn/banner/1/8/d/0/18d08771a5a4a7b3a9f1a63fcd7aa74f.jpg"
+                                     alt="" uk-cover>
+                                <canvas width="960" height="539"></canvas>
+                                <a href="" class="uk-position-cover"><img class="uk-position-center icon1"
+                                                                          src="images/play.png" alt=""></a>
+                                <div class="uk-padding-small box_1 uk-position-bottom" style="padding-bottom: 10px;">
+                                    <h4 class="uk-margin-remove title_name_1"><a href="">Sống Chết Có Nhau (Single)</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                <h3 class="title_name">Chart</h3>
+                <a href=""
+                   class="uk-button uk-button-default uk-border-rounded uk-flex-inline uk-flex-middle btn_play_all"><span
+                        uk-icon="play"></span> Play all</a>
+            </div>
+            <div class="uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin-small">
+                <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">1</i>
+                                <img class="lazyload"
+                                     src="https://i.scdn.co/image/5570996211d2ef04e38deb3824fa3f443666d089" alt=""
+                                     uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai Là Người Thương
+                                    Em</a></h6>
+                                <div class="author"><a href="#author">Quân A.P</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">2</i>
+                                <img class="lazyload" src="images/album/img2.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Làm người luôn yêu
+                                    em</a></h6>
+                                <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">3</i>
+                                <img class="lazyload" src="images/album/img3.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Anh muốn em sống
+                                    sao</a></h6>
+                                <div class="author"><a href="#author">Hương Tràm</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">4</i>
+                                <img class="lazyload" src="images/album/img4.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Nỗi nhớ đầy vơi</a>
+                                </h6>
+                                <div class="author"><a href="#author">Hồ Ngọc Hà</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">5</i>
+                                <img class="lazyload" src="images/album/img5.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Đừng yêu nữa em mệt
+                                    rồi</a></h6>
+                                <div class="author"><a href="#author">MIN</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">6</i>
+                                <img class="lazyload"
+                                     src="https://i.scdn.co/image/5570996211d2ef04e38deb3824fa3f443666d089" alt=""
+                                     uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai Là Người Thương
+                                    Em</a></h6>
+                                <div class="author"><a href="#author">Quân A.P</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">7</i>
+                                <img class="lazyload" src="images/album/img2.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Làm người luôn yêu
+                                    em</a></h6>
+                                <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">8</i>
+                                <img class="lazyload" src="images/album/img3.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Anh muốn em sống
+                                    sao</a></h6>
+                                <div class="author"><a href="#author">Hương Tràm</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">9</i>
+                                <img class="lazyload" src="images/album/img4.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Nỗi nhớ đầy vơi</a>
+                                </h6>
+                                <div class="author"><a href="#author">Hồ Ngọc Hà</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-1-4@s uk-width-1-5@m">
+                        <div class="uk-position-relative box_3 uk-overflow-hidden">
+                            <div class="uk-cover-container box_2">
+                                <span class="uk-badge uk-position-top-left uk-position-z-index"></span>
+                                <i class="stt uk-position-top-left uk-position-z-index">10</i>
+                                <img class="lazyload" src="images/album/img5.png" alt="" uk-cover>
+                                <canvas width="960" height="960"></canvas>
+                                <a class="uk-position-cover" href="#play"><span
+                                        class="icon-play uk-position-center"></span></a>
+                            </div>
+                            <div class="uk-padding-small box_1 uk-position-bottom">
+                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Đừng yêu nữa em mệt
+                                    rồi</a></h6>
+                                <div class="author"><a href="#author">MIN</a></div>
+                            </div>
+                        </div>
+                        <div class="uk-text-center uk-position-relative" style="margin-top: -14px;">
+                            <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                    class="material-icons">headset</i> <span
+                                    class="uk-text-middle">1242 lượt nghe</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-background-default uk-border-rounded box_content_main uk-margin">
+                <div class="uk-flex uk-margin-medium-top uk-margin-small-bottom uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                    <h3 class="title_name">Chủ đề</h3>
+                    <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="uk-visible@s uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin-small">
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                <img src="images/chu-de/nhac_dong_que.png" alt="" uk-cover>
+                                <canvas width="380" height="220"></canvas>
+                                <div class="nation-1 uk-position-right">
+                                    <div class="uk-position-bottom uk-padding-small">
+                                        <h3>nhạc <br> đồng quê</h3>
+                                        <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                   aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                <img src="images/chu-de/nhac_rock.png" alt="" uk-cover>
+                                <canvas width="380" height="220"></canvas>
+                                <div class="nation-2 uk-position-right">
+                                    <div class="uk-position-bottom uk-padding-small">
+                                        <h3>nhạc <br> rock</h3>
+                                        <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                   aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                <img src="images/chu-de/nhac_tru_tinh.png" alt="" uk-cover>
+                                <canvas width="380" height="220"></canvas>
+                                <div class="nation-3 uk-position-right">
+                                    <div class="uk-position-bottom uk-padding-small">
+                                        <h3>nhạc <br> trữ tình</h3>
+                                        <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                   aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                <img src="images/chu-de/bai_hat_ve_me.png" alt="" uk-cover>
+                                <canvas width="380" height="220"></canvas>
+                                <div class="nation-4 uk-position-right">
+                                    <div class="uk-position-bottom uk-padding-small">
+                                        <h3>các bài hát <br> về mẹ</h3>
+                                        <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                   aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                <img src="images/chu-de/nhac_dong_que.png" alt="" uk-cover>
+                                <canvas width="380" height="220"></canvas>
+                                <div class="nation-5 uk-position-right">
+                                    <div class="uk-position-bottom uk-padding-small">
+                                        <h3>nhạc <br> đồng quê</h3>
+                                        <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                   aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-3@m">
+                            <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                <img src="images/chu-de/nhac_phim.png" alt="" uk-cover>
+                                <canvas width="380" height="220"></canvas>
+                                <div class="nation-6 uk-position-right">
+                                    <div class="uk-position-bottom uk-padding-small">
+                                        <h3>nhạc <br> phim</h3>
+                                        <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                   aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-hidden@s box_content uk-margin-bottom">
+                    <div class="uk-position-relative uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right"
+                         tabindex="-1" uk-slider="finite: true;">
+
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                            <li class="uk-width-2-3 uk-width-1-2@s uk-width-1-3@m">
+                                <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                    <img src="images/chu-de/nhac_dong_que.png" alt="" uk-cover>
+                                    <canvas width="380" height="220"></canvas>
+                                    <div class="nation-1 uk-position-right">
+                                        <div class="uk-position-bottom uk-padding-small">
+                                            <h3>nhạc <br> đồng quê</h3>
+                                            <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-2-3 uk-width-1-2@s uk-width-1-3@m">
+                                <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                    <img src="images/chu-de/nhac_rock.png" alt="" uk-cover>
+                                    <canvas width="380" height="220"></canvas>
+                                    <div class="nation-2 uk-position-right">
+                                        <div class="uk-position-bottom uk-padding-small">
+                                            <h3>nhạc <br> rock</h3>
+                                            <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-2-3 uk-width-1-2@s uk-width-1-3@m">
+                                <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                    <img src="images/chu-de/nhac_tru_tinh.png" alt="" uk-cover>
+                                    <canvas width="380" height="220"></canvas>
+                                    <div class="nation-3 uk-position-right">
+                                        <div class="uk-position-bottom uk-padding-small">
+                                            <h3>nhạc <br> trữ tình</h3>
+                                            <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-2-3 uk-width-1-2@s uk-width-1-3@m">
+                                <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                    <img src="images/chu-de/bai_hat_ve_me.png" alt="" uk-cover>
+                                    <canvas width="380" height="220"></canvas>
+                                    <div class="nation-4 uk-position-right">
+                                        <div class="uk-position-bottom uk-padding-small">
+                                            <h3>các bài hát <br> về mẹ</h3>
+                                            <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-2-3 uk-width-1-2@s uk-width-1-3@m">
+                                <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                    <img src="images/chu-de/nhac_dong_que.png" alt="" uk-cover>
+                                    <canvas width="380" height="220"></canvas>
+                                    <div class="nation-5 uk-position-right">
+                                        <div class="uk-position-bottom uk-padding-small">
+                                            <h3>nhạc <br> đồng quê</h3>
+                                            <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-2-3 uk-width-1-2@s uk-width-1-3@m">
+                                <div class="uk-cover-container uk-light uk-box-shadow-medium">
+                                    <img src="images/chu-de/nhac_phim.png" alt="" uk-cover>
+                                    <canvas width="380" height="220"></canvas>
+                                    <div class="nation-6 uk-position-right">
+                                        <div class="uk-position-bottom uk-padding-small">
+                                            <h3>nhạc <br> phim</h3>
+                                            <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right"
+                                                                                       aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="uk-flex uk-margin-medium-top uk-margin-small-bottom uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                    <h3 class="title_name">New Hit</h3>
+                    <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin-small">
+                    <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <div class="uk-cover-container uk-margin-small">
+                                <img src="images/new-hit/img1.png" alt="" uk-cover>
+                                <canvas width="960" height="409"></canvas>
+                            </div>
+                            <div class="uk-child-width-auto uk-flex-between uk-margin-medium-bottom" uk-grid>
+                                <div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center"><a href="">Sống Chết Có
+                                        Nhau (Single)</a></h4>
+                                    <div class="author"><a href="#author">Quân A.P</a></div>
+                                </div>
+                                <div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                            class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="uk-list">
+                                <li class="uk-margin">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover>
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove">
+                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia
+                                                    Đình</a></h6>
+                                                <div class="author"><a href="#author">Quân A.P</a></div>
+                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                                                <div>04:50</div>
+                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-margin">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover>
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove">
+                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai
+                                                    Là Người Thương Em</a></h6>
+                                                <div class="author"><a href="#author">Quân A.P</a></div>
+                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                                                <div>04:50</div>
+                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-margin">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover>
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove">
+                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia
+                                                    Đình</a></h6>
+                                                <div class="author"><a href="#author">Quân A.P</a></div>
+                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                                                <div>04:50</div>
+                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="uk-cover-container uk-margin-small">
+                                <img src="images/new-hit/img2.png" alt="" uk-cover>
+                                <canvas width="960" height="409"></canvas>
+                            </div>
+                            <div class="uk-child-width-auto uk-flex-between uk-margin-medium-bottom" uk-grid>
+                                <div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center"><a href="">Đóa hoa hồng</a>
+                                    </h4>
+                                    <div class="author"><a href="#author">Chi Pu</a></div>
+                                </div>
+                                <div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded"><i
+                                            class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="uk-list">
+                                <li class="uk-margin">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover>
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove">
+                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia
+                                                    Đình</a></h6>
+                                                <div class="author"><a href="#author">Quân A.P</a></div>
+                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                                                <div>04:50</div>
+                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-margin">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover>
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove">
+                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai
+                                                    Là Người Thương Em</a></h6>
+                                                <div class="author"><a href="#author">Quân A.P</a></div>
+                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                                                <div>04:50</div>
+                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="uk-margin">
+                                    <div class="uk-grid-small" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <div class="uk-cover-container uk-border-rounded">
+                                                <img src="images/img-play.png" alt="" uk-cover>
+                                                <canvas width="55" height="55"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-expand">
+                                            <div class="box_1 uk-padding-remove">
+                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia
+                                                    Đình</a></h6>
+                                                <div class="author"><a href="#author">Quân A.P</a></div>
+                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-3">
+                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                                                <div>04:50</div>
+                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-margin-medium-top uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                    <h3 class="title_name">Album</h3>
+                    <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="box_content uk-padding-small uk-margin-bottom">
+                    <div class="uk-position-relative uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right"
+                         tabindex="-1" uk-slider="finite: true">
+
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                            <li class="uk-width-3-5 uk-width-1-4@s uk-width-1-5@m">
+                                <div class="uk-position-relative box_3">
+                                    <div class="uk-cover-container box_2">
+                                        <img class="lazyload"
+                                             src="https://i.scdn.co/image/5570996211d2ef04e38deb3824fa3f443666d089"
+                                             alt="" uk-cover>
+                                        <canvas width="960" height="960"></canvas>
+                                        <a class="uk-position-cover" href="#play"><span
+                                                class="icon-play uk-position-center"></span></a>
+                                    </div>
+                                    <div class="uk-padding-small box_1 uk-position-bottom">
+                                        <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai Là Người
+                                            Thương Em</a></h6>
+                                        <div class="author"><a href="#author">Quân A.P</a></div>
+                                    </div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded uk-position-bottom-center">
+                                        <i class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-5 uk-width-1-4@s uk-width-1-5@m">
+                                <div class="uk-position-relative box_3">
+                                    <div class="uk-cover-container box_2">
+                                        <img class="lazyload" src="images/album/img2.png" alt="" uk-cover>
+                                        <canvas width="960" height="960"></canvas>
+                                        <a class="uk-position-cover" href="#play"><span
+                                                class="icon-play uk-position-center"></span></a>
+                                    </div>
+                                    <div class="uk-padding-small box_1 uk-position-bottom">
+                                        <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Làm người
+                                            luôn yêu em</a></h6>
+                                        <div class="author"><a href="#author">Sơn Tùng MTP</a></div>
+                                    </div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded uk-position-bottom-center">
+                                        <i class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-5 uk-width-1-4@s uk-width-1-5@m">
+                                <div class="uk-position-relative box_3">
+                                    <div class="uk-cover-container box_2">
+                                        <img class="lazyload" src="images/album/img3.png" alt="" uk-cover>
+                                        <canvas width="960" height="960"></canvas>
+                                        <a class="uk-position-cover" href="#play"><span
+                                                class="icon-play uk-position-center"></span></a>
+                                    </div>
+                                    <div class="uk-padding-small box_1 uk-position-bottom">
+                                        <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Anh muốn em
+                                            sống sao</a></h6>
+                                        <div class="author"><a href="#author">Hương Tràm</a></div>
+                                    </div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded uk-position-bottom-center">
+                                        <i class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-5 uk-width-1-4@s uk-width-1-5@m">
+                                <div class="uk-position-relative box_3">
+                                    <div class="uk-cover-container box_2">
+                                        <img class="lazyload" src="images/album/img4.png" alt="" uk-cover>
+                                        <canvas width="960" height="960"></canvas>
+                                        <a class="uk-position-cover" href="#play"><span
+                                                class="icon-play uk-position-center"></span></a>
+                                    </div>
+                                    <div class="uk-padding-small box_1 uk-position-bottom">
+                                        <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Nỗi nhớ đầy
+                                            vơi</a></h6>
+                                        <div class="author"><a href="#author">Hồ Ngọc Hà</a></div>
+                                    </div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded uk-position-bottom-center">
+                                        <i class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-width-3-5 uk-width-1-4@s uk-width-1-5@m">
+                                <div class="uk-position-relative box_3">
+                                    <div class="uk-cover-container box_2">
+                                        <img class="lazyload" src="images/album/img5.png" alt="" uk-cover>
+                                        <canvas width="960" height="960"></canvas>
+                                        <a class="uk-position-cover" href="#play"><span
+                                                class="icon-play uk-position-center"></span></a>
+                                    </div>
+                                    <div class="uk-padding-small box_1 uk-position-bottom">
+                                        <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Đừng yêu
+                                            nữa em mệt rồi</a></h6>
+                                        <div class="author"><a href="#author">MIN</a></div>
+                                    </div>
+                                    <div class="uk-button luot_nghe uk-button-secondary uk-border-rounded uk-position-bottom-center">
+                                        <i class="material-icons">headset</i> <span class="uk-text-middle">1242 lượt nghe</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="uk-flex uk-margin-medium-top uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                    <h3 class="title_name">Nghệ sĩ nổi bật</h3>
+                </div>
+                <div class="box_content uk-padding-small">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="finite: true">
+
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                            <li class="uk-width-2-5 uk-width-1-4@s uk-width-1-5@m">
+                                <a href="" class="uk-link-reset hover1">
+                                    <div class="box_nghe_si uk-margin-small uk-border-circle uk-background-contain"
+                                         data-src="images/bg-ava-nghesi.png" uk-img>
+                                        <div class="uk-cover-container uk-border-circle uk-transition-toggle uk-overflow-hidden">
+                                            <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover"
+                                                 data-src="images/nghe-si-noi-bat/my_tam.png" alt="" uk-cover>
+                                            <canvas width="960" height="960"></canvas>
+                                        </div>
+                                    </div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center">Mỹ Tâm</h4>
+                                </a>
+                            </li>
+                            <li class="uk-width-2-5 uk-width-1-4@s uk-width-1-5@m">
+                                <a href="" class="uk-link-reset hover1">
+                                    <div class="box_nghe_si uk-margin-small uk-border-circle uk-background-contain"
+                                         data-src="images/bg-ava-nghesi.png" uk-img>
+                                        <div class="uk-cover-container uk-border-circle uk-transition-toggle uk-overflow-hidden">
+                                            <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover"
+                                                 data-src="images/nghe-si-noi-bat/ho_ngoc_ha.png" alt="" uk-cover>
+                                            <canvas width="960" height="960"></canvas>
+                                        </div>
+                                    </div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center">Hồ Ngọc Hà</h4>
+                                </a>
+                            </li>
+                            <li class="uk-width-2-5 uk-width-1-4@s uk-width-1-5@m">
+                                <a href="" class="uk-link-reset hover1">
+                                    <div class="box_nghe_si uk-margin-small uk-border-circle uk-background-contain"
+                                         data-src="images/bg-ava-nghesi.png" uk-img>
+                                        <div class="uk-cover-container uk-border-circle uk-transition-toggle uk-overflow-hidden">
+                                            <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover"
+                                                 data-src="images/nghe-si-noi-bat/son_tung.png" alt="" uk-cover>
+                                            <canvas width="960" height="960"></canvas>
+                                        </div>
+                                    </div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center">Sơn Tùng</h4>
+                                </a>
+                            </li>
+                            <li class="uk-width-2-5 uk-width-1-4@s uk-width-1-5@m">
+                                <a href="" class="uk-link-reset hover1">
+                                    <div class="box_nghe_si uk-margin-small uk-border-circle uk-background-contain"
+                                         data-src="images/bg-ava-nghesi.png" uk-img>
+                                        <div class="uk-cover-container uk-border-circle uk-transition-toggle uk-overflow-hidden">
+                                            <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover"
+                                                 data-src="images/nghe-si-noi-bat/bao_anh.png" alt="" uk-cover>
+                                            <canvas width="960" height="960"></canvas>
+                                        </div>
+                                    </div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center">Bảo Anh</h4>
+                                </a>
+                            </li>
+                            <li class="uk-width-2-5 uk-width-1-4@s uk-width-1-5@m">
+                                <a href="" class="uk-link-reset hover1">
+                                    <div class="box_nghe_si uk-margin-small uk-border-circle uk-background-contain"
+                                         data-src="images/bg-ava-nghesi.png" uk-img>
+                                        <div class="uk-cover-container uk-border-circle uk-transition-toggle uk-overflow-hidden">
+                                            <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover"
+                                                 data-src="images/nghe-si-noi-bat/erik.png" alt="" uk-cover>
+                                            <canvas width="960" height="960"></canvas>
+                                        </div>
+                                    </div>
+                                    <h4 class="uk-margin-remove title_name_1 uk-text-center">Erik</h4>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="me-footer" class="uk-section-xsmall">
+        <div class="uk-container">
+            <div class="uk-child-width-auto@s uk-flex-middle uk-text-center uk-flex-between uk-grid-small" uk-grid>
+                <div>
+                    <figure class="me_logo">
+                        <a href=""><img src="images/logo-bottom.png" alt=""></a>
+                    </figure>
+                </div>
+                <div>
+                    <ul id="site_map" class="uk-subnav uk-subnav-divider" uk-margin>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Q & A</a></li>
+                        <li><a href="#">Khuyến mại</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-child-width-auto@s uk-flex-middle uk-text-center uk-text-left@s uk-flex-between" uk-grid>
+                <div>
+                    <div class="me_copyright">
+                        Bản Quyền thuộc VNPT Media <br>
+                        All rights reversed
+                    </div>
+                </div>
+                <div>
+                    <img class="thanhvien" src="images/thanhvien_VNPT.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </section>
 </body>
 </html>

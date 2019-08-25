@@ -68,7 +68,7 @@
         </div>
         <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid>
             <div>
-                <a href="">
+                <a href="catalog.php">
                     <div class="uk-cover-container uk-transition-toggle uk-background-muted">
                         <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/vertu.jpg" alt="" uk-cover>
                         <canvas width="960" height="469"></canvas>
@@ -76,7 +76,7 @@
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="catalog.php">
                     <div class="uk-cover-container uk-transition-toggle uk-background-muted">
                         <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/dong-ho.jpg" alt="" uk-cover>
                         <canvas width="960" height="469"></canvas>
@@ -84,7 +84,7 @@
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="catalog.php">
                     <div class="uk-cover-container uk-transition-toggle uk-background-muted">
                         <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/vertu.jpg" alt="" uk-cover>
                         <canvas width="960" height="469"></canvas>
@@ -92,7 +92,7 @@
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="catalog.php">
                     <div class="uk-cover-container uk-transition-toggle uk-background-muted">
                         <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/dong-ho.jpg" alt="" uk-cover>
                         <canvas width="960" height="469"></canvas>

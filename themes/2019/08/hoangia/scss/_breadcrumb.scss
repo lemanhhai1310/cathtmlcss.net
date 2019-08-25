@@ -1,0 +1,29 @@
+.breadcrumb-catalog{
+  padding: 10px 0 !important;
+  @media(max-width: 960px){
+    padding: 10px !important;
+  }
+  li{
+    &:nth-child(n+2){
+      &:before{
+        margin: 0 8px !important;
+      }
+    }
+    a{
+      color: #000;
+    }
+  }
+}
+.breadcrumb-detail{
+  padding: 5px 0 !important;
+  li{
+    &:nth-child(n+2){
+      &:before{
+        margin: 0 8px !important;
+      }
+    }
+    a{
+      color: #000;
+    }
+  }
+}

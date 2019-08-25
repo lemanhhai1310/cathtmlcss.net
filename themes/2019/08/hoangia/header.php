@@ -10,7 +10,7 @@
 </head>
 <body>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
-<header>
+<header class="uk-visible@m">
     <div class="top_header_menu uk-background-muted uk-visible@m">
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -33,7 +33,7 @@
             <div class="uk-flex-middle" uk-grid>
                 <div class="uk-width-1-5@m">
                     <figure class="logo_hoangia">
-                        <a href=""><img class="lazyload" data-src="images/1x/logo.png" alt=""></a>
+                        <a href="."><img class="lazyload" data-src="images/1x/logo.png" alt=""></a>
                     </figure>
                 </div>
                 <div class="uk-width-expand">
@@ -79,16 +79,7 @@
         <div class="uk-container">
             <div uk-grid>
                 <div class="uk-width-1-5@m">
-                    <div id="hamber_menu">
-                        <a class="txt_color_1" href="#"><i class="fa fa-bars" aria-hidden="true"></i>
-                            DANH MỤC SẢN PHẨM
-                        </a>
-                        <div class="col_menu_cap1">
-                            <div id="sub_menu_web" class="uk-position-bottom">
 
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="uk-width-expand">
                     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>

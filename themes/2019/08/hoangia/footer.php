@@ -80,11 +80,16 @@
 </section>
 <!--JS-->
 <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@1.1.7/dist/defer_plus.min.js"></script>
-<script type="deferjs" src="js/app-dist.js"></script>
 <script type="text/javascript">
+    // Lazy file Javascript
+    deferscript('js/app-dist.js', 'app-js', 1);
     // This will lzay-load FontAwesome icons
     deferstyle('assets/font-awesome-4.7.0/css/font-awesome.min.css', 'font-awesome', 2000);
     deferstyle('css/_fonts.css', 'fonts', 2000);
+    deferstyle('css/_footer.css', 'style-footer', 2000);
+    // Lazyload image
+    deferimg('img[data-src],picture,video,audio');
+    deferiframe('iframe[data-src],[data-style],iframe');
 </script>
 </body>
 </html>

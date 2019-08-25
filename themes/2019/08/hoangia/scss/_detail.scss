@@ -1,0 +1,63 @@
+.title_detail_1{
+  font-size: 22px;
+  font-family:'Roboto Medium', sans-serif;
+  color: #000;
+}
+.price-detail{
+  span{
+    font-size: 22px;
+    color: #faa05a;
+  }
+  label{
+    font-size: 12px;
+  }
+}
+.btn_buy{
+  padding: 10px 0;
+  line-height: 25px;
+  text-transform: inherit !important;
+  &.uk-button-danger{
+    background-color: #F97838;
+    border-color: #F97838;
+  }
+  h2{
+    line-height: 1;
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family:'Roboto Bold', sans-serif;
+  }
+  div{
+    font-size: 13px;
+    color: #f3f3f3;
+    margin-top: -5px;
+    font-family:'Roboto Light', sans-serif;
+  }
+}
+.box_price{
+  border: 1px solid #E6E6E6;
+}
+.box_gift{
+  border: 1px solid #E6E6E6;
+  .title{
+    font-family:'Roboto Medium', sans-serif;
+    font-size: 14px;
+    color: #000;
+  }
+  .uk-list{
+    font-size: 13px;
+    color: #000;
+    margin: 0;
+    li{
+      position: relative;
+      padding-left: 20px;
+      i.fa{
+        position: absolute;
+        top: 1px;
+        left: 0;
+        font-size: 15px;
+        color: #faa05a;
+      }
+    }
+  }
+}

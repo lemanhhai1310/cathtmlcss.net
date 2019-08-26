@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="361ddf8c-e444-4767-a26c-fb59593ab874" name="hanghai" url="http://45.77.169.129">
+        <fileTransfer host="45.77.169.129" port="21" rootFolder="/web/cathtmlcss.net/public_html/themes/2019/08/hanghai">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

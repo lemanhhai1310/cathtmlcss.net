@@ -7,13 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
     <link rel="stylesheet" href="css/app.css">
+    <!--JS-->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js@1.1.7/dist/defer_plus.min.js"></script>
+    -->
+    <script type="text/javascript">
+        // defer.js
+        !function(e,o,t,n,i,r){function c(e,t){r?n(e,t||80):i.push(e,t)}function f(e,t,n,i){return t&&o.getElementById(t)||(i=o.createElement(e||'SCRIPT'),t&&(i.id=t),n&&(i.onload=n),o.head.appendChild(i)),i||{}}r=/p/.test(o.readyState),c.dom=f,e.defer=c,e.addEventListener('on'+t in e?t:'load',function(){for(r=t;i[0];)c(i.shift(),i.shift())}),e.deferscript=function(t,n,e,i){c(function(e){f(!1,n,i).src=t},e)}}(this,document,'pageshow',setTimeout,[]),function(u,t){var a='IntersectionObserver',d='src',l='lazied',h='data-',p=h+l,m='forEach',y='getAttribute',c='appendChild',b=Function(),v=u.defer||b,f=v.dom||b;function g(e){return[].slice.call(t.querySelectorAll(e))}function e(s){return function(e,t,o,r,c,f){v(function(n,t){function i(n){!1!==(r||b).call(n,n)&&(f||['srcset',d,'data','style'])[m](function(e,t){(t=n[y](h+e))&&(n[e]=t)}),n.className+=' '+(o||l)}t=a in u?(n=new u[a](function(e){e[m](function(e,t){e.isIntersecting&&(t=e.target)&&(n.unobserve(t),i(t))})},c)).observe.bind(n):i,g(e||s+'['+h+d+']:not(['+p+'])')[m](function(e){e[y](p)||(e.setAttribute(p,s),t(e))})},t)}}function n(){var r=t.head;v(function(t,n,i,o){t=[].concat(g((i='script[type=deferjs]')+':not('+(o='[async]')+')'),g(i+o)),function e(){if(0!=t){for(o in n=f(),(i=t.shift()).parentNode.removeChild(i),i.removeAttribute('type'),i)'string'==typeof i[o]&&n[o]!=i[o]&&(n[o]=i[o]);n[d]&&!n.hasAttribute('async')?(n.onload=n.onerror=e,r[c](n)):(r[c](n),v(e,.1))}}()},8)}v.all=n,u.deferstyle=function(t,n,e,i){v(function(e){(e=f('LINK',n,i)).rel='stylesheet',e.href=t},e)},u.deferimg=e('IMG'),u.deferiframe=e('IFRAME'),n()}(this,document);
+        // Lazyload file Javascript
+        deferscript('js/app-dist.js', 'app-js');
+        // Lazyload image
+        deferimg('img[data-src],picture,video,audio');
+
+        deferstyle('assets/font-awesome-4.7.0/css/font-awesome.min.css', 'font-awesome',3000);
+        deferstyle('css/_fonts.css', 'fonts',2000);
+
+        deferiframe('iframe[data-src],[data-style],iframe');
+    </script>
 </head>
-<body>
+<body class="<?= (isset($dark)) ? 'dark' : '' ?>">
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
-<header class="uk-visible@m">
+<header id="header" class="uk-visible@m uk-position-z-index" uk-sticky="animation: uk-animation-slide-top; top: 600">
     <div class="top_header_menu uk-background-muted uk-visible@m">
         <div class="uk-container">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-right">
                     <ul class="uk-subnav menu_top uk-subnav-divider uk-margin-remove">
                         <li><a href="#">Trả góp 0%</a></li>
@@ -30,10 +47,10 @@
     </div>
     <div class="center_header uk-section-xsmall">
         <div class="uk-container">
-            <div class="uk-flex-middle" uk-grid>
+            <div class="uk-flex-middle uk-grid" uk-grid>
                 <div class="uk-width-1-5@m">
                     <figure class="logo_hoangia">
-                        <a href="."><img class="lazyload" data-src="images/1x/logo.png" alt=""></a>
+                        <a href="."><img src="images/1x/logo.png" alt=""></a>
                     </figure>
                 </div>
                 <div class="uk-width-expand">
@@ -47,7 +64,7 @@
                     </form>
                 </div>
                 <div class="uk-width-auto">
-                    <div class="uk-grid-small uk-flex-middle uk-grid-8" uk-grid>
+                    <div class="uk-grid-small uk-flex-middle uk-grid-8 uk-grid" uk-grid>
                         <div class="uk-width-auto">
                             <div class="box_icon uk-border-rounded">
                                 <span uk-icon="receiver"></span>
@@ -60,7 +77,7 @@
                     </div>
                 </div>
                 <div class="uk-width-auto">
-                    <div class="uk-grid-small uk-flex-middle uk-grid-8" uk-grid>
+                    <div class="uk-grid-small uk-flex-middle uk-grid-8 uk-grid" uk-grid>
                         <div class="uk-width-auto">
                             <div class="box_icon uk-border-rounded">
                                 <span uk-icon="clock"></span>
@@ -77,9 +94,9 @@
     </div>
     <div class="bottom_header">
         <div class="uk-container">
-            <div uk-grid>
+            <div class="uk-grid" uk-grid>
                 <div class="uk-width-1-5@m">
-
+                    <?php require "menu_pc.php"; ?>
                 </div>
                 <div class="uk-width-expand">
                     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -88,19 +105,19 @@
                             <ul class="uk-navbar-nav">
                                 <li>
                                     <a href="">
-                                        <img class="lazyload" data-src="images/1x/bao-hanh.png" alt="">
+                                        <img src="images/1x/bao-hanh.png" alt="">
                                         <span class="uk-text-middle uk-margin-small-left">Bảo hành uy tín</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img class="lazyload" data-src="images/1x/tra-gop.png" alt="">
+                                        <img src="images/1x/tra-gop.png" alt="">
                                         <span class="uk-text-middle uk-margin-small-left">Trả góp ưu đãi</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img class="lazyload" data-src="images/1x/ho-tro.png" alt="">
+                                        <img src="images/1x/ho-tro.png" alt="">
                                         <span class="uk-text-middle uk-margin-small-left uk-text-nowrap">Hỗ trợ - Tư vấn</span>
                                     </a>
                                 </li>
@@ -113,3 +130,40 @@
         </div>
     </div>
 </header>
+<nav id="header_mb" class="uk-navbar-container uk-navbar uk-hidden@m" uk-navbar uk-sticky>
+    <div class="uk-navbar-left">
+        <div class="uk-navbar-item">
+            <div id="mobile_menu_toggler">
+                <div id="m_nav_menu" class="m_nav">
+                    <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                    <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                    <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="."><img src="images/1x/logo.png" alt=""></a>
+    </div>
+    <div class="uk-navbar-right">
+        <div>
+            <a class="uk-navbar-toggle" href="#" uk-search-icon></a>
+            <div class="uk-navbar-dropdown search_position uk-padding-small" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="Nội dung cần tìm" autofocus>
+                        </form>
+                    </div>
+                    <div class="uk-width-auto">
+                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <?php require "mobile_menu.php"; ?>
+</nav>
+<div class="uk-overlay-primary mask_menu"></div>

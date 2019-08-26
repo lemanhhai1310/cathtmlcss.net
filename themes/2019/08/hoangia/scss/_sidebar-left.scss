@@ -1,10 +1,19 @@
 .title_fillter{
   font-size: 13px;
   font-family:'Roboto Medium', sans-serif;
-  color: #000;
+  color: #000 !important;
 }
 .box_sidebar_left{
   label{
     color: #333333;
   }
+}
+#offcanvas-flip{
+  .uk-checkbox{
+    background-color: inherit;
+    border-color: inherit;
+  }
+}
+.boloc{
+  padding: 0 10px !important;
 }

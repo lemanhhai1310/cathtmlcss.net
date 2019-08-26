@@ -1,4 +1,4 @@
-<aside class="box_sidebar_left" uk-sticky="offset: 30; media: (min-width: 960px)">
+<aside class="box_sidebar_left" uk-sticky="offset: 75; media: (min-width: 960px)">
     <div class="uk-margin">
         <h3 class="uk-text-uppercase title_fillter uk-margin-small">lọc theo giá</h3>
         <div class="uk-margin-small">

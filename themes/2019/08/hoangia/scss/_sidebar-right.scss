@@ -1,0 +1,23 @@
+.title_detail_3{
+  @extend .title_detail_2;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.item1{
+  padding: 8px;
+  &:nth-child(odd){
+    background-color: #EBEBEB;
+  }
+}
+.title_sidebar_right_1{
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 5px;
+  a{
+    color: #000;
+  }
+}
+.price_sidebar_right{
+  color: #F77E2A;
+  font-size: 14px;
+}

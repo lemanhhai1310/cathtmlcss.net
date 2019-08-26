@@ -6,15 +6,23 @@
         <li><a href="#">Điện thoại cao cấp</a></li>
         <li><span>Vertu Luxury</span></li>
     </ul>
-    <div class="uk-grid-medium" uk-grid>
+    <div class="uk-grid-medium uk-grid" uk-grid>
         <div class="uk-width-1-5@m uk-visible@m">
             <?php require "sidebar-left.php"; ?>
         </div>
         <div class="uk-width-expand">
-            <figure>
+            <figure class="uk-margin-remove">
                 <a href=""><img src="images/1x/banner_danhmuc.jpg" alt=""></a>
             </figure>
-            <div class="uk-grid-medium" uk-grid>
+            <div class="uk-padding-small uk-hidden@m uk-text-right">
+                <a href="" class="uk-button uk-button-default uk-text-capitalize boloc" uk-toggle="target: #offcanvas-flip"><i class="fa fa-filter" aria-hidden="true"></i> Bộ lọc</a>
+            </div>
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar uk-background-default">
+                    <?php require "sidebar-left.php"; ?>
+                </div>
+            </div>
+            <div class="uk-grid-medium uk-grid" uk-grid>
                 <?php
                 $data = array(
                     array(

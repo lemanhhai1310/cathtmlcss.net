@@ -1,3 +1,56 @@
+.title_detail_2{
+  color: #000;
+  font-size: 18px;
+}
+.table_thongso{
+  tr{
+    td{
+      color: #000;
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+  }
+}
+.baiviet{
+  color: #000;
+  font-size: 13.5px;
+}
+.tab_detail{
+  margin-left: 0;
+  li{
+    padding-left: 0;
+    &.uk-active{
+      a{
+        background-color: #2A8FD0;
+        color: #ffffff;
+        &:before{
+          @media(min-width: 960px){
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+
+            border-top: 10px solid #2A8FD0;
+          }
+        }
+      }
+    }
+    a{
+      background-color: #F2F2F2;
+      color: #000;
+      padding: 10px;
+    }
+  }
+}
+.box_2{
+  border-top: 1px solid #F2F2F2;
+}
 .title_detail_1{
   font-size: 22px;
   font-family:'Roboto Medium', sans-serif;
@@ -58,6 +111,89 @@
         font-size: 15px;
         color: #faa05a;
       }
+    }
+  }
+}
+#sync1{
+  .owl-nav{
+    margin: 0;
+    button{
+      &:hover{
+        background-color: transparent;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .item{
+    a{
+      &:hover{
+        cursor: zoom-in;
+      }
+    }
+    .uk-padding-large{
+      padding: 0 80px;
+      @media(max-width: 640px){
+        padding: 0 40px !important;
+      }
+    }
+  }
+}
+#sync2{
+  .owl-nav{
+    button{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-top: 0;
+      margin-bottom: 0;
+      &:focus{
+        outline: none;
+      }
+      svg{
+        height: 20px !important;
+      }
+      &.owl-prev{
+        @media(min-width: 640px){
+          right: 100%;
+        }
+        @media(max-width: 640px){
+          left: 0;
+        }
+      }
+      &.owl-next{
+        @media(min-width: 640px){
+          left: 100%;
+        }
+        @media(max-width: 640px){
+          right: 0;
+        }
+      }
+    }
+  }
+  .owl-item{
+    &.active{
+      &.current{
+        .item{
+          border-color: #2A8FD0;
+        }
+      }
+    }
+  }
+  .item{
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    padding: 10px 0;
+    @media(max-width: 640px){
+      padding: 0px 0;
+    }
+    img{
+      height: 70px;
+      object-fit: contain;
     }
   }
 }

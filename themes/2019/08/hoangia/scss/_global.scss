@@ -1,6 +1,9 @@
 body{
   font-size: 14px;
   font-family:'Roboto Regular', sans-serif;
+  &.dark{
+    background-color: #000000;
+  }
 }
 .uk-grid-medium{
   @media(max-width: 640px){

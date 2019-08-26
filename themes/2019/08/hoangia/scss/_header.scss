@@ -1,3 +1,68 @@
+#header_mb{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  &.uk-sticky{
+    &.uk-active{
+
+    }
+  }
+  .uk-logo{
+    img{
+      height: 25px;
+    }
+  }
+  .uk-navbar-item,
+  .uk-navbar-toggle{
+    min-height: 55px;
+  }
+}
+.search_position{
+  left: 0 !important;
+  right: 0 !important;
+  width: inherit;
+  margin: 0;
+  padding: 6px 10px;
+  .uk-search-input{
+    font-size: 15px;
+  }
+}
+#header{
+  z-index: 982;
+  position: relative;
+  background-color: #fff;
+  &.uk-sticky{
+    &.uk-active{
+      z-index: 982;
+      .center_header{
+        background-color: #fff;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+      }
+      .logo_hoangia,
+      .top_header_menu{
+        display: none;
+      }
+      #hamber_menu{
+        position: absolute;
+        top: calc((60px - 45px)/2);
+        float: none;
+        &:hover{
+          .txt_color_1{
+
+          }
+        }
+        .txt_color_1{
+          min-width: 207px;
+        }
+      }
+      .bottom_header{
+        border: none;
+        .uk-width-expand{
+          display: none;
+        }
+      }
+    }
+  }
+}
 .top_header_menu{
   padding: 6px 0;
 }

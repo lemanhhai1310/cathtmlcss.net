@@ -4,13 +4,13 @@
 
     <ul class="uk-slideshow-items">
         <li>
-            <img class="lazyload" data-src="images/1x/slide.jpg" alt="" uk-cover>
+            <img class="uk-cover" data-src="images/1x/slide.jpg" alt="">
         </li>
         <li>
-            <img class="lazyload" data-src="images/1x/slide.jpg" alt="" uk-cover>
+            <img class="uk-cover" data-src="images/1x/slide.jpg" alt="">
         </li>
         <li>
-            <img class="lazyload" data-src="images/1x/slide.jpg" alt="" uk-cover>
+            <img class="uk-cover" data-src="images/1x/slide.jpg" alt="">
         </li>
     </ul>
 
@@ -31,7 +31,7 @@
             <div class="uk-position-relative">
 
                 <div class="uk-slider-container uk-light">
-                    <ul class="uk-slider-items uk-child-width-auto uk-grid-medium uk-flex-middle" uk-grid>
+                    <ul class="uk-slider-items uk-child-width-auto uk-grid-medium uk-flex-middle uk-grid" uk-grid>
                         <li>
                             <img class="lazyload" data-src="images/1x/brand/oris.jpg" alt="">
                         </li>
@@ -66,7 +66,7 @@
 
 
         </div>
-        <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small" uk-grid>
+        <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small uk-grid" uk-grid>
             <div>
                 <a href="catalog.php">
                     <div class="uk-cover-container uk-transition-toggle uk-background-muted">
@@ -115,7 +115,7 @@
             <div class="uk-position-relative">
 
                 <div class="uk-slider-container">
-                    <ul class="uk-slider-items uk-grid-small slide_home_sp" uk-grid>
+                    <ul class="uk-slider-items uk-grid-small slide_home_sp uk-grid" uk-grid>
                         <?php
                         $data = array(
                             array(
@@ -194,7 +194,7 @@
             <div class="uk-position-relative">
 
                 <div class="uk-slider-container">
-                    <ul class="uk-slider-items uk-grid-small slide_home_sp" uk-grid>
+                    <ul class="uk-slider-items uk-grid-small slide_home_sp uk-grid" uk-grid>
                         <?php
                         $data = array(
                             array(
@@ -289,7 +289,7 @@
             <div class="uk-position-relative">
 
                 <div class="uk-slider-container">
-                    <ul class="uk-slider-items uk-grid-small slide_home_sp" uk-grid>
+                    <ul class="uk-slider-items uk-grid-small slide_home_sp uk-grid" uk-grid>
                         <?php
                         $data = array(
                             array(
@@ -379,7 +379,7 @@
         </div>
     </div>
     <div class="uk-container">
-        <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-medium" uk-grid>
+        <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-medium uk-grid" uk-grid>
             <?php
             $data = array(
                 array(

@@ -1,3 +1,53 @@
+.price-dark{
+  color: #F9C65F;
+  .txt{
+    font-size: 11px;
+  }
+  .number{
+    font-size: 22px;
+  }
+}
+.box-dark-1{
+  border-bottom: 1px solid #ffcb85;
+  .title{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+.khuyenmai-dark{
+  @extend .price-dark;
+  color: #FFFFFF;
+}
+.price_khac{
+  font-size: 13.5px;
+  b{
+    color: #000;
+  }
+  span{
+    color: #F77E2A;
+  }
+}
+.btn-dark-buy{
+  background-image: linear-gradient(to right, #b38c55, #a87f4b, #ffcb85, #a67c4a);
+  color: #000 !important;
+  border: none;
+  &.tuvan{
+    padding: 0 20px;
+    img{
+      width: 28px;
+    }
+    .uk-input{
+      background-color: #fff;
+      color: #000;
+      font-size: 13px;
+      line-height: 28px;
+      &::placeholder{
+        color: #000;
+      }
+    }
+  }
+}
 .title_detail_2{
   color: #000;
   font-size: 18px;
@@ -6,8 +56,15 @@
   tr{
     td{
       color: #000;
+      .dark &{
+        color: #fff;
+        border: 1px solid #C4AA7C;
+      }
       &:first-child{
         padding-left: 0;
+        .dark &{
+          padding-left: 10px !important;
+        }
       }
     }
   }
@@ -15,15 +72,35 @@
 .baiviet{
   color: #000;
   font-size: 13.5px;
+  .dark &{
+    padding: 15px;
+    border: 1px solid #b38c55;
+    color: #FFFFFF;
+  }
 }
 .tab_detail{
   margin-left: 0;
+  .dark &{
+    &:before{
+      display: none;
+    }
+  }
+  .dark &{
+    margin-left: -15px;
+  }
   li{
     padding-left: 0;
+    .dark &{
+      padding-left: 15px;
+    }
     &.uk-active{
       a{
         background-color: #2A8FD0;
         color: #ffffff;
+        .dark &{
+          background-image: linear-gradient(to right, #b38c55, #a87f4b, #ffcb85, #a67c4a);
+          border-color: #b38c55;
+        }
         &:before{
           @media(min-width: 960px){
             content: '';
@@ -37,6 +114,9 @@
             border-right: 10px solid transparent;
 
             border-top: 10px solid #2A8FD0;
+            .dark &{
+              border-top-color: #b38c55;
+            }
           }
         }
       }
@@ -45,11 +125,18 @@
       background-color: #F2F2F2;
       color: #000;
       padding: 10px;
+      .dark &{
+        color: #000 !important;
+        padding: 10px 20px;
+      }
     }
   }
 }
 .box_2{
   border-top: 1px solid #F2F2F2;
+  .dark &{
+    border: none;
+  }
 }
 .title_detail_1{
   font-size: 22px;
@@ -92,21 +179,30 @@
 }
 .box_gift{
   border: 1px solid #E6E6E6;
+  .dark &{
+    border: 1px solid #C4AA7C;
+  }
   .title{
     font-family:'Roboto Medium', sans-serif;
     font-size: 14px;
     color: #000;
+    .dark &{
+      color: #fff;
+    }
   }
   .uk-list{
     font-size: 13px;
     color: #000;
     margin: 0;
+    .dark &{
+      color: #fff;
+    }
     li{
       position: relative;
       padding-left: 20px;
       i.fa{
         position: absolute;
-        top: 1px;
+        top: 2px;
         left: 0;
         font-size: 15px;
         color: #faa05a;
@@ -151,6 +247,16 @@
       border-radius: 50%;
       margin-top: 0;
       margin-bottom: 0;
+      .dark &{
+        color: #fff !important;
+        background-color: #D6D6D6;
+        &.disabled{
+          display: none;
+        }
+        svg{
+          color: #FFFFFF;
+        }
+      }
       &:focus{
         outline: none;
       }
@@ -160,6 +266,9 @@
       &.owl-prev{
         @media(min-width: 640px){
           right: 100%;
+          .dark &{
+            right: calc(100% - 20px);
+          }
         }
         @media(max-width: 640px){
           left: 0;
@@ -168,6 +277,9 @@
       &.owl-next{
         @media(min-width: 640px){
           left: 100%;
+          .dark &{
+            left: calc(100% - 20px);
+          }
         }
         @media(max-width: 640px){
           right: 0;

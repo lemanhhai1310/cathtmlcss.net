@@ -1,0 +1,39 @@
+.tuyendung{
+  img{
+    width: 60px;
+  }
+  .title{
+    font-family:'Montserrat Bold',sans-serif;
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 5px;
+    a{
+      color: #0b4789;
+    }
+  }
+}
+//============================================
+.tuyendung_box{
+  img{
+    width: 50px;
+  }
+  .title{
+    font-family:'Montserrat Bold',sans-serif;
+    color: #0b4789;
+    font-size: 14px;
+    margin: 0;
+  }
+  .time{
+    font-family:'Montserrat Medium',sans-serif;
+    color: #000;
+  }
+}
+//============================================
+.tuyendung_detail{
+  p{
+    margin: 0;
+    font-family:'NunitoSans Regular',sans-serif;
+    color: #000;
+    font-size: 14px;
+  }
+}

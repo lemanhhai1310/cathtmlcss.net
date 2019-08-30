@@ -1,4 +1,5 @@
 <?php $data['title'] = 'Hoàng gia - Danh mục' ?>
+<?php $light = ''; ?>
 <?php require "header.php"; ?>
 <div class="uk-container uk-padding-remove">
     <ul class="uk-breadcrumb uk-flex-middle uk-margin-remove breadcrumb-catalog">

@@ -5,3 +5,77 @@
   border-top: 2px solid #011933;
   padding: 15px 0;
 }
+//============================================
+.box_footer_search{
+  img{
+    width: 26px;
+  }
+  .uk-search-input{
+    background-color: #fff !important;
+    color: #343538 !important;
+    padding-left: 15px;
+    &::placeholder{
+      color: #343538;
+    }
+  }
+}
+//============================================
+.box_footer_address{
+  font-family:'Montserrat Light',sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  .uk-list{
+    li{
+      position: relative;
+      padding-left: 25px;
+      .uk-icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+//============================================
+.box_footer_1{
+  bottom: 10px;
+  h2{
+    @extend .title_footer_1;
+  }
+}
+//============================================
+.list_footer_1{
+  li{
+    a{
+      color: #ffffff;
+      font-size: 13px;
+      font-family:'Montserrat Light',sans-serif;
+    }
+  }
+}
+//============================================
+.top_footer{
+  @media(max-width: 960px){
+
+  }
+}
+//============================================
+.box_footer{
+  padding-bottom: 10px;
+  position: relative;
+  &:after{
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+//============================================
+.title_footer_1{
+  font-size: 15px;
+  font-family:'Montserrat Bold',sans-serif;
+  margin: 0;
+}

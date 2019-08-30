@@ -1,0 +1,54 @@
+.pod-menu-bottom-mobile{
+  .uk-accordion-title{
+    color: #021d3d;
+    font-size: 14px;
+    font-family:'Poppins-Medium';
+  }
+  >li{
+    &:nth-child(n+2){
+      border-top: 1px solid #dadce0;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+#pod-footer{
+  @media(min-width: 960px){
+    padding-top: 100px;
+  }
+  @media(max-width: 960px){
+    figure{
+      text-align: center;
+    }
+  }
+}
+.pod-footer-social{
+  a{
+    &:nth-child(n+2){
+      margin-left: 5px;
+    }
+    color: #022456;
+    border: 1px solid #022456;
+    border-radius: 50%;
+    svg{
+      width: 16px;
+    }
+  }
+}
+.pod-footer-title{
+  font-family:'Poppins-Medium';
+  font-size: 16px;
+  color: #021d3d;
+}
+.pod-footer-list{
+  li{
+    color: #7e8190;
+    font-size: 13px;
+    &:nth-child(n+2){
+      margin-top: 7px;
+    }
+    a{
+      color: #7e8190;
+    }
+  }
+}

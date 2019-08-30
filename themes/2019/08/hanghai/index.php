@@ -1,6 +1,6 @@
 <?php $data['title'] = 'TRUNG TÂM NHÂN LỰC HÀNG HẢI ALLSEAMAN - Trang chủ' ?>
 <?php require "header.php"; ?>
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; ratio: 1920:751; min-height: 450;">
+<div class="slide_hover uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push; ratio: 1920:751; min-height: 450;">
 
     <ul class="uk-slideshow-items">
         <?php
@@ -17,7 +17,7 @@
             <img data-src="<?= $v['src'] ?>" alt="" class="uk-cover" uk-cover>
             <div class="uk-position-cover">
                 <div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
-                    <div class="uk-width-1-1 box_banner">
+                    <div class="uk-width-1-1 box_banner" uk-scrollspy="cls: uk-animation-scale-down; target: .uk-text-right; delay: 150; repeat: true;">
                         <h3 class="uk-text-right">Trung tâm nhân lực Hàng Hải</h3>
                         <h2 class="uk-text-right">ALLSEAMAN</h2>
                         <div class="uk-text-center uk-margin-large-top">
@@ -31,8 +31,9 @@
         <?php endforeach; ?>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    <a class="uk-position-center-left uk-position-small uk-slidenav" href="#" uk-slideshow-item="previous"><img data-src="images/icon_prev.png" alt=""></a>
+    <a class="uk-position-center-right uk-position-small uk-slidenav" href="#" uk-slideshow-item="next"><img data-src="images/icon_next.png" alt=""></a>
+
     <div class="uk-position-bottom block_style_slide uk-visible@m">
         <div class="uk-container uk-position-relative">
             <div class="box_cc uk-background-default uk-position-center-left-out"></div>
@@ -40,12 +41,12 @@
         </div>
     </div>
 </div>
-    <div id="modal-media-video" class="uk-flex-top" uk-modal>
-        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-            <button class="uk-modal-close-outside" type="button" uk-close></button>
-            <video data-src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline uk-video></video>
-        </div>
+<div id="modal-media-video" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <video data-src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline uk-video></video>
     </div>
+</div>
 <div class="uk-section-small">
     <div class="uk-container">
         <div class="uk-grid uk-grid-small uk-grid-20" uk-grid>
@@ -60,7 +61,7 @@
                 </div>
             </div>
             <div class="uk-width-expand">
-                <div class="uk-grid uk-grid-small uk-grid-20 uk-child-width-1-2" uk-grid>
+                <div class="uk-grid uk-grid-small uk-grid-20 uk-child-width-1-2" uk-grid uk-scrollspy="target: .anima; repeat: false; cls: animate; delay: 200">
                     <?php
                     $data = array(
                         array(
@@ -74,13 +75,17 @@
                     );
                     foreach ($data as $k => $v): ?>
                     <div>
-                        <div class="uk-cover-container">
-                            <img data-src="<?= $v['src'] ?>" alt="" class="uk-cover" uk-cover>
-                            <canvas width="322" height="322"></canvas>
-                            <div class="uk-position-bottom uk-text-center uk-light uk-padding-small" style="background-color: #02519c;">
-                                <h3 class="title_1 uk-margin-remove"><a href=""><?= $v['title'] ?></a></h3>
+                        <a href="">
+                            <div class="uk-position-relative uk-overflow-hidden anima uk-transition-toggle">
+                                <div class="uk-cover-container uk-transition-scale-up uk-transition-opaque">
+                                    <img data-src="<?= $v['src'] ?>" alt="" class="uk-cover" uk-cover>
+                                    <canvas width="322" height="322"></canvas>
+                                </div>
+                                <div class="uk-position-bottom uk-text-center uk-light uk-padding-small" style="background-color: #02519c;">
+                                    <h3 class="title_1 uk-margin-remove"><?= $v['title'] ?></h3>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <?php endforeach; ?>
                 </div>
@@ -110,11 +115,11 @@
 </div>
 <div class="uk-section-small block_01">
     <div class="uk-container">
-        <div class="box_1 uk-position-relative uk-text-center uk-margin">
+        <div class="box_1 uk-position-relative uk-text-center uk-margin-medium">
             <h2>Các khoá học</h2>
             <div class="desc">CHÚNG TÔI ĐÀO TẠO VÀ CUNG CẤP CÁC NGHIỆP VỤ</div>
         </div>
-        <div class="uk-grid uk-grid-small uk-grid-20 uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
+        <div class="uk-grid uk-grid-small uk-grid-20 uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-scrollspy="target: .anima; repeat: false; cls: animate; delay: 200">
             <?php
             $data = array(
                 array(
@@ -144,10 +149,12 @@
             );
             foreach ($data as $k => $v): ?>
                 <div>
-                    <a href="">
-                        <div class="uk-cover-container box_khoahoc uk-text-center uk-light uk-background-default uk-border-rounded uk-box-shadow-medium">
-                            <img data-src="<?= $v['src'] ?>" alt="" class="uk-cover" uk-cover>
-                            <canvas width="370" height="245"></canvas>
+                    <a href="khoahoc-detail.php">
+                        <div class="uk-transition-toggle uk-overflow-hidden box_khoahoc anima uk-position-relative uk-text-center uk-light uk-background-default uk-border-rounded uk-box-shadow-medium">
+                            <div class="uk-cover-container uk-transition-scale-up uk-transition-opaque" tabindex="0">
+                                <img data-src="<?= $v['src'] ?>" alt="" class="uk-cover" uk-cover>
+                                <canvas width="370" height="245"></canvas>
+                            </div>
                             <div class="uk-padding-small uk-position-bottom uk-text-truncate">
                                 <?= $v['title'] ?>
                             </div>
@@ -162,10 +169,10 @@
     </div>
 </div>
 <div class="uk-section-small uk-padding-remove-bottom">
-    <div class="box_1 uk-position-relative uk-text-center uk-margin">
+    <div class="box_1 uk-position-relative uk-text-center uk-margin-medium">
         <h2>Hình ảnh hoạt động</h2>
     </div>
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+    <div class="uk-position-relative slide_hover uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
         <ul class="uk-slider-items uk-grid uk-grid-20" uk-lightbox="animation: fade">
             <?php
@@ -190,32 +197,134 @@
                 ),
             );
             foreach ($data as $k => $v): ?>
-            <li class="uk-width-3-5">
-                <a href="<?= $v['src'] ?>" style="cursor: zoom-in" data-caption="Caption 1">
-                    <div class="uk-panel uk-cover-container box_hinhanh">
-                        <img data-src="<?= $v['src'] ?>" class="uk-cover" alt="" uk-img uk-cover>
-                        <canvas width="971" height="450"></canvas>
-                    </div>
-                </a>
+            <li class="uk-width-4-5 uk-width-3-5@m">
+
+                <div class="uk-panel uk-cover-container box_hinhanh uk-transition-toggle">
+                    <img src="<?= $v['src'] ?>" class="uk-cover" alt="" uk-cover>
+                    <canvas width="971" height="450"></canvas>
+                    <a class="uk-position-cover uk-overlay uk-overlay-primary uk-transition-fade" style="z-index: 982;" href="<?= $v['src'] ?>" data-caption="Caption 1"><span class="uk-position-center" uk-icon="icon: search; ratio: 1.5"></span></a>
+                </div>
             </li>
             <?php endforeach; ?>
         </ul>
 
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        <a class="uk-position-center-left uk-position-small uk-slidenav" href="#" uk-slider-item="previous"><img data-src="images/icon_prev.png" alt=""></a>
+        <a class="uk-position-center-right uk-position-small uk-slidenav" href="#" uk-slider-item="next"><img data-src="images/icon_next.png" alt=""></a>
 
     </div>
 </div>
 <div class="uk-section-small">
     <div class="uk-container">
-        <div class="box_1 uk-position-relative uk-text-center uk-margin">
+        <div class="box_1 uk-position-relative uk-text-center uk-margin-medium">
             <h2>Tin tức nổi bật</h2>
             <a href="" class="uk-button uk-button-default btn_readmore uk-visible@m uk-position-center-right" uk-icon="chevron-right">Tới trang tin tức</a>
         </div>
-        <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+        <div class="uk-grid uk-child-width-1-3@m uk-grid-medium" uk-grid uk-scrollspy="target: .anima; repeat: false; cls: animate; delay: 200">
+            <?php
+            $data = array(
+                array(
+                    'src' => 'https://znews-photo.zadn.vn/w960/Uploaded/jgtnrz/2019_08_26/Donald_Trump_1.jpg',
+                    'title' => 'TT Trump: \'Ông Tập không muốn mất đi 3 triệu việc làm\' vì thương chiến',
+                    'desc' => 'Tổng thống Mỹ Donald Trump tự tin cho rằng Chủ tịch Tập Cận Bình không muốn hệ thống thương mại của Trung Quốc đổ vỡ và sẽ chấp nhận một thỏa thuận với Washington.',
+                ),
+                array(
+                    'src' => 'https://znews-photo.zadn.vn/w480/Uploaded/lexw/2019_08_26/SHA_5288_zing_edited.jpg',
+                    'title' => 'Xe thang đâm thủng vỏ máy bay Boeing 787 tại Tân Sơn Nhất',
+                    'desc' => 'Đệ nhất phu nhân Mỹ khiến nhiều người phát sốt khi các phóng viên chụp được khoảnh khắc bà có cử chỉ thân mật với Thủ tướng Canada Justin Trudeau khi đang đứng cạnh ông Trump.',
+                ),
+                array(
+                    'src' => 'https://znews-photo.zadn.vn/w480/Uploaded/jopluat/2019_08_26/Minh_Vuong.jpg',
+                    'title' => 'Bà Melania gây sốt với khoảnh khắc \'thân mật\' cùng ông Trudeau',
+                    'desc' => 'Xe thang của Công ty TNHH MTV Dịch vụ mặt đất sân bay Việt Nam (VIAGS) đã đâm vào thân chiếc Boeing 787-9 của Vietnam Airlines khi máy bay chuẩn bị cất cánh đi Nhật Bản.',
+                ),
+            );
+            foreach ($data as $k => $v): ?>
             <div>
+                <div class="uk-transition-toggle anima" tabindex="0">
+                    <div class="uk-overflow-hidden">
+                        <div class="uk-cover-container uk-background-muted uk-box-shadow-medium uk-transition-scale-up uk-transition-opaque">
+                            <img data-src="<?= $v['src'] ?>" alt="" class="uk-cover" uk-cover>
+                            <canvas width="370" height="245"></canvas>
+                        </div>
+                    </div>
+                    <h3 class="title_1 uk-margin-small"><a href=""><?= $v['title'] ?></a></h3>
+                    <div class="uk-margin-small desc-news"><?= $v['desc'] ?></div>
+                    <a href="" class="uk-button uk-button-default btn_readmore">Đọc thêm</a>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+<div class="uk-container">
+    <div class="block_doitac uk-section-small">
+        <div class="box_1 uk-position-relative uk-text-center uk-margin-medium">
+            <h2>Các đối tác</h2>
+        </div>
+        <div uk-slider="autoplay: true">
+
+            <div class="uk-position-relative">
+
+                <div class="uk-slider-container uk-light">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid uk-grid-small uk-flex-middle" uk-grid>
+                        <?php
+                        $data = array(
+                            array(
+                                'src' => 'images/doi-tac/60bec466f9ce1c9045df.jpg'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vimaru.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vinalines.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vinamarine.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vipco.petrolimex.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vr.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vimaru.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vinalines.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vinamarine.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vipco.petrolimex.png'
+                            ),
+                            array(
+                                'src' => 'images/doi-tac/vr.png'
+                            ),
+                        );
+                        foreach ($data as $k => $v): ?>
+                            <li class="uk-text-center">
+                                <img data-src="<?= $v['src'] ?>" alt="">
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+                <div class="uk-hidden@s uk-light">
+                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+
+                <div class="uk-visible@s">
+                    <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
 
             </div>
+
+            <ul class="uk-slider-nav uk-hidden@s uk-dotnav uk-flex-center uk-margin"></ul>
+
         </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
         <div class="box_content_main uk-margin">
             <div class="uk-position-relative uk-position-z-index box_stt">
                 <div class="uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-background-default uk-border-rounded uk-box-shadow-medium">
-                    <div class="uk-grid-match uk-grid-divider" uk-grid>
+                    <div class="uk-grid-match uk-grid-divider uk-grid" uk-grid>
                         <div class="uk-width-1-4@m uk-visible@m">
                             <?php require "sidebar-left.php"; ?>
                         </div>
@@ -20,7 +20,7 @@
                             <div class="uk-section-xsmall">
                                 <h3 class="title_1">Bài hát yêu thích</h3>
                                 <h3 class="title_1">MV yêu thích</h3>
-                                <div class="uk-grid-small" uk-grid>
+                                <div class="uk-grid-small uk-grid" uk-grid>
                                     <?php
                                     $data = array(
                                         array(

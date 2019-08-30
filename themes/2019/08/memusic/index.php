@@ -25,16 +25,16 @@
         </div>
     </div>
 </div>
-<div class="uk-background-norepeat uk-background-top-center uk-section-xsmall lazy" data-src="images/bg-movive.png">
+<div class="uk-background-norepeat uk-background-top-center uk-section-xsmall lazy" data-src="images/bg-movive.png" uk-img>
     <div class="uk-container uk-padding-remove">
         <div class="uk-flex uk-light uk-flex-middle uk-flex-between uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
             <h3 class="title_name">MV</h3>
             <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
         </div>
         <div class="uk-visible@s uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin">
-            <div class="uk-grid-medium" uk-grid>
+            <div class="uk-grid-medium uk-grid" uk-grid>
                 <div class="uk-width-1-3@m">
-                    <ul class="uk-tab-left mv_video_left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                    <ul class="uk-tab-left mv_video_left uk-tab" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
                         <?php
                         $data = array(
                             'Gia Đình',
@@ -94,7 +94,7 @@
         <div class="uk-hidden@s box_content uk-margin">
             <div class="uk-position-relative uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right" tabindex="-1" uk-slider="finite: true;">
 
-                <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small uk-grid" uk-grid>
                     <?php
                     $data = array(
                         array(
@@ -150,7 +150,7 @@
             <a href="" class="uk-button uk-button-default uk-border-rounded uk-flex-inline uk-flex-middle btn_play_all"><span uk-icon="play"></span> Play all</a>
         </div>
         <div class="uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin-small">
-            <div class="uk-grid-small" uk-grid>
+            <div class="uk-grid-small uk-grid" uk-grid>
                 <?php
                 $data = array(
                     array(
@@ -233,7 +233,7 @@
                     <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="uk-visible@s uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin-small">
-                    <div class="uk-grid-small" uk-grid>
+                    <div class="uk-grid-small uk-grid" uk-grid>
                         <?php
                         $data = array(
                             array(
@@ -286,7 +286,7 @@
                 <div class="uk-hidden@s box_content uk-margin-bottom">
                     <div class="uk-position-relative uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right" tabindex="-1" uk-slider="finite: true;">
 
-                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small uk-grid" uk-grid>
                             <?php
                             $data = array(
                                 array(
@@ -343,13 +343,13 @@
                     <a href="" class="link_more">xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="uk-padding-small uk-padding-remove-bottom uk-padding-remove-top uk-margin-small">
-                    <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
+                    <div class="uk-grid-medium uk-child-width-1-2@m uk-grid" uk-grid>
                         <div>
                             <div class="uk-cover-container uk-margin-small">
                                 <img class="lazyload" data-src="images/new-hit/img1.png" alt="" uk-cover>
                                 <canvas width="960" height="409"></canvas>
                             </div>
-                            <div class="uk-child-width-auto uk-flex-between uk-margin-medium-bottom" uk-grid>
+                            <div class="uk-child-width-auto uk-flex-between uk-margin-medium-bottom uk-grid" uk-grid>
                                 <div>
                                     <h4 class="uk-margin-remove title_name_1 uk-text-center"><a href="">Sống Chết Có Nhau (Single)</a></h4>
                                     <div class="author"><a href="#author">Quân A.P</a></div>
@@ -359,75 +359,48 @@
                                 </div>
                             </div>
                             <ul class="uk-list">
-                                <li class="uk-margin">
-                                    <div class="uk-grid-small" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-cover-container uk-border-rounded">
-                                                <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
-                                                <canvas width="55" height="55"></canvas>
+                                <?php
+                                $data = array(
+                                    'Gia Đình',
+                                    'Ai Là Người Thương Em',
+                                    'Có Tất Cả Nhưng Thiếu Anh',
+                                );
+                                foreach ($data as $k => $v):?>
+                                    <li class="uk-margin">
+                                        <div class="uk-grid-small uk-grid" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-rounded">
+                                                    <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
+                                                    <canvas width="55" height="55"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="box_1 uk-padding-remove">
+                                                    <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title"><?= $v ?></a></h6>
+                                                    <div class="author"><a href="#author">Quân A.P</a></div>
+                                                    <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid>
+                                                    <div>04:50</div>
+                                                    <div>
+                                                        <a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                        <div class="uk-dropdown uk-padding-remove list-more-acts" uk-dropdown="mode: click; pos: bottom-right">
+                                                            <ul class="uk-list uk-padding-remove">
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: plus; ratio:0.8;"></span> Thêm vào</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: social; ratio:0.8;"></span> Chia sẻ</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: download; ratio:0.8;"></span> Tải xuống</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: ban; ratio:0.8;"></span> Chặn</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: warning; ratio:0.8;"></span> Thông tin</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="uk-width-expand">
-                                            <div class="box_1 uk-padding-remove">
-                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia Đình</a></h6>
-                                                <div class="author"><a href="#author">Quân A.P</a></div>
-                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-3">
-                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
-                                                <div>04:50</div>
-                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="uk-margin">
-                                    <div class="uk-grid-small" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-cover-container uk-border-rounded">
-                                                <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
-                                                <canvas width="55" height="55"></canvas>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <div class="box_1 uk-padding-remove">
-                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai Là Người Thương Em</a></h6>
-                                                <div class="author"><a href="#author">Quân A.P</a></div>
-                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-3">
-                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
-                                                <div>04:50</div>
-                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="uk-margin">
-                                    <div class="uk-grid-small" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-cover-container uk-border-rounded">
-                                                <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
-                                                <canvas width="55" height="55"></canvas>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <div class="box_1 uk-padding-remove">
-                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia Đình</a></h6>
-                                                <div class="author"><a href="#author">Quân A.P</a></div>
-                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-3">
-                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
-                                                <div>04:50</div>
-                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                         <div>
@@ -435,7 +408,7 @@
                                 <img class="lazyload" data-src="images/new-hit/img2.png" alt="" uk-cover>
                                 <canvas width="960" height="409"></canvas>
                             </div>
-                            <div class="uk-child-width-auto uk-flex-between uk-margin-medium-bottom" uk-grid>
+                            <div class="uk-child-width-auto uk-flex-between uk-margin-medium-bottom uk-grid" uk-grid>
                                 <div>
                                     <h4 class="uk-margin-remove title_name_1 uk-text-center"><a href="">Đóa hoa hồng</a></h4>
                                     <div class="author"><a href="#author">Chi Pu</a></div>
@@ -445,75 +418,48 @@
                                 </div>
                             </div>
                             <ul class="uk-list">
-                                <li class="uk-margin">
-                                    <div class="uk-grid-small" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-cover-container uk-border-rounded">
-                                                <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
-                                                <canvas width="55" height="55"></canvas>
+                                <?php
+                                $data = array(
+                                    'Gia Đình',
+                                    'Ai Là Người Thương Em',
+                                    'Có Tất Cả Nhưng Thiếu Anh',
+                                );
+                                foreach ($data as $k => $v):?>
+                                    <li class="uk-margin">
+                                        <div class="uk-grid-small uk-grid" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <div class="uk-cover-container uk-border-rounded">
+                                                    <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
+                                                    <canvas width="55" height="55"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="box_1 uk-padding-remove">
+                                                    <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title"><?= $v ?></a></h6>
+                                                    <div class="author"><a href="#author">Quân A.P</a></div>
+                                                    <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-3">
+                                                <div class="uk-child-width-auto uk-flex-between uk-grid" uk-grid>
+                                                    <div>04:50</div>
+                                                    <div>
+                                                        <a href="#" class="uk-link-reset"><span uk-icon="more"></span></a>
+                                                        <div class="uk-dropdown uk-padding-remove list-more-acts" uk-dropdown="mode: click; pos: bottom-right">
+                                                            <ul class="uk-list uk-padding-remove">
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: plus; ratio:0.8;"></span> Thêm vào</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: social; ratio:0.8;"></span> Chia sẻ</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: download; ratio:0.8;"></span> Tải xuống</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: ban; ratio:0.8;"></span> Chặn</a></li>
+                                                                <li><a href=""><span class="uk-margin-small-right" uk-icon="icon: warning; ratio:0.8;"></span> Thông tin</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="uk-width-expand">
-                                            <div class="box_1 uk-padding-remove">
-                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia Đình</a></h6>
-                                                <div class="author"><a href="#author">Quân A.P</a></div>
-                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-3">
-                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
-                                                <div>04:50</div>
-                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="uk-margin">
-                                    <div class="uk-grid-small" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-cover-container uk-border-rounded">
-                                                <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
-                                                <canvas width="55" height="55"></canvas>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <div class="box_1 uk-padding-remove">
-                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Ai Là Người Thương Em</a></h6>
-                                                <div class="author"><a href="#author">Quân A.P</a></div>
-                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-3">
-                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
-                                                <div>04:50</div>
-                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="uk-margin">
-                                    <div class="uk-grid-small" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-cover-container uk-border-rounded">
-                                                <img class="lazyload" data-src="images/img-play.png" alt="" uk-cover>
-                                                <canvas width="55" height="55"></canvas>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <div class="box_1 uk-padding-remove">
-                                                <h6 class="uk-margin-remove title uk-text-truncate"><a href="#title">Gia Đình</a></h6>
-                                                <div class="author"><a href="#author">Quân A.P</a></div>
-                                                <div class="luot_nghe_1"><i class="material-icons">headset</i> <span>1242 lượt nghe</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-3">
-                                            <div class="uk-child-width-auto uk-flex-between" uk-grid>
-                                                <div>04:50</div>
-                                                <div><a href="#" class="uk-link-reset"><span uk-icon="more"></span></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+                                <?php endforeach; ?>
                             </ul>
                         </div>
                     </div>
@@ -525,7 +471,7 @@
                 <div class="box_content uk-padding-small uk-margin-bottom">
                     <div class="uk-position-relative uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right" tabindex="-1" uk-slider="finite: true">
 
-                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small uk-grid" uk-grid>
                             <?php
                             $data = array(
                                 array(
@@ -580,7 +526,7 @@
                 <div class="box_content uk-padding-small">
                     <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="finite: true">
 
-                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small" uk-grid>
+                        <ul class="uk-slider-items uk-child-width-1-5@m uk-grid-small uk-grid" uk-grid>
                             <?php
                             $data = array(
                                 array(
@@ -608,9 +554,11 @@
                                 <li class="uk-width-2-5 uk-width-1-4@s uk-width-1-5@m">
                                     <a href="" class="uk-link-reset hover1">
                                         <div class="box_nghe_si uk-margin-small uk-border-circle uk-background-contain" data-src="images/bg-ava-nghesi.png" uk-img>
-                                            <div class="uk-cover-container uk-border-circle uk-transition-toggle uk-overflow-hidden">
-                                                <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="<?= $value['src'] ?>" alt="" uk-cover>
-                                                <canvas width="960" height="960"></canvas>
+                                            <div class="uk-border-circle uk-transition-toggle uk-overflow-hidden">
+                                                <div class="uk-cover-container uk-border-circle uk-transition-scale-up uk-transition-opaque">
+                                                    <img data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                                    <canvas width="960" height="960"></canvas>
+                                                </div>
                                             </div>
                                         </div>
                                         <h4 class="uk-margin-remove title_name_1 uk-text-center"><?= $value['name'] ?></h4>

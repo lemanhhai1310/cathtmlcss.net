@@ -2,6 +2,41 @@
   font-size: 13px;
   color: #000;
 }
+.top_footer_pc{
+  .dark &{
+    color: #fff;
+    background-color: transparent;
+  }
+}
+.info_cty_m{
+  .dark &{
+    color: #000;
+  }
+  img{
+    width: 200px;
+  }
+  p{
+    font-size: 13px;
+  }
+}
+.box_footer_bct{
+  img{
+    height: 50px;
+  }
+}
+.box_footer_add_m{
+  font-size: 13px;
+  .dark &{
+    color: #000;
+  }
+  .name{
+    font-size: 14px;
+    font-family:'Roboto Medium', sans-serif;
+    .dark &{
+      color: #000;
+    }
+  }
+}
 .title_footer_1{
   font-size: 15px;
   color: #000000;
@@ -15,12 +50,18 @@
     >a{
       font-size: 13px;
       color: #4d4d4d;
+      .dark &{
+        color: #FFFFFF;
+      }
     }
   }
 }
 .footer_address{
   font-size: 13px;
   color: #000;
+  .dark &{
+    color: #fff;
+  }
   ul{
     li{
       .uk-icon{
@@ -33,16 +74,43 @@
   .uk-legend{
     color: #4d4d4d;
     font-size: 13px;
+    .dark &{
+      color: #FFFFFF;
+      @media(max-width:640px){
+        color: #000000;
+      }
+    }
   }
   .uk-input{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     font-size: 13px;
+    .dark &{
+      background-color: #fff;
+      color: #000;
+      border-color: #FFFFFF;
+      &::placeholder{
+        color: #000;
+      }
+    }
   }
   .uk-button{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 0 12px;
     font-size: 13px;
+    .dark &{
+      background-color: #1A1A1A;
+      border-color: #1A1A1A;
+      color: #FFFFFF;
+    }
+  }
+}
+.footer_social{
+  .uk-icon-button{
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 25px;
+    height: 25px;
   }
 }

@@ -12,7 +12,7 @@
         <div class="box_content_main uk-margin">
             <div class="uk-position-relative uk-position-z-index box_stt">
                 <div class="uk-padding-small">
-                    <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-small" uk-grid>
+                    <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-small uk-grid" uk-grid>
                         <?php
                         $data = array(
                             array(

@@ -1,8 +1,19 @@
 <aside class="box_sidebar_left" uk-sticky="offset: 75; media: (min-width: 960px)">
     <div class="uk-margin">
-        <h3 class="uk-text-uppercase title_fillter uk-margin-small">lọc theo giá</h3>
+        <h3 class="uk-text-uppercase title_fillter uk-margin">lọc theo giá</h3>
         <div class="uk-margin-small">
-            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+            <script>
+                deferstyle('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', 'jquery-ui-css');
+            </script>
+            <div id="slider-range" class="slider-range"></div>
+            <div class="uk-grid uk-child-width-1-2 uk-grid-small" uk-grid>
+                <div>
+                    <input type="text" class="uk-text-left uk-width-1-1 amount-min" id="amount-min" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                </div>
+                <div>
+                    <input type="text" class="uk-text-right uk-width-1-1 amount-max" id="amount-max" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                </div>
+            </div>
         </div>
     </div>
     <div class="uk-margin">

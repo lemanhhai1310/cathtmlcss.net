@@ -1,4 +1,5 @@
 <?php $data['title'] = 'Hoàng gia - Trang chủ' ?>
+<?php $light = ''; ?>
 <?php require "header.php"; ?>
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 1915:839; min-height: 300;">
 
@@ -26,7 +27,7 @@
         </div>
     </div>
     <div class="uk-container">
-        <div class="uk-margin-medium" uk-slider="autoplay: true">
+        <div class="uk-margin-medium" uk-slider="autoplay: true; autoplay-interval: 3000;">
 
             <div class="uk-position-relative">
 
@@ -67,38 +68,33 @@
 
         </div>
         <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small uk-grid" uk-grid>
+            <?php
+            $data = array(
+                array(
+                    'src' => 'images/1x/brand/vertu.jpg',
+                ),
+                array(
+                    'src' => 'images/1x/brand/dong-ho.jpg',
+                ),
+                array(
+                    'src' => 'images/1x/brand/vertu.jpg',
+                ),
+                array(
+                    'src' => 'images/1x/brand/dong-ho.jpg',
+                ),
+            );
+            foreach ($data as $key => $value): ?>
             <div>
                 <a href="catalog.php">
-                    <div class="uk-cover-container uk-transition-toggle uk-background-muted">
-                        <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/vertu.jpg" alt="" uk-cover>
-                        <canvas width="960" height="469"></canvas>
+                    <div class="uk-transition-toggle uk-overflow-hidden uk-box-shadow-medium">
+                        <div class="uk-cover-container uk-background-muted uk-transition-scale-up uk-transition-opaque">
+                            <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                            <canvas width="960" height="469"></canvas>
+                        </div>
                     </div>
                 </a>
             </div>
-            <div>
-                <a href="catalog.php">
-                    <div class="uk-cover-container uk-transition-toggle uk-background-muted">
-                        <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/dong-ho.jpg" alt="" uk-cover>
-                        <canvas width="960" height="469"></canvas>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="catalog.php">
-                    <div class="uk-cover-container uk-transition-toggle uk-background-muted">
-                        <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/vertu.jpg" alt="" uk-cover>
-                        <canvas width="960" height="469"></canvas>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="catalog.php">
-                    <div class="uk-cover-container uk-transition-toggle uk-background-muted">
-                        <img class="lazyload uk-transition-scale-up uk-transition-opaque uk-position-cover" data-src="images/1x/brand/dong-ho.jpg" alt="" uk-cover>
-                        <canvas width="960" height="469"></canvas>
-                    </div>
-                </a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
@@ -137,6 +133,11 @@
                                 'src' => 'https://cdn.tgdd.vn/Products/Images/44/106875/apple-macbook-air-mqd32sa-a-i5-5350u-400x400.jpg',
                                 'title' => 'Xiaomi Redmi Note 7 64GB Trắng',
                                 'price' => 4490000,
+                            ),
+                            array(
+                                'src' => 'https://cdn.tgdd.vn/Products/Images/44/195381/hp-15-da0443tx-i3-7020u-4gb-1tb-mx110-win10-5sl06-avatar-1-400x400.jpg',
+                                'title' => 'Vivo S1',
+                                'price' => 6690000,
                             ),
                         );
                         foreach ($data as $key => $value): ?>
@@ -384,26 +385,26 @@
             $data = array(
                 array(
                     'src' => 'https://sohanews.sohacdn.com/zoom/434_271/2019/8/24/us-chamber-of-commerce-1566618679690186911705-crop-15666186856702003381502.jpg',
-                    'title' => 'Doanh nghiệp Mỹ từ chối yêu cầu rút khỏi Trung Quốc của Tổng thống Trump',
+                    'title' => 'CAVIAR IPHONE MEDINA MOSQUE REVIEW',
                 ),
                 array(
                     'src' => 'https://photo2.tinhte.vn/data/attachment-files/2019/08/4756248_COVER_o_nhiem_tinhte.jpg',
-                    'title' => 'Các hạt bụi ô nhiễm trong không khí vẫn có thể giết người ngay khi ở nồng độ thấp',
+                    'title' => 'CAVIAR IPHONE MEDINA MOSQUE REVIEW',
                 ),
                 array(
                     'src' => 'https://sohanews.sohacdn.com/zoom/412_259/2019/8/24/051019ustariff960x540-15665822289131811226664-crop-15665822402171518357976.jpg',
-                    'title' => 'CNBC: 75 tỉ USD hàng hóa bị TQ cho "lên thớt", ông Trump liền giáng cấp ông Tập từ bạn thành thù - Điềm rất xấu?',
+                    'title' => 'CAVIAR IPHONE MEDINA MOSQUE REVIEW',
                 ),
                 array(
                     'src' => 'https://sohanews.sohacdn.com/zoom/412_259/2019/8/23/4c8a-icmpfxa9072199-15665291248851409417056-crop-1566529135896270592543.jpg',
-                    'title' => 'Báo Trung Quốc nói gì về tiêm kích Su-30MK2 hiện đại nhất của Không quân Việt Nam?',
+                    'title' => 'CAVIAR IPHONE MEDINA MOSQUE REVIEW',
                 ),
             );
             foreach ($data as $key => $value): ?>
                 <div>
-                    <div class="uk-box-shadow-small">
-                        <div class="uk-cover-container uk-transition-toggle uk-margin-small uk-background-muted">
-                            <img class="uk-transition-scale-up uk-transition-opaque uk-position-cover lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                    <div class="uk-box-shadow-medium uk-transition-toggle uk-overflow-hidden">
+                        <div class="uk-cover-container uk-background-muted uk-transition-scale-up uk-transition-opaque">
+                            <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
                             <canvas width="960" height="589"></canvas>
                         </div>
                     </div>

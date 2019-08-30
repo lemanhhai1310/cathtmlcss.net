@@ -16,16 +16,18 @@
         !function(e,o,t,n,i,r){function c(e,t){r?n(e,t||80):i.push(e,t)}function f(e,t,n,i){return t&&o.getElementById(t)||(i=o.createElement(e||'SCRIPT'),t&&(i.id=t),n&&(i.onload=n),o.head.appendChild(i)),i||{}}r=/p/.test(o.readyState),c.dom=f,e.defer=c,e.addEventListener('on'+t in e?t:'load',function(){for(r=t;i[0];)c(i.shift(),i.shift())}),e.deferscript=function(t,n,e,i){c(function(e){f(!1,n,i).src=t},e)}}(this,document,'pageshow',setTimeout,[]),function(u,t){var a='IntersectionObserver',d='src',l='lazied',h='data-',p=h+l,m='forEach',y='getAttribute',c='appendChild',b=Function(),v=u.defer||b,f=v.dom||b;function g(e){return[].slice.call(t.querySelectorAll(e))}function e(s){return function(e,t,o,r,c,f){v(function(n,t){function i(n){!1!==(r||b).call(n,n)&&(f||['srcset',d,'data','style'])[m](function(e,t){(t=n[y](h+e))&&(n[e]=t)}),n.className+=' '+(o||l)}t=a in u?(n=new u[a](function(e){e[m](function(e,t){e.isIntersecting&&(t=e.target)&&(n.unobserve(t),i(t))})},c)).observe.bind(n):i,g(e||s+'['+h+d+']:not(['+p+'])')[m](function(e){e[y](p)||(e.setAttribute(p,s),t(e))})},t)}}function n(){var r=t.head;v(function(t,n,i,o){t=[].concat(g((i='script[type=deferjs]')+':not('+(o='[async]')+')'),g(i+o)),function e(){if(0!=t){for(o in n=f(),(i=t.shift()).parentNode.removeChild(i),i.removeAttribute('type'),i)'string'==typeof i[o]&&n[o]!=i[o]&&(n[o]=i[o]);n[d]&&!n.hasAttribute('async')?(n.onload=n.onerror=e,r[c](n)):(r[c](n),v(e,.1))}}()},8)}v.all=n,u.deferstyle=function(t,n,e,i){v(function(e){(e=f('LINK',n,i)).rel='stylesheet',e.href=t},e)},u.deferimg=e('IMG'),u.deferiframe=e('IFRAME'),n()}(this,document);
         // Lazyload file Javascript
         deferscript('js/app-dist.js', 'app-js');
+        deferscript('https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0', 'facebook-js', 3000);
         // Lazyload image
         deferimg('img[data-src],picture,video,audio');
 
         deferstyle('assets/font-awesome-4.7.0/css/font-awesome.min.css', 'font-awesome',3000);
-        deferstyle('css/_fonts.css', 'fonts',2000);
+        deferstyle('css/_fonts.css', 'fonts');
 
         deferiframe('iframe[data-src],[data-style],iframe');
     </script>
 </head>
-<body class="<?= (isset($dark)) ? 'dark' : '' ?>">
+<body class="<?= (isset($dark)) ? 'dark uk-light' : '' ?>">
+<div id="fb-root"></div>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
 <header id="header" class="uk-visible@m uk-position-z-index" uk-sticky="animation: uk-animation-slide-top; top: 600">
     <div class="top_header_menu uk-background-muted uk-visible@m">
@@ -33,6 +35,12 @@
             <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-right">
                     <ul class="uk-subnav menu_top uk-subnav-divider uk-margin-remove">
+                        <?php if(isset($dark)): ?>
+                            <li><a href="detail-light.php">Light</a></li>
+                        <?php endif; ?>
+                        <?php if(isset($light)): ?>
+                            <li><a href="detail-dark.php">Dark</a></li>
+                        <?php endif; ?>
                         <li><a href="#">Trả góp 0%</a></li>
                         <li><a href="#">So sánh sản phẩm</a></li>
                         <li><a href="#">Tin tức</a></li>
@@ -105,20 +113,26 @@
                             <ul class="uk-navbar-nav">
                                 <li>
                                     <a href="">
-                                        <img src="images/1x/bao-hanh.png" alt="">
-                                        <span class="uk-text-middle uk-margin-small-left">Bảo hành uy tín</span>
+                                        <img data-src="images/icon/baohanh.svg" alt="">
+                                        <span class="uk-text-middle uk-margin-small-left uk-text-nowrap">Bảo hành uy tín</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="images/1x/tra-gop.png" alt="">
-                                        <span class="uk-text-middle uk-margin-small-left">Trả góp ưu đãi</span>
+                                        <img data-src="images/icon/tragop.svg" alt="">
+                                        <span class="uk-text-middle uk-margin-small-left uk-text-nowrap">Trả góp ưu đãi</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="images/1x/ho-tro.png" alt="">
+                                        <img data-src="images/icon/hotro.svg" alt="">
                                         <span class="uk-text-middle uk-margin-small-left uk-text-nowrap">Hỗ trợ - Tư vấn</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img data-src="images/icon/showroom.svg" alt="">
+                                        <span class="uk-text-middle uk-margin-small-left uk-text-nowrap">Bản đồ showroom</span>
                                     </a>
                                 </li>
                             </ul>
@@ -130,10 +144,19 @@
         </div>
     </div>
 </header>
+<nav class="info_mb uk-navbar-container uk-navbar uk-hidden@m" uk-navbar>
+    <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: receiver; ratio: 0.7"></span> 09357.1.9999</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: clock; ratio: 0.7"></span> 08h00 - 21h00, T2C - CN</a></li>
+        </ul>
+    </div>
+</nav>
+<?php require "menu_mobile_hoangia.php"; ?>
 <nav id="header_mb" class="uk-navbar-container uk-navbar uk-hidden@m" uk-navbar uk-sticky>
     <div class="uk-navbar-left">
         <div class="uk-navbar-item">
-            <div id="mobile_menu_toggler">
+            <div id="mobile_menu_toggler" uk-toggle="target: #menu-mobile-hoangia">
                 <div id="m_nav_menu" class="m_nav">
                     <div class="m_nav_ham button_closed" id="m_ham_1"></div>
                     <div class="m_nav_ham button_closed" id="m_ham_2"></div>
@@ -164,6 +187,5 @@
             </div>
         </div>
     </div>
-    <?php require "mobile_menu.php"; ?>
 </nav>
 <div class="uk-overlay-primary mask_menu"></div>

@@ -17,3 +17,26 @@
 .boloc{
   padding: 0 10px !important;
 }
+#slider-range{
+  height: 7px;
+  border-radius: 0;
+  border: none;
+  background-color: #c5c5c5;
+  .ui-slider-handle{
+    background-color: transparent;
+    border: none;
+    background: url("../images/1x/icon_price.png") no-repeat;
+    width: 9px;
+    height: 14px;
+    top: inherit;
+    bottom: 100%;
+    transform: translateX(4.5px);
+    &:focus{
+      outline: none;
+    }
+  }
+  .ui-slider-range{
+    background-color: #000000;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,89 @@
+/*================================[Roboto]================================*/
+@font-face{
+    font-family:'Roboto Regular';
+    src:url('Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Bold';
+    src:url('Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Light';
+    src:url('Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Light Italic';
+    src:url('Roboto/Roboto-LightItalic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Medium';
+    src:url('Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Medium Italic';
+    src:url('Roboto/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Italic';
+    src:url('Roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+/*================================[Roboto Condensed]================================*/
+@font-face{
+    font-family:'Roboto Condensed Regular';
+    src:url('Roboto Condensed/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Roboto Condensed Bold';
+    src:url('Roboto Condensed/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+/*================================[UTM]================================*/
+@font-face{
+    font-family:'UTM Avo';
+    src:url('UTM/UTM Avo.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'UTM Avo Bold';
+    src:url('UTM/UTM AvoBold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:'UTM Androgyne';
+    src:url('UTM/UTM Androgyne.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+/*================================[MS Reference Sans Serif]================================*/
+@font-face{
+    font-family:'MS Reference Sans Serif';
+    src:url('REFSAN.TTF') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+/*================================[Intro]================================*/
+@font-face{
+    font-family:'Intro';
+    src:url('Intro/Intro.otf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}

@@ -1,3 +1,16 @@
+.info_mb{
+  background-color: #E6E6E6 !important;
+  .uk-navbar-nav{
+    >li{
+      >a{
+        min-height: 36px;
+        text-transform: inherit;
+        color: #000;
+        font-size: 12.5px;
+      }
+    }
+  }
+}
 #header_mb{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   &.uk-sticky{
@@ -7,7 +20,7 @@
   }
   .uk-logo{
     img{
-      height: 25px;
+      height: 22px;
     }
   }
   .uk-navbar-item,
@@ -29,13 +42,33 @@
   z-index: 982;
   position: relative;
   background-color: #fff;
+  .dark &{
+    color: #fff;
+    background-color: transparent;
+  }
   &.uk-sticky{
     &.uk-active{
       z-index: 982;
+      .box_search{
+        .uk-input{
+          .dark &{
+            border-color: #1A1A1A;
+            color: #1A1A1A;
+            &::placeholder{
+              color: #1A1A1A;
+            }
+          }
+        }
+      }
       .center_header{
         background-color: #fff;
         padding: 10px 0;
         box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+        .txt_1{
+          .dark &{
+            color: #000 !important;
+          }
+        }
       }
       .logo_hoangia,
       .top_header_menu{
@@ -52,6 +85,9 @@
         }
         .txt_color_1{
           min-width: 207px;
+          .dark &{
+            color: #000;
+          }
         }
       }
       .bottom_header{
@@ -65,6 +101,9 @@
 }
 .top_header_menu{
   padding: 6px 0;
+  .dark &{
+    background-color: #999999;
+  }
 }
 .menu_top{
   >li{
@@ -111,6 +150,9 @@
 .txt_1{
   color: #000 !important;
   font-size: 13.5px;
+  .dark &{
+    color: #fff !important;
+  }
 }
 .center_header{
   padding: 25px 0;
@@ -131,8 +173,11 @@
           min-height: 45px;
           color: #000;
           padding-left: 0;
+          .dark &{
+            color: #fff;
+          }
           img{
-            height: 32px;
+            height: 30px;
           }
         }
       }

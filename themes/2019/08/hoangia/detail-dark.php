@@ -92,6 +92,11 @@
                     </div>
                     <?php endforeach; ?>
                 </div>
+
+                <div class="uk-visible@m uk-margin">
+                    <h4 class="title_detail_2">Video đánh giá, giới thiệu Gold Chocolate Alligator</h4>
+                    <iframe src="about:blank" data-src="https://www.youtube.com/embed/cJWHh4VBY8k?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="960" height="540" frameborder="0" allowusermedia uk-responsive uk-video="automute: true"></iframe>
+                </div>
             </div>
             <div>
                 <h1 class="title_detail_1 uk-margin">IPHONE XR - 256 GB - HÀNG CHÍNH HÃNG</h1>
@@ -100,10 +105,32 @@
                     <li><a href="#">iPhone</a></li>
                     <li><span>iPhone XR 256 GB</span></li>
                 </ul>
-                <div class="uk-padding-small box_price uk-background-muted uk-border-rounded uk-box-shadow-small uk-margin-bottom">
-                    <div class="price-detail uk-flex uk-flex-middle">
-                        <span class="uk-margin-small-right">Giá: 11.000.000</span>
-                        <label class="uk-label uk-label-warning uk-text-capitalize">Trả góp 0%</label>
+                <div class="uk-margin-small khuyenmai-dark">
+                    <span class="uk-margin-small-right uk-text-uppercase txt">khuyến mại</span>
+                    <span class="number">0</span>
+                </div>
+                <div class="uk-margin-small price-dark">
+                    <span class="uk-margin-small-right uk-text-uppercase txt">giá sản phẩm</span>
+                    <span class="number">460.000.000</span>
+                </div>
+                <div class="uk-grid uk-grid-small uk-grid-20" uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <button class="uk-button btn-dark-buy uk-button-default uk-border-rounded uk-button-large uk-width-1-1">đặt mua</button>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div class="uk-button btn-dark-buy tuvan uk-button-default uk-border-rounded uk-button-large uk-width-1-1">
+                            <div class="uk-grid uk-grid-small uk-grid-10 uk-child-width-auto uk-flex-middle" uk-grid>
+                                <div>
+                                    <img data-src="images/1x/icon_flash.png" alt="">
+                                </div>
+                                <div class="uk-flex-middle">
+                                    <span>tư vấn</span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <input class="uk-input uk-form-small uk-width-1-1" type="tel" placeholder="Nhập số điện thoại">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="box_gift uk-border-rounded uk-box-shadow-small uk-padding-small uk-margin">
@@ -123,27 +150,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="uk-margin">
-                    <a href="" class="btn_buy uk-button uk-box-shadow-small uk-light uk-border-rounded uk-button-danger uk-button-large uk-width-1-1">
-                        <h2>MUA NGAY</h2>
-                        <div>Tại cửa hàng hoặc ship COD</div>
-                    </a>
-                </div>
-                <div class="uk-margin">
-                    <a href="" class="btn_buy uk-button uk-box-shadow-small uk-light uk-border-rounded uk-button-primary uk-button-large uk-width-1-1">
-                        <h2>TRẢ GÓP</h2>
-                        <div>Visa, Mastercard, HD Saison, FE Credit</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="uk-child-width-1-2@m uk-grid-medium uk-grid" uk-grid>
-            <div>
-                <h4 class="title_detail_2">Video đánh giá, giới thiệu Gold Chocolate Alligator</h4>
-                <iframe src="about:blank" data-src="https://www.youtube.com/embed/cJWHh4VBY8k?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="960" height="540" frameborder="0" allowusermedia uk-responsive uk-video="automute: true"></iframe>
-            </div>
-            <div>
-                <h4 class="title_detail_2">Thông số kỹ thuật của Gold Chocolate Alligator</h4>
                 <table class="uk-table table_thongso uk-table-small uk-table-divider">
                     <tbody>
                     <?php
@@ -159,19 +165,23 @@
                         array('Dung lượng pin (mAh):','4000mAh'),
                     );
                     foreach ($data as $key => $value):?>
-                    <tr>
-                        <td><?= $value[0] ?></td>
-                        <td><?= $value[1] ?></td>
-                    </tr>
+                        <tr>
+                            <td><?= $value[0] ?></td>
+                            <td><?= $value[1] ?></td>
+                        </tr>
                     <?php endforeach; ?>
                     </tbody>
                 </table>
+                <div class="uk-hidden@m">
+                    <h4 class="title_detail_2">Video đánh giá, giới thiệu Gold Chocolate Alligator</h4>
+                    <iframe src="about:blank" data-src="https://www.youtube.com/embed/cJWHh4VBY8k?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="960" height="540" frameborder="0" allowusermedia uk-responsive uk-video="automute: true"></iframe>
+                </div>
             </div>
         </div>
         <div class="box_2 uk-margin">
             <div class="uk-grid-medium uk-grid" uk-grid>
                 <div class="uk-width-expand">
-                    <ul class="uk-child-width-expand@m tab_detail uk-grid-collapse" uk-grid uk-tab="connect: .content-detail">
+                    <ul class="tab_detail uk-grid-collapse" uk-grid uk-tab="connect: .content-detail">
                         <li class="uk-active"><a href="#">đánh giá chi tiết</a></li>
                         <li><a href="#">thông số kỹ thuật</a></li>
                         <li><a href="#">khách hàng</a></li>
@@ -197,9 +207,96 @@
                         <li>3</li>
                     </ul>
                 </div>
-                <div class="uk-width-1-4@m">
-                    <?php require "sidebar-right.php"; ?>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container uk-padding-remove">
+        <div class="uk-section-xsmall box-dark-1">
+            <h3 class="title uk-text-uppercase uk-text-center">có thể bạn quan tâm</h3>
+            <div uk-slider="finite: true">
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider-items uk-grid-small slide_home_sp uk-grid" uk-grid>
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/7077/194536/apple-watch-s3-gps-42mm-vien-nhom-day-cao-su-den-nt-400x400.jpg',
+                                    'title' => 'Vivo S1',
+                                    'price' => 6690000,
+                                ),
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/7077/194392/apple-watch-s4-gps-44mm-vien-nhom-day-cao-su-den-nt-400x400.jpg',
+                                    'title' => 'Samsung Galaxy A10',
+                                    'price' => 3090000,
+                                ),
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/7077/194338/apple-watch-s4-gps-44mm-vien-nhom-day-vai-hong-nt-400x400.jpg',
+                                    'title' => 'iPhone 7 Plus 32GB',
+                                    'price' => 12490000,
+                                ),
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/7077/194323/apple-watch-s4-gps-40mm-vien-nhom-mau-hong-nt-400x400.jpg',
+                                    'title' => 'Xiaomi Redmi Note 7 64GB Trắng',
+                                    'price' => 4490000,
+                                ),
+
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/42/200330/oppo-a5s-red-400x400.jpg',
+                                    'title' => 'OPPO A5s',
+                                    'price' => 3990000,
+                                ),
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/42/202268/huawei-y9-prime-2019-blue-2-400x400.jpg',
+                                    'title' => 'Huawei Y9 Prime (2019)',
+                                    'price' => 5840000,
+                                ),
+                                array(
+                                    'src' => 'https://cdn.tgdd.vn/Products/Images/522/163645/ipad-wifi-32gb-2018-thumb-33397-123-123321-600x600-400x400.jpg',
+                                    'title' => 'iPad Wifi 2018 32GB',
+                                    'price' => 7490000,
+                                ),
+                            );
+                            foreach ($data as $key => $value): ?>
+                                <li class="uk-width-3-5 uk-width-1-3@s uk-width-1-4@m">
+                                    <div class="box_1">
+                                        <a href="">
+                                            <div class="uk-background-default uk-padding">
+                                                <div class="uk-cover-container">
+                                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                                    <canvas width="960" height="960"></canvas>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="uk-margin-small uk-text-center info_sp">
+                                            <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                                            <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                                            <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                                            <div class="uk-button-group">
+                                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>

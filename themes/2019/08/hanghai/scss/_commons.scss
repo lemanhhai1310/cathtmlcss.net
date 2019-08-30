@@ -1,0 +1,125 @@
+.block_01{
+  h1{
+    font-family:'UTM Hanzel Regular';
+    font-size: 30px;
+  }
+}
+//============================================
+.dangky{
+  .uk-card-header{
+    background-color: #1a4688;
+    text-transform: uppercase;
+    color: #ffdf14;
+    font-family:'Montserrat SemiBold',sans-serif;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .uk-card-body{
+    .desc,
+    .uk-form-label{
+      color: #000;
+      font-size: 13px;
+      font-family:'Montserrat Medium',sans-serif;
+    }
+    .uk-input{
+      background-color: #fafafa;
+    }
+    .btn_select{
+      text-transform: inherit;
+      text-align: left;
+      padding-left: 10px;
+      .uk-icon{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+//============================================
+.btn_submit{
+  text-transform: inherit;
+  background-color: #0465b3;
+  min-width: 300px;
+}
+//============================================
+.tab_01{
+  margin-left: 0;
+  &:before{
+    border-bottom-color: #1a4688;
+    left: 0;
+  }
+  li{
+    padding-left: 0;
+    &.uk-active{
+      a{
+        color: #000;
+        background-color: #ffdf14;
+        border-left: 3px solid #1a4688;
+        border-bottom-color: #ffdf14;
+      }
+    }
+    a{
+      font-family:'Montserrat Bold',sans-serif;
+      font-size: 13px;
+      color: #1a4688;
+      text-transform: inherit;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: #dde3ed;
+      border-bottom-color: #1a4688;
+      @media(min-width: 960px){
+        min-width: 150px;
+      }
+    }
+  }
+}
+//============================================
+.box_2{
+  padding: 6px 12px;
+  background-color: #ffdf14;
+  border-left: 4px solid #1a4688;
+  .title{
+    font-family:'Montserrat Bold',sans-serif;
+    color: #000;
+    font-size: 16px;
+  }
+  a{
+    color: #000;
+    font-family:'Montserrat Light',sans-serif;
+  }
+}
+//============================================
+.block_03{
+  border-top: 2px solid #1a4688;
+  .uk-pagination{
+    li{
+      &.uk-active{
+        >span{
+          background: url("../images/active_pagination.png") no-repeat;
+          width: 40px;
+          height: 40px;
+          background-size: cover;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #1a4688;
+        }
+      }
+      a{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+//============================================
+
+//============================================
+
+//============================================

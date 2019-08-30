@@ -1,0 +1,35 @@
+.title_contact_1{
+  color: #1a4688;
+  font-size: 15px;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+//============================================
+.contact-add{
+  .uk-list{
+    li{
+      padding-left: 40px;
+      position: relative;
+      font-size: 13px;
+      .uk-icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+//============================================
+.form-contact-1{
+  .uk-legend{
+    font-size: 13px;
+  }
+  .uk-input,
+  .uk-textarea{
+    background-color: #f7f8f7;
+  }
+  .uk-button{
+    background-color: #0259a9;
+    font-family: 'Montserrat Bold', sans-serif;
+    text-transform: initial;
+  }
+}

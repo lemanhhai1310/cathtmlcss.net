@@ -1,0 +1,46 @@
+.box_gioithieuchung{
+  .title{
+    font-size: 16px;
+    font-family:'Montserrat SemiBold',sans-serif;
+    color: #000;
+  }
+}
+//============================================
+.box_about_02{
+  .title{
+    font-family:'Montserrat Bold',sans-serif;
+    color: #0b4789;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .desc{
+
+  }
+}
+//============================================
+.box_about_01{
+  text-align: center;
+  position: relative;
+  background-color: #ebebeb;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid #ffffff;
+    z-index: 2;
+  }
+  img{
+    width: 150px;
+  }
+  h4{
+    font-family:'Montserrat SemiBold';
+    color: #0b4789;
+    font-size: 15px;
+  }
+}
+//============================================
+
+//============================================

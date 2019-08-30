@@ -1,4 +1,5 @@
 <?php $data['title'] = 'Hoàng gia - Chi tiết Light' ?>
+<?php $light = ''; ?>
 <?php require "header.php"; ?>
 <div class="uk-section-xsmall">
     <div class="uk-container">
@@ -100,9 +101,29 @@
                     <li><span>iPhone XR 256 GB</span></li>
                 </ul>
                 <div class="uk-padding-small box_price uk-background-muted uk-border-rounded uk-box-shadow-small uk-margin-bottom">
-                    <div class="price-detail uk-flex uk-flex-middle">
+                    <div class="price-detail uk-flex uk-flex-middle uk-margin-small">
                         <span class="uk-margin-small-right">Giá: 11.000.000</span>
                         <label class="uk-label uk-label-warning uk-text-capitalize">Trả góp 0%</label>
+                    </div>
+                    <div class="uk-grid uk-child-width-auto" uk-grid>
+                        <div>
+                            <div class="price_khac">
+                                <b>Black</b>
+                                <span>9.220.000đ</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="price_khac">
+                                <b>Gray</b>
+                                <span>9.520.000đ</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="price_khac">
+                                <b>Rose</b>
+                                <span>9.820.000đ</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="box_gift uk-border-rounded uk-box-shadow-small uk-padding-small uk-margin">

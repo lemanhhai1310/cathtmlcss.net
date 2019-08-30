@@ -11,6 +11,9 @@
     transition: all .3s;
     text-decoration: none;
     font-family:'Roboto Medium',sans-serif;
+    .dark &{
+      color: #fff;
+    }
     .uk-icon{
       background-color: #F5D39A;
       border-radius: 50%;
@@ -19,6 +22,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      .dark &{
+        color: #000000;
+      }
     }
   }
   &:hover{
@@ -112,6 +118,11 @@
       font-size: 13px;
       position: relative;
       transition: all .3s;
+      .dark &{
+        &:hover{
+          color: #000;
+        }
+      }
       .uk-icon{
         position: absolute;
         right: 0;

@@ -743,10 +743,11 @@
                 <a href="#">Đăng nhập</a> / <a href="#">Đăng ký</a>
             </div>
         </div>
-        <ul class="uk-nav-default uk-nav-parent-icon mb-2" uk-nav>
+        <ul class="uk-nav-default uk-nav-parent-icon mb-2" uk-nav="toggle: .uk-icon;">
             <li class="uk-active"><a href="#">Trang chủ</a></li>
             <li class="uk-parent">
                 <a href="#">Sức Khỏe Làm Đẹp</a>
+                <span class="uk-position-center-right" uk-icon="chevron-down"></span>
                 <ul class="uk-nav-sub">
                     <li><a href="#">Trang Điểm</a></li>
                     <li>
@@ -766,7 +767,8 @@
                 </ul>
             </li>
             <li class="uk-parent">
-                <a href="#">Bé - Đồ Chơi</a>
+                <a href="https://news.zing.vn">Bé - Đồ Chơi</a>
+                <span class="uk-position-center-right" uk-icon="chevron-down"></span>
                 <ul class="uk-nav-sub">
                     <li>
                         <a href="#">Bé Ăn</a>

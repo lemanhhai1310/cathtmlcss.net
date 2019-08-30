@@ -1,0 +1,22 @@
+.slide_hover{
+  .uk-slidenav{
+    img{
+      height: 35px;
+    }
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s ease;
+  }
+  &:hover{
+    .uk-slidenav{
+      opacity: 1;
+      visibility: visible;
+      &.uk-position-center-left{
+        left: 15px;
+      }
+      &.uk-position-center-right{
+        right: 15px;
+      }
+    }
+  }
+}

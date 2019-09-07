@@ -1,0 +1,68 @@
+body{
+  font-size: 13px;
+  font-family:'Roboto Regular';
+  background-color: #131313;
+}
+.tv-container1{
+  @media(max-width: 960px){
+    padding: 0 !important;
+  }
+}
+.uk-container{
+  @media(max-width: 1366px){
+    max-width: 1100px;
+  }
+}
+.uk-container-small{
+  max-width: 1000px;
+}
+.tv-block-common{
+  background-color: #242424;
+}
+.tv-title1{
+  font-size: 22px;
+  color: #FFFFFF;
+  font-family:'Roboto Medium';
+  position: relative;
+  min-width: 100px;
+}
+.tv-title-2{
+  @extend .tv-title1;
+  margin: 0;
+  @media (max-width: 560px) {
+    font-size: 16px;
+  }
+}
+.tv-title{
+  @extend .tv-title1;
+  padding-bottom: 8px;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px !important;
+  }
+}
+.coin-title{
+  @extend .tv-title;
+  color: #000;
+  &:after{
+    background-color: #ffcf35;
+  }
+}
+.video-title{
+  @extend .tv-title;
+  &:after{
+    background-color: #8cba3f;
+  }
+}
+.tran-title{
+  @extend .tv-title;
+  &:after{
+    left: calc((100% - 60px)/2);
+    width: 60px;
+    background-color: #8cba3f;
+  }
+}

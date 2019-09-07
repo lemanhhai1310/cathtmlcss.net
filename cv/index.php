@@ -60,11 +60,27 @@
                 <div class="uk-margin">
                     <h4 class="uk-text-uppercase uk-display-inline-block cv-title-1 uk-margin-bottom">work experience</h4>
                     <div class="cv-box-1 uk-margin-medium-bottom">
+                        <h5 class="uk-margin-remove">Frontend Developer</h5>
+                        <h6 class="uk-margin-remove">AgileTech Vietnam</h6>
+                        <div class="uk-flex-middle uk-flex-between" uk-grid>
+                            <div>
+                                <time>09/2019 - Today</time>
+                            </div>
+                            <div>
+                                <address>Hanoi, Vietnam</address>
+                            </div>
+                        </div>
+                        <ul class="uk-list uk-list-bullet uk-margin-small">
+                            <li class="uk-margin-remove">Fresher ReactJS</li>
+                        </ul>
+                        <div class="uk-margin-small"><span style="color: #b0564e; font-size: 13px;">Contact:</span> Nguyễn Mạnh Thắng - thang@agiletech.vn</div>
+                    </div>
+                    <div class="cv-box-1 uk-margin-medium-bottom">
                         <h5 class="uk-margin-remove">Freelancer</h5>
                         <h6 class="uk-margin-remove"></h6>
                         <div class="uk-flex-middle uk-flex-between" uk-grid>
                             <div>
-                                <time>05/2019 - Today</time>
+                                <time>05/2019 - 09/2019</time>
                             </div>
                             <div>
                                 <address>Hanoi, Vietnam</address>
@@ -208,18 +224,18 @@
                 <div class="uk-margin uk-grid-small uk-child-width-auto cv-skill-grid" uk-grid>
                     <?php
                     $data = array(
-                        'Codeigniter',
-                        'Javascript',
-                        'jQuery',
                         'React JS',
-                        'HTML5',
+                        'HTML/CSS',
                         'CSS3',
                         'SCSS',
                         'UIkit',
+                        'Wordpress',
+                        'Codeigniter',
+                        'Javascript',
+                        'jQuery',
+                        'HTML5',
                         'Bootstrap',
                         'SQL',
-                        'Wordpress',
-                        'HTML/CSS',
                     );
                     foreach ($data as $k1 => $v1){?>
                         <div><button class="uk-button uk-button-default cv-btn-1 uk-border-pill"><?= $v1; ?></button></div>

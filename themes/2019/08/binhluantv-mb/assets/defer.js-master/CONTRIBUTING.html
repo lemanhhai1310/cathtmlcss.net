@@ -1,0 +1,301 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>CONTRIBUTING.md</title>
+      </head>
+      <body>
+        <h1 id="contributing">Contributing</h1>
+<h2 id="how-do-i-a-name-toc-a-">How do I... <a name="toc"></a></h2>
+<ul>
+<li><a href="#introduction">Use This Guide</a>?</li>
+<li>Ask or Say Something? 🤔🐛😱<ul>
+<li><a href="#request-support">Request Support</a></li>
+<li><a href="#report-an-error-or-bug">Report an Error or Bug</a></li>
+<li><a href="#request-a-feature">Request a Feature</a></li>
+</ul>
+</li>
+<li>Make Something? 🤓👩🏽‍💻📜🍳<ul>
+<li><a href="#project-setup">Project Setup</a></li>
+<li><a href="#contribute-documentation">Contribute Documentation</a></li>
+<li><a href="#contribute-code">Contribute Code</a></li>
+</ul>
+</li>
+<li>Manage Something ✅🙆🏼💃👔<ul>
+<li><a href="#provide-support-on-issues">Provide Support on Issues</a></li>
+<li><a href="#label-issues">Label Issues</a></li>
+<li><a href="#clean-up-issues-and-prs">Clean Up Issues and PRs</a></li>
+<li><a href="#review-pull-requests">Review Pull Requests</a></li>
+<li><a href="#merge-pull-requests">Merge Pull Requests</a></li>
+<li><a href="#tag-a-release">Tag a Release</a></li>
+<li><a href="#join-the-project-team">Join the Project Team</a></li>
+</ul>
+</li>
+<li>Add a Guide Like This One <a href="#attribution">To My Project</a>? 🤖😻👻</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Thank you so much for your interest in contributing!. All types of contributions are encouraged and valued. See the <a href="#toc">table of contents</a> for different ways to help and details about how this project handles them!📝</p>
+<p>Please make sure to read the relevant section before making your contribution! It will make it a lot easier for us maintainers to make the most of it and smooth out the experience for all involved. 💚</p>
+<p>The <a href="#join-the-project-team">Project Team</a> looks forward to your contributions. 🙌🏾✨</p>
+<h2 id="request-support">Request Support</h2>
+<p>If you have a question about this project, how to use it, or just need clarification about something:</p>
+<ul>
+<li>Open an Issue at <a href="https://github.com/shinsenter/defer.js/issues">https://github.com/shinsenter/defer.js/issues</a></li>
+<li>Provide as much context as you can about what you&#39;re running into.</li>
+<li>Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.</li>
+</ul>
+<p>Once it&#39;s filed:</p>
+<ul>
+<li>The project team will <a href="#label-issues">label the issue</a>.</li>
+<li>Someone will try to have a response soon.</li>
+<li>If you or the maintainers don&#39;t respond to an issue for 30 days, the <a href="#clean-up-issues-and-prs">issue will be closed</a>. If you want to come back to it, reply (once, please), and we&#39;ll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.</li>
+</ul>
+<h2 id="report-an-error-or-bug">Report an Error or Bug</h2>
+<p>If you run into an error or bug with the project:</p>
+<ul>
+<li>Open an Issue at <a href="https://github.com/shinsenter/defer.js/issues">https://github.com/shinsenter/defer.js/issues</a></li>
+<li>Include <em>reproduction steps</em> that someone else can follow to recreate the bug or error on their own.</li>
+<li>Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.</li>
+</ul>
+<p>Once it&#39;s filed:</p>
+<ul>
+<li>The project team will <a href="#label-issues">label the issue</a>.</li>
+<li>A team member will try to reproduce the issue with your provided steps. If there are no repro steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as <code>needs-repro</code>. Bugs with the <code>needs-repro</code> tag will not be addressed until they are reproduced.</li>
+<li>If the team is able to reproduce the issue, it will be marked <code>needs-fix</code>, as well as possibly other tags (such as <code>critical</code>), and the issue will be left to be <a href="#contribute-code">implemented by someone</a>.</li>
+<li>If you or the maintainers don&#39;t respond to an issue for 30 days, the <a href="#clean-up-issues-and-prs">issue will be closed</a>. If you want to come back to it, reply (once, please), and we&#39;ll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.</li>
+<li><code>critical</code> issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.</li>
+</ul>
+<h2 id="request-a-feature">Request a Feature</h2>
+<p>If the project doesn&#39;t do something you need or want it to do:</p>
+<ul>
+<li>Open an Issue at <a href="https://github.com/shinsenter/defer.js/issues">https://github.com/shinsenter/defer.js/issues</a></li>
+<li>Provide as much context as you can about what you&#39;re running into.</li>
+<li>Please try and be clear about why existing features and alternatives would not work for you.</li>
+</ul>
+<p>Once it&#39;s filed:</p>
+<ul>
+<li>The project team will <a href="#label-issues">label the issue</a>.</li>
+<li>The project team will evaluate the feature request, possibly asking you more questions to understand its purpose and any relevant requirements. If the issue is closed, the team will convey their reasoning and suggest an alternative path forward.</li>
+<li>If the feature request is accepted, it will be marked for implementation with <code>feature-accepted</code>, which can then be done by either by a core team member or by anyone in the community who wants to <a href="#contribute-code">contribute code</a>.</li>
+</ul>
+<p>Note: The team is unlikely to be able to accept every single feature request that is filed. Please understand if they need to say no.</p>
+<h2 id="project-setup">Project Setup</h2>
+<p>So you wanna contribute some code! That&#39;s great! This project uses GitHub Pull Requests to manage contributions, so <a href="https://guides.github.com/activities/forking">read up on how to fork a GitHub project and file a PR</a> if you&#39;ve never done it before.</p>
+<p>If this seems like a lot or you aren&#39;t able to do all this setup, you might also be able to <a href="https://help.github.com/articles/editing-files-in-another-user-s-repository/">edit the files directly</a> without having to do any of this setup. Yes, <a href="#contribute-code">even code</a>.</p>
+<p>If you want to go the usual route and run the project locally, though:</p>
+<ul>
+<li><a href="https://nodejs.org/en/download/">Install Node.js</a></li>
+<li><a href="https://guides.github.com/activities/forking/#fork">Fork the project</a></li>
+</ul>
+<p>Then in your terminal:</p>
+<ul>
+<li><code>cd path/to/your/clone</code></li>
+<li><code>npm install</code></li>
+<li><code>npm test</code></li>
+</ul>
+<p>And you should be ready to go!</p>
+<h2 id="contribute-documentation">Contribute Documentation</h2>
+<p>Documentation is a super important, critical part of this project. Docs are how we keep track of what we&#39;re doing, how, and why. It&#39;s how we stay on the same page about our policies. And it&#39;s how we tell others everything they need in order to be able to use this project -- or contribute to it. So thank you in advance.</p>
+<p>Documentation contributions of any size are welcome! Feel free to file a PR even if you&#39;re just rewording a sentence to be more clear, or fixing a spelling mistake!</p>
+<p>To contribute documentation:</p>
+<ul>
+<li><a href="#project-setup">Set up the project</a>.</li>
+<li>Edit or add any relevant documentation.</li>
+<li>Make sure your changes are formatted correctly and consistently with the rest of the documentation.</li>
+<li>Re-read what you wrote, and run a spellchecker on it to make sure you didn&#39;t miss anything.</li>
+<li>Write clear, concise commit message(s) using <a href="https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md">conventional-changelog format</a>. Documentation commits should use <code>docs(&lt;component&gt;): &lt;message&gt;</code>.</li>
+<li>Go to <a href="https://github.com/shinsenter/defer.js/pulls">https://github.com/shinsenter/defer.js/pulls</a> and open a new pull request with your changes.</li>
+<li>If your PR is connected to an open issue, add a line in your PR&#39;s description that says <code>Fixes: #123</code>, where <code>#123</code> is the number of the issue you&#39;re fixing.</li>
+</ul>
+<p>Once you&#39;ve filed the PR:</p>
+<ul>
+<li>One or more maintainers will use GitHub&#39;s review feature to review your PR.</li>
+<li>If the maintainer asks for any changes, edit your changes, push, and ask for another review.</li>
+<li>If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won&#39;t be accepting the changes. That&#39;s ok! We still really appreciate you taking the time to do it, and we don&#39;t take that lightly. 💚</li>
+<li>If your PR gets accepted, it will be marked as such, and merged into the <code>latest</code> branch soon after. Your contribution will be distributed to the masses next time the maintainers <a href="#tag-a-release">tag a release</a></li>
+</ul>
+<h2 id="contribute-code">Contribute Code</h2>
+<p>We like code commits a lot! They&#39;re super handy, and they keep the project going and doing the work it needs to do to be useful to others.</p>
+<p>Code contributions of just about any size are acceptable!</p>
+<p>The main difference between code contributions and documentation contributions is that contributing code requires inclusion of relevant tests for the code being added or changed. Contributions without accompanying tests will be held off until a test is added, unless the maintainers consider the specific tests to be either impossible, or way too much of a burden for such a contribution.</p>
+<p>To contribute code:</p>
+<ul>
+<li><a href="#project-setup">Set up the project</a>.</li>
+<li>Make any necessary changes to the source code.</li>
+<li>Include any <a href="#contribute-documentation">additional documentation</a> the changes might need.</li>
+<li>Write tests that verify that your contribution works as expected.</li>
+<li>Write clear, concise commit message(s) using <a href="https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md">conventional-changelog format</a>.</li>
+<li>Dependency updates, additions, or removals must be in individual commits, and the message must use the format: <code>&lt;prefix&gt;(deps): PKG@VERSION</code>, where <code>&lt;prefix&gt;</code> is any of the usual <code>conventional-changelog</code> prefixes, at your discretion.</li>
+<li>Go to <a href="https://github.com/shinsenter/defer.js/pulls">https://github.com/shinsenter/defer.js/pulls</a> and open a new pull request with your changes.</li>
+<li>If your PR is connected to an open issue, add a line in your PR&#39;s description that says <code>Fixes: #123</code>, where <code>#123</code> is the number of the issue you&#39;re fixing.</li>
+</ul>
+<p>Once you&#39;ve filed the PR:</p>
+<ul>
+<li>Barring special circumstances, maintainers will not review PRs until all checks pass (Travis, AppVeyor, etc).</li>
+<li>One or more maintainers will use GitHub&#39;s review feature to review your PR.</li>
+<li>If the maintainer asks for any changes, edit your changes, push, and ask for another review. Additional tags (such as <code>needs-tests</code>) will be added depending on the review.</li>
+<li>If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won&#39;t be accepting the changes. That&#39;s ok! We still really appreciate you taking the time to do it, and we don&#39;t take that lightly. 💚</li>
+<li>If your PR gets accepted, it will be marked as such, and merged into the <code>latest</code> branch soon after. Your contribution will be distributed to the masses next time the maintainers <a href="#tag-a-release">tag a release</a></li>
+</ul>
+<h2 id="provide-support-on-issues">Provide Support on Issues</h2>
+<p><a href="#join-the-project-team">Needs Collaborator</a>: none</p>
+<p>Helping out other users with their questions is a really awesome way of contributing to any community. It&#39;s not uncommon for most of the issues on an open source projects being support-related questions by users trying to understand something they ran into, or find their way around a known bug.</p>
+<p>Sometimes, the <code>support</code> label will be added to things that turn out to actually be other things, like bugs or feature requests. In that case, suss out the details with the person who filed the original issue, add a comment explaining what the bug is, and change the label from <code>support</code> to <code>bug</code> or <code>feature</code>. If you can&#39;t do this yourself, @mention a maintainer so they can do it.</p>
+<p>In order to help other folks out with their questions:</p>
+<ul>
+<li>Go to the issue tracker and <a href="https://github.com/shinsenter/defer.js/issues?q=is%3Aopen+is%3Aissue+label%3Asupport">filter open issues by the <code>support</code> label</a>.</li>
+<li>Read through the list until you find something that you&#39;re familiar enough with to give an answer to.</li>
+<li>Respond to the issue with whatever details are needed to clarify the question, or get more details about what&#39;s going on.</li>
+<li>Once the discussion wraps up and things are clarified, either close the issue, or ask the original issue filer (or a maintainer) to close it for you.</li>
+</ul>
+<p>Some notes on picking up support issues:</p>
+<ul>
+<li>Avoid responding to issues you don&#39;t know you can answer accurately.</li>
+<li>As much as possible, try to refer to past issues with accepted answers. Link to them from your replies with the <code>#123</code> format.</li>
+<li>Be kind and patient with users -- often, folks who have run into confusing things might be upset or impatient. This is ok. Try to understand where they&#39;re coming from, and if you&#39;re too uncomfortable with the tone, feel free to stay away or withdraw from the issue. (note: if the user is outright hostile or is violating the CoC, <a href="CODE_OF_CONDUCT.md">refer to the Code of Conduct</a> to resolve the conflict).</li>
+</ul>
+<h2 id="label-issues">Label Issues</h2>
+<p><a href="#join-the-project-team">Needs Collaborator</a>: Issue Tracker</p>
+<p>One of the most important tasks in handling issues is labeling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and easily.</p>
+<p>In order to label issues, <a href="https://github.com/shinsenter/defer.js/issues?q=is%3Aopen+is%3Aissue+no%3Alabel">open up the list of unlabeled issues</a> and, <strong>from newest to oldest</strong>, read through each one and apply issue labels according to the table below. If you&#39;re unsure about what label to apply, skip the issue and try the next one: don&#39;t feel obligated to label each and every issue yourself!</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Apply When</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bug</code></td>
+<td>Cases where the code (or documentation) is behaving in a way it wasn&#39;t intended to.</td>
+<td>If something is happening that surprises the <em>user</em> but does not go against the way the code is designed, it should use the <code>enhancement</code> label.</td>
+</tr>
+<tr>
+<td><code>critical</code></td>
+<td>Added to <code>bug</code> issues if the problem described makes the code completely unusable in a common situation.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>documentation</code></td>
+<td>Added to issues or pull requests that affect any of the documentation for the project.</td>
+<td>Can be combined with other labels, such as <code>bug</code> or <code>enhancement</code>.</td>
+</tr>
+<tr>
+<td><code>duplicate</code></td>
+<td>Added to issues or PRs that refer to the exact same issue as another one that&#39;s been previously labeled.</td>
+<td>Duplicate issues should be marked and closed right away, with a message referencing the issue it&#39;s a duplicate of (with <code>#123</code>)</td>
+</tr>
+<tr>
+<td><code>enhancement</code></td>
+<td>Added to <a href="#request-a-feature">feature requests</a>, PRs, or documentation issues that are purely additive: the code or docs currently work as expected, but a change is being requested or suggested.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>help wanted</code></td>
+<td>Applied by <a href="#join-the-project-team">Committers</a> to issues and PRs that they would like to get outside help for. Generally, this means it&#39;s lower priority for the maintainer team to itself implement, but that the community is encouraged to pick up if they so desire</td>
+<td>Never applied on first-pass labeling.</td>
+</tr>
+<tr>
+<td><code>in-progress</code></td>
+<td>Applied by <a href="#join-the-project-team">Committers</a> to PRs that are pending some work before they&#39;re ready for review.</td>
+<td>The original PR submitter should @mention the team member that applied the label once the PR is complete.</td>
+</tr>
+<tr>
+<td><code>performance</code></td>
+<td>This issue or PR is directly related to improving performance.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>refactor</code></td>
+<td>Added to issues or PRs that deal with cleaning up or modifying the project for the betterment of it.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>starter</code></td>
+<td>Applied by <a href="#join-the-project-team">Committers</a> to issues that they consider good introductions to the project for people who have not contributed before. These are not necessarily &quot;easy&quot;, but rather focused around how much context is necessary in order to understand what needs to be done for this project in particular.</td>
+<td>Existing project members are expected to stay away from these unless they increase in priority.</td>
+</tr>
+<tr>
+<td><code>support</code></td>
+<td>This issue is either asking a question about how to use the project, clarifying the reason for unexpected behavior, or possibly reporting a <code>bug</code> but does not have enough detail yet to determine whether it would count as such.</td>
+<td>The label should be switched to <code>bug</code> if reliable reproduction steps are provided. Issues primarily with unintended configurations of a user&#39;s environment are not considered bugs, even if they cause crashes.</td>
+</tr>
+<tr>
+<td><code>tests</code></td>
+<td>This issue or PR either requests or adds primarily tests to the project.</td>
+<td>If a PR is pending tests, that will be handled through the <a href="#review-pull-requests">PR review process</a></td>
+</tr>
+<tr>
+<td><code>wontfix</code></td>
+<td>Labelers may apply this label to issues that clearly have nothing at all to do with the project or are otherwise entirely outside of its scope/sphere of influence. <a href="#join-the-project-team">Committers</a> may apply this label and close an issue or PR if they decide to pass on an otherwise relevant issue.</td>
+<td>The issue or PR should be closed as soon as the label is applied, and a clear explanation provided of why the label was used. Contributors are free to contest the labeling, but the decision ultimately falls on committers as to whether to accept something or not.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clean-up-issues-and-prs">Clean Up Issues and PRs</h2>
+<p><a href="#join-the-project-team">Needs Collaborator</a>: Issue Tracker</p>
+<p>Issues and PRs can go stale after a while. Maybe they&#39;re abandoned. Maybe the team will just plain not have time to address them any time soon.</p>
+<p>In these cases, they should be closed until they&#39;re brought up again or the interaction starts over.</p>
+<p>To clean up issues and PRs:</p>
+<ul>
+<li>Search the issue tracker for issues or PRs, and add the term <code>updated:&lt;=YYYY-MM-DD</code>, where the date is 30 days before today.</li>
+<li>Go through each issue <em>from oldest to newest</em>, and close them if <strong>all of the following are true</strong>:<ul>
+<li>not opened by a maintainer</li>
+<li>not marked as <code>critical</code></li>
+<li>not marked as <code>starter</code> or <code>help wanted</code> (these might stick around for a while, in general, as they&#39;re intended to be available)</li>
+<li>no explicit messages in the comments asking for it to be left open</li>
+<li>does not belong to a milestone</li>
+</ul>
+</li>
+<li>Leave a message when closing saying &quot;Cleaning up stale issue. Please reopen or ping us if and when you&#39;re ready to resume this. See <a href="https://github.com/shinsenter/defer.js/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs">https://github.com/shinsenter/defer.js/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs</a> for more details.&quot;</li>
+</ul>
+<h2 id="review-pull-requests">Review Pull Requests</h2>
+<p><a href="#join-the-project-team">Needs Collaborator</a>: Issue Tracker</p>
+<p>While anyone can comment on a PR, add feedback, etc, PRs are only <em>approved</em> by team members with Issue Tracker or higher permissions.</p>
+<p>PR reviews use <a href="https://help.github.com/articles/about-pull-request-reviews/">GitHub&#39;s own review feature</a>, which manages comments, approval, and review iteration.</p>
+<p>Some notes:</p>
+<ul>
+<li>You may ask for minor changes (&quot;nitpicks&quot;), but consider whether they are really blockers to merging: try to err on the side of &quot;approve, with comments&quot;.</li>
+<li><em>ALL PULL REQUESTS</em> should be covered by a test: either by a previously-failing test, an existing test that covers the entire functionality of the submitted code, or new tests to verify any new/changed behavior. All tests must also pass and follow established conventions. Test coverage should not drop, unless the specific case is considered reasonable by maintainers.</li>
+<li>Please make sure you&#39;re familiar with the code or documentation being updated, unless it&#39;s a minor change (spellchecking, minor formatting, etc). You may @mention another project member who you think is better suited for the review, but still provide a non-approving review of your own.</li>
+<li>Be extra kind: people who submit code/doc contributions are putting themselves in a pretty vulnerable position, and have put time and care into what they&#39;ve done (even if that&#39;s not obvious to you!) -- always respond with respect, be understanding, but don&#39;t feel like you need to sacrifice your standards for their sake, either. Just don&#39;t be a jerk about it?</li>
+</ul>
+<h2 id="merge-pull-requests">Merge Pull Requests</h2>
+<p><a href="#join-the-project-team">Needs Collaborator</a>: Committer</p>
+<p>TBD - need to hash out a bit more of this process.</p>
+<h2 id="tag-a-release">Tag A Release</h2>
+<p><a href="#join-the-project-team">Needs Collaborator</a>: Committer</p>
+<p>TBD - need to hash out a bit more of this process. The most important bit here is probably that all tests must pass, and tags must use <a href="https://semver.org">semver</a>.</p>
+<h2 id="join-the-project-team">Join the Project Team</h2>
+<h3 id="ways-to-join">Ways to Join</h3>
+<p>There are many ways to contribute! Most of them don&#39;t require any official status unless otherwise noted. That said, there&#39;s a couple of positions that grant special repository abilities, and this section describes how they&#39;re granted and what they do.</p>
+<p>All of the below positions are granted based on the project team&#39;s needs, as well as their consensus opinion about whether they would like to work with the person and think that they would fit well into that position. The process is relatively informal, and it&#39;s likely that people who express interest in participating can just be granted the permissions they&#39;d like.</p>
+<p>You can spot a collaborator on the repo by looking for the <code>[Collaborator]</code> or <code>[Owner]</code> tags next to their names.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Issue Tracker</td>
+<td>Granted to contributors who express a strong interest in spending time on the project&#39;s issue tracker. These tasks are mainly <a href="#label-issues">labeling issues</a>, <a href="#clean-up-issues-and-prs">cleaning up old ones</a>, and <a href="#review-pull-requests">reviewing pull requests</a>, as well as all the usual things non-team-member contributors can do. Issue handlers should not merge pull requests, tag releases, or directly commit code themselves: that should still be done through the usual pull request process. Becoming an Issue Handler means the project team trusts you to understand enough of the team&#39;s process and context to implement it on the issue tracker.</td>
+</tr>
+<tr>
+<td>Committer</td>
+<td>Granted to contributors who want to handle the actual pull request merges, tagging new versions, etc. Committers should have a good level of familiarity with the codebase, and enough context to understand the implications of various changes, as well as a good sense of the will and expectations of the project team.</td>
+</tr>
+<tr>
+<td>Admin/Owner</td>
+<td>Granted to people ultimately responsible for the project, its community, etc.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="attribution">Attribution</h2>
+<p>This guide was generated using the WeAllJS <code>CONTRIBUTING.md</code> generator. <a href="https://npm.im/weallcontribute">Make your own</a>!</p>
+
+      </body>
+    </html>

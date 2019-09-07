@@ -11,11 +11,17 @@
   }
   .catalog{
     font-size: 12px;
+    .mb &{
+      font-size: 10px;
+    }
   }
   .title{
     font-size: 16px;
     margin-top: 0 !important;
     font-family:'Roboto Medium';
+    .mb &{
+      font-size: 14px;
+    }
     a{
       color: #666666;
       .dark &{
@@ -25,10 +31,18 @@
   }
   .price{
     font-size: 15px;
+    .mb &{
+      font-size: 13px;
+    }
   }
   .uk-button{
     font-size: 13px;
     min-width: 78px;
+    .mb &{
+      font-size: 11px;
+      line-height: 25px;
+      height: 25px !important;
+    }
     &.uk-button-secondary{
       background-color: #666666;
       .dark &{

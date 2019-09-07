@@ -1,2 +1,2 @@
 <?php
-phpinfo();
+header("Location: https://cathtmlcss.net/cv/");

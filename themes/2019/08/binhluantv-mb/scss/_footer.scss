@@ -1,0 +1,51 @@
+#tv-footer{
+  background-color: #000000;
+  .top{
+    .box_f_1{
+      .uk-icon-button{
+        background-color: #818181;
+        width: 30px;
+        height: 30px;
+        svg{
+          color: #000000;
+        }
+      }
+    }
+    .box_f_2{
+      img{
+
+      }
+      span{
+        color: #ffffff;
+        a{
+          color: #8cba3f;
+        }
+      }
+    }
+  }
+  .center{
+    background-color: #131313;
+    .uk-list{
+      li{
+        a{
+          color: #818181;
+        }
+      }
+    }
+  }
+  .bottom{
+    .copyright{
+      color: #818181;
+      a{
+        color: #ffffff;
+      }
+    }
+    .dmca{
+      text-align: center;
+      figcaption{
+        font-size: 12px;
+        text-align: left;
+      }
+    }
+  }
+}

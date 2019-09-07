@@ -105,7 +105,7 @@
             <hr class="uk-position-center-left uk-margin-remove uk-position-center-right">
         </div>
     </div>
-    <div class="uk-container uk-padding-remove">
+    <div class="uk-container uk-padding-remove uk-visible@m">
         <div uk-slider="finite: true">
 
             <div class="uk-position-relative">
@@ -181,6 +181,84 @@
 
         </div>
     </div>
+    <div class="uk-container uk-hidden@m">
+        <div class="uk-grid-small uk-grid" uk-grid>
+            <div class="uk-width-2-5">
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                );
+                foreach ($data as $key => $value): ?>
+                    <div class="box_1">
+                        <a href="">
+                            <div class="uk-background-default1 uk-padding1">
+                                <div class="uk-cover-container">
+                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                    <canvas width="640" height="640"></canvas>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="uk-margin-small uk-text-center info_sp">
+                            <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                            <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                            <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                            <div class="uk-button-group">
+                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="uk-width-expand">
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                );
+                foreach ($data as $key => $value): ?>
+                    <div class="uk-grid-small uk-grid mb" uk-grid>
+                        <div class="uk-width-1-3">
+                            <div class="uk-background-default1 uk-padding-small1">
+                                <div class="uk-cover-container">
+                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                    <canvas width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <div class="uk-margin-small info_sp">
+                                <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                                <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                                <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                                <div class="uk-button-group">
+                                    <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                    <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="uk-section-small">
     <div class="box_home_1 uk-margin uk-text-center uk-text-uppercase">
@@ -189,7 +267,7 @@
             <hr class="uk-position-center-left uk-margin-remove uk-position-center-right">
         </div>
     </div>
-    <div class="uk-container uk-padding-remove">
+    <div class="uk-container uk-padding-remove uk-visible@m">
         <div uk-slider="finite: true">
 
             <div class="uk-position-relative">
@@ -276,6 +354,84 @@
 
         </div>
     </div>
+    <div class="uk-container uk-hidden@m">
+        <div class="uk-grid-small uk-grid" uk-grid>
+            <div class="uk-width-2-5">
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                );
+                foreach ($data as $key => $value): ?>
+                    <div class="box_1">
+                        <a href="">
+                            <div class="uk-background-default1 uk-padding1">
+                                <div class="uk-cover-container">
+                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                    <canvas width="640" height="640"></canvas>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="uk-margin-small uk-text-center info_sp">
+                            <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                            <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                            <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                            <div class="uk-button-group">
+                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="uk-width-expand">
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                );
+                foreach ($data as $key => $value): ?>
+                    <div class="uk-grid-small uk-grid mb" uk-grid>
+                        <div class="uk-width-1-3">
+                            <div class="uk-background-default1 uk-padding-small1">
+                                <div class="uk-cover-container">
+                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                    <canvas width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <div class="uk-margin-small info_sp">
+                                <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                                <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                                <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                                <div class="uk-button-group">
+                                    <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                    <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="uk-section-small uk-background-muted">
     <div class="box_home_1 uk-margin uk-text-center uk-text-uppercase">
@@ -284,7 +440,7 @@
             <hr class="uk-position-center-left uk-margin-remove uk-position-center-right">
         </div>
     </div>
-    <div class="uk-container uk-padding-remove">
+    <div class="uk-container uk-padding-remove uk-visible@m">
         <div uk-slider="finite: true">
 
             <div class="uk-position-relative">
@@ -369,6 +525,84 @@
             </div>
 
 
+        </div>
+    </div>
+    <div class="uk-container uk-hidden@m">
+        <div class="uk-grid-small uk-grid" uk-grid>
+            <div class="uk-width-2-5">
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                );
+                foreach ($data as $key => $value): ?>
+                    <div class="box_1">
+                        <a href="">
+                            <div class="uk-background-default1 uk-padding1">
+                                <div class="uk-cover-container">
+                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                    <canvas width="640" height="640"></canvas>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="uk-margin-small uk-text-center info_sp">
+                            <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                            <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                            <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                            <div class="uk-button-group">
+                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="uk-width-expand">
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                    array(
+                        'src' => 'images/image/vertu.png',
+                        'title' => 'Vivo S1',
+                        'price' => 6690000,
+                    ),
+                );
+                foreach ($data as $key => $value): ?>
+                    <div class="uk-grid-small uk-grid mb" uk-grid>
+                        <div class="uk-width-1-3">
+                            <div class="uk-background-default1 uk-padding-small1">
+                                <div class="uk-cover-container">
+                                    <img class="lazyload" data-src="<?= $value['src'] ?>" alt="" uk-cover>
+                                    <canvas width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-2-3">
+                            <div class="uk-margin-small info_sp">
+                                <div class="catalog">Vertu Signature S | MSP: 100010</div>
+                                <h3 class="title uk-text-truncate uk-margin-small"><a href=""><?= $value['title'] ?></a></h3>
+                                <div class="price uk-margin-small"><?= number_format($value['price']); ?></div>
+                                <div class="uk-button-group">
+                                    <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-secondary">Chi tiết</a>
+                                    <a href="" class="uk-button uk-form-small uk-text-capitalize uk-button-primary">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 </div>
